@@ -18,69 +18,56 @@
 
 			<!--<a href="#" class="brand-logo font-size:1.5rem ">Elementos de Programaci&oacute;n</a>	-->		  
 			  			  <label class="titulo">&nbsp;&nbsp; Elementos de Programaci&oacute;n</label>		
+						  <ul id="nav-mobile" class="right">
+							<li><a href="index.html">Home</a></li>
+							
+      </ul>
 			</div>
 		  </nav>
 		  
-		  
-		  <div class="collection green lighten-2">
-			<a href="secuencial.html" class="collection-item" >Secuencial         <i class="material-icons right grey-text">&#xE5CC;</i>
-</a>
-			<a href="#!" class="collection-item" >Decisi&oacute;n</a>
-			<a href="#!" class="collection-item">Iteraci&oacute;n Definida</a>
-			<a href="#!" class="collection-item">Iteraci&oacute;n Condicionada</a>
-			<a href="#!" class="collection-item">Funciones</a>
-			<a href="#!" class="collection-item">Vectores</a>
-			<a href="#!" class="collection-item">Matrices</a>
-			<a href="#!" class="collection-item">Strings</a>
-			<a href="#!" class="collection-item">Estructuras</a>
-			<a href="#!" class="collection-item">Archivos</a>
-			<a href="#!" class="collection-item">Corte de Control</a>	
-			  
-			   
+		  <div class="container center">
+		  <h4>Secuencial</h4>
+		        <div class="row">
 
-		</div>
-	    
-	     <div class="collection z-depth-2">
-                            <script>
-                                $(document).ready(function () {
-                                    $('.tap-target').tapTarget();
-                                    $('.tap-target').tapTarget('open');
-                                });
-                            </script>
+            <a href="@Url.Content("~/Niveles/SeleccionarNivel?destino=pendientes")">
+                <div class="col offset-l3 offset-m3 black-text s4 l2 m2 card-panel hoverable lime lighten-4" id="menu">
+                    <h3 class="center light-blue-text">
+                        <i class="material-icons medium green-text">&#xE924;</i>
+                    </h3>
+                    <h6 class="center">Unidades</h6>
+                </div>
+            </a>
 
-	                        <a class="collection-item grey lighten-4 "  href="#"  >
-                        <div class="row">
+            <a href="@Url.Content("~/Niveles/SeleccionarNivel?destino=terminados")">
+                <div class="col    black-text s4 l2 m2 card-panel hoverable lime lighten-4 ">
+                    <h3 class="center light-blue-text">
+                        <i class="material-icons medium green-text">&#xE8DC;</i>
+                    </h3>
+                    <h6 class="center">Clases de Consulta</h6>
+                </div>
+            </a>
 
-
-                                    <div class="col s4 m4 l4">
-                                        <div class="row tooltipped" data-tooltip="0 / 6">
-                                            <i class="fas fa-lock grey-text "></i>
-                                        </div>
-                                    </div>
-
-
-
-
-                            <div class="col s4 m4 l4">
-
-                                <text class="grey-text" id="9">Ciclos </text>
-                            </div>
+            <a href="@Url.Content("~/Logros")">
+                <div class="col    black-text s4 l2 m2 card-panel hoverable lime lighten-4 ">
+                    <h3 class="center light-blue-text">
+                        <i class="material-icons medium green-text">star</i>
+                    </h3>
+                    <h6 class="center">Herramientas</h6>
+                </div>
+            </a>
+			 <a href="@Url.Content("~/Logros")">
+                <div class="col    black-text s4 l2 m2 card-panel hoverable lime lighten-4 ">
+                    <h3 class="center light-blue-text">
+                        <i class="material-icons medium green-text">star</i>
+                    </h3>
+                    <h6 class="center">Material de Apoyo</h6>
+                </div>
+            </a>
 
 
-                            <div class="col s4 m4 l4">
-                               
-                                <i class="material-icons right grey-text">&#xE5CC;</i>
-                            </div>
-
-
-                            
-                            
-
-                        </div>
-                    </a>
-
+        </div>
             
-		   
+		   </div>
          
 		  
 		
@@ -90,7 +77,7 @@
 	 <footer>
           <div class="footer-copyright green lighten-1">
             <div class="container">
-            Â© 2019 UNLaM
+            © 2019 UNLaM
             <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
             </div>
           </div>
