@@ -30,3 +30,8 @@
 }
 .fraction span.fdn {border-top: thin solid black;}
 .fraction span.bar {display: none;}
+
+.itemListado
+{
+	font-size: 1.3rem;
+}
