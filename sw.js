@@ -1,6 +1,8 @@
 const cacheName = 'ep2019-170719';
 const resourcesToCache = [
-  'index.html' , 'unidades.html' , 'secuencial_ejercicios.html' , 'init.js' , 'estilos.css' , 'estilos.css'
+  'index.html',
+  'unidades.html',
+  'secuencial.html'    
 ];
 
 self.addEventListener('install', function(event) {
