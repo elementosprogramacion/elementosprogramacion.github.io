@@ -1,6 +1,9 @@
-const cacheName = 'ep-170719-2037';
+const cacheName = 'ep-170719-2112';
 const resourcesToCache = [
-  'index.html'    
+  'index.html',
+  'unidades.html',
+  'secuencial.html',
+  'secuencial_ejercicios.html'
 ];
 
 self.addEventListener('install', function(event) {
