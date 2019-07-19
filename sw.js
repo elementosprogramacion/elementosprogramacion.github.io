@@ -1,4 +1,4 @@
-const cacheName = 'ep-170719-2339';
+const cacheName = 'ep-190719-1129';
 const resourcesToCache = [
   'index.html',
   'unidades.html',
