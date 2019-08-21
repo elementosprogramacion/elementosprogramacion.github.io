@@ -8,13 +8,15 @@ const resourcesToCache = [
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-      return cache.addAll(resourcesToCache);
-    })
+    caches.open(cacheName).then(function(cache) 
+       {
+        return cache.addAll(resourcesToCache);
+       })
   );
 });
 
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', function(event) 
+{
   var version = 'v1';
   event.waitUntil(
     caches.keys()
@@ -28,6 +30,7 @@ self.addEventListener('activate', function(event) {
         )
       )
   );
+  });
 
 
 
