@@ -1,4 +1,4 @@
-const cacheName = 'epUNLaM-v2';
+const cacheName = 'epUNLaM-v3';
 const resourcesToCache = [
   'index.html',
   'unidades.html',
@@ -17,7 +17,7 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('activate', function(event) 
 {
-  var version = 'v2';
+  var version = 'v3';
   event.waitUntil(
     caches.keys()
       .then(cacheNames =>
