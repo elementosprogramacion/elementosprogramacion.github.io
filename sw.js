@@ -1,4 +1,4 @@
-const cacheName = 'epUNLaM-v6';
+const cacheName = 'epUNLaM-v7';
 const resourcesToCache = [
   'index.html',
   'unidades.html',
@@ -33,6 +33,24 @@ self.addEventListener('message', function (event) {
     self.skipWaiting();
   }
 });
+
+
+self.addEventListener('activate', function(event) 
+{
+  var version = 'v3';
+  event.waitUntil(
+    caches.keys()
+      .then(cacheNames =>
+        Promise.all(
+          cacheNames
+            .map(c => c.split('-'))
+            .filter(c => c[0] === 'epUNLaM')
+            .filter(c => c[1] !== version)
+            .map(c => caches.delete(c.join('-')))
+        )
+      )
+  );
+  });
 
 /*
 self.addEventListener('activate', function(event) 
