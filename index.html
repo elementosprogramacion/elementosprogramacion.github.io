@@ -115,14 +115,11 @@
  
 		   */
 		   
- function recargar()
-		   {
-			   alert('recargando');
-			       newWorker.postMessage({ action: 'skipWaiting' });
-		   }
+ 
 		   
 		   
-  if ('serviceWorker' in navigator) {
+  if ('serviceWorker' in navigator) 
+  {
     navigator.serviceWorker.register('/sw.js').then(reg => {
       reg.addEventListener('updatefound', () => {
         // A wild service worker has appeared in reg.installing!
@@ -148,7 +145,12 @@
       refreshing = true;
     });
   }
-		   
+	
+		   function recargar()
+		   {
+			   alert('recargando');
+			       newWorker.postMessage({ action: 'skipWaiting' });
+		   }
 		   
 		   /*
 		  if ('serviceWorker' in navigator) {
