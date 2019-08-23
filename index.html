@@ -101,7 +101,7 @@
     //let snackbar = document.getElementById('snackbar');
     //snackbar.className = 'show';
 	  alert('nueva version');
-	  var toastHTML = '<span>Hay una nueva versión disponible</span><button  onclick="newWorker.postMessage({ action: 'skipWaiting' });"    id="reload" class="btn-flat toast-action">ACTUALIZAR</button>';
+	  var toastHTML = '<span>Hay una nueva versión disponible</span><button  onclick="recargar();"    id="reload" class="btn-flat toast-action">ACTUALIZAR</button>';
   	M.toast({html: toastHTML});
   }
 		  /* 
@@ -109,7 +109,14 @@
   document.getElementById('reload').addEventListener('click', function(){
     newWorker.postMessage({ action: 'skipWaiting' });
   });
+  
+ 
 		   */
+		   
+ function recargar()
+		   {
+			       newWorker.postMessage({ action: 'skipWaiting' });
+		   }
 		   
 		   
   if ('serviceWorker' in navigator) {
