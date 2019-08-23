@@ -94,18 +94,24 @@
       <script type="text/javascript" src="js/materialize.min.js"></script>
 	  <script type="text/javascript" src="js/materialize.min.js"></script>
 	   <script>
+		   
+		   
 		      let newWorker;
   function showUpdateBar() {
     //let snackbar = document.getElementById('snackbar');
     //snackbar.className = 'show';
 	  alert('nueva version');
-	  var toastHTML = '<span>Hay una nueva versión disponible</span><button id="reload" class="btn-flat toast-action">ACTUALIZAR</button>';
+	  var toastHTML = '<span>Hay una nueva versión disponible</span><button  onclick="newWorker.postMessage({ action: 'skipWaiting' });"    id="reload" class="btn-flat toast-action">ACTUALIZAR</button>';
   	M.toast({html: toastHTML});
   }
+		  /* 
   // The click event on the pop up notification
   document.getElementById('reload').addEventListener('click', function(){
     newWorker.postMessage({ action: 'skipWaiting' });
   });
+		   */
+		   
+		   
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js').then(reg => {
       reg.addEventListener('updatefound', () => {
