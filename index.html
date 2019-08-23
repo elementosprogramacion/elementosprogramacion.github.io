@@ -85,12 +85,50 @@
             
 		   </div>
          
-		  
+		    <div id="notification">A new version of this app is available. Click <a id="reload">here</a> to update.</div>
+
 		
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
 	  <script type="text/javascript" src="js/materialize.min.js"></script>
 	   <script>
+		     let newWorker;
+
+  // The click event on the notification
+  document.getElementById('reload').addEventListener('click', function(){
+    newWorker.postMessage({ action: 'skipWaiting' });
+  });
+
+  if ('serviceWorker' in navigator) {
+    // Register the service worker
+    navigator.serviceWorker.register('/service-worker.js').then(reg => {
+      reg.addEventListener('updatefound', () => {
+
+        // An updated service worker has appeared in reg.installing!
+        newWorker = reg.installing;
+
+        newWorker.addEventListener('statechange', () => {
+
+          // Has service worker state changed?
+          switch (newWorker.state) {
+            case 'installed':
+
+	// There is a new service worker available, show the notification
+              if (navigator.serviceWorker.controller) {
+                let notification = document.getElementById('notification ');
+    notification .className = 'show';
+              }
+
+              break;
+          }
+        });
+      });
+    });
+
+  }
+		   
+		   
+		   /*
 		  if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('sw.js').then(function(registration) {
@@ -101,7 +139,7 @@
       console.log('ServiceWorker registration failed: ', err);
     });
   });
-}
+}*/
 	  </script>
     </main>
 	 <footer>
