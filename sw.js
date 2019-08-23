@@ -1,4 +1,4 @@
-const cacheName = 'epUNLaM-v9';
+const cacheName = 'epUNLaM-v10';
 const resourcesToCache = [
   'index.html',
   'unidades.html',
