@@ -87,9 +87,9 @@
             
 		   </div>
          
-	<a id="updateBtn" onclick="recargar();" class="waves-effect waves-light btn-small"><i class="material-icons right">autorenew</i>Nueva Versión Disponible</a>
+	<!--<a id="updateBtn" onclick="recargar();" class="waves-effect waves-light btn-small"><i class="material-icons right">autorenew</i>Nueva Versión Disponible</a>
 
-	<!--	    <div id="notification">A new version of this app is available. Click <a id="reload">here</a> to update.</div>-->
+		    <div id="notification">A new version of this app is available. Click <a id="reload">here</a> to update.</div>-->
 
 		
       <!--JavaScript at end of body for optimized loading-->
@@ -129,13 +129,16 @@
           switch (newWorker.state) {
             case 'installed':
               if (navigator.serviceWorker.controller) {
+		      alert('recargando');
+		      newWorker.postMessage({ action: 'skipWaiting' });
                 // new update available
-                showUpdateBar();
+                	//showUpdateBar();
+		      /*
 		   function recargar()
 		   {
 			   alert('recargando');
-			       newWorker.postMessage({ action: 'skipWaiting' });
-		   }
+			       
+		   }*/
               }
               // No update available
               break;
