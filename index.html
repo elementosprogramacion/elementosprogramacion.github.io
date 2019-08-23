@@ -100,7 +100,7 @@
   function showUpdateBar() {
     //let snackbar = document.getElementById('snackbar');
     //snackbar.className = 'show';
-	  alert('nueva version');
+	  
 	  var toastHTML = '<span>Hay una nueva versión disponible</span><button  onclick="recargar();"    id="reload" class="btn-flat toast-action">ACTUALIZAR</button>';
   	M.toast({html: toastHTML});
   }
@@ -115,6 +115,7 @@
 		   
  function recargar()
 		   {
+			   alert('recargando');
 			       newWorker.postMessage({ action: 'skipWaiting' });
 		   }
 		   
