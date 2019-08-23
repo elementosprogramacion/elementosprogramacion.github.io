@@ -131,6 +131,11 @@
               if (navigator.serviceWorker.controller) {
                 // new update available
                 showUpdateBar();
+		   function recargar()
+		   {
+			   alert('recargando');
+			       newWorker.postMessage({ action: 'skipWaiting' });
+		   }
               }
               // No update available
               break;
@@ -146,11 +151,7 @@
     });
   }
 	
-		   function recargar()
-		   {
-			   alert('recargando');
-			       newWorker.postMessage({ action: 'skipWaiting' });
-		   }
+		  
 		   
 		   /*
 		  if ('serviceWorker' in navigator) {
