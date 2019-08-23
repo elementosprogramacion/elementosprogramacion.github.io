@@ -37,7 +37,7 @@ self.addEventListener('message', function (event) {
 
 self.addEventListener('activate', function(event) 
 {
-  var version = 'v3';
+  var version = 'v7';
   event.waitUntil(
     caches.keys()
       .then(cacheNames =>
