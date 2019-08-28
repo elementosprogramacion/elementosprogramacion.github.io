@@ -1,3 +1,4 @@
+cache-control: max-age=0,no-cache,no-store,must-revalidate
 const cacheName = 'epUNLaM-v9';
 const resourcesToCache = [
   'index.html',
