@@ -87,9 +87,9 @@
             
 		   </div>
          
-	<!--<a id="updateBtn" onclick="recargar();" class="waves-effect waves-light btn-small"><i class="material-icons right">autorenew</i>Nueva Versión Disponible</a>
+	<a id="updateBtn" onclick="navigator.serviceWorker.update();" class="waves-effect waves-light btn-small"><i class="material-icons right">autorenew</i>Buscar Actualizaciones</a>
 
-		    <div id="notification">A new version of this app is available. Click <a id="reload">here</a> to update.</div>-->
+		   <!-- <div id="notification">A new version of this app is available. Click <a id="reload">here</a> to update.</div>-->
 
 		
       <!--JavaScript at end of body for optimized loading-->
@@ -154,6 +154,11 @@
       refreshing = true;
     });
   }
+
+		   
+  
+			   
+};
 	
 		  
 		   
