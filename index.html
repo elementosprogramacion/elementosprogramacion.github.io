@@ -87,7 +87,7 @@
             
 		   </div>
          
-	<a id="updateBtn" onclick="navigator.serviceWorker.update();" class="waves-effect waves-light btn-small"><i class="material-icons right">autorenew</i>Buscar Actualizaciones</a>
+	<a id="updateBtn"  class="waves-effect waves-light btn-small"><i class="material-icons right">autorenew</i>Buscar Actualizaciones</a>
 
 		   <!-- <div id="notification">A new version of this app is available. Click <a id="reload">here</a> to update.</div>-->
 
@@ -123,6 +123,10 @@
     navigator.serviceWorker.register('/sw.js').then(reg => {
       reg.addEventListener('updatefound', () => {
         // A wild service worker has appeared in reg.installing!
+	//onclick="navigator.serviceWorker.update();"
+	 updateBtn.onclick = function() {
+      		reg.update();
+    	}
         newWorker = reg.installing;
         newWorker.addEventListener('statechange', () => {
           // Has network.state changed?
