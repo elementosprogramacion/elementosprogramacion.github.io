@@ -103,7 +103,7 @@
     //let snackbar = document.getElementById('snackbar');
     //snackbar.className = 'show';
 	  
-	  var toastHTML = '<span>Hay una nueva versión disponible</span><button  onclick="recargar();"    id="reload" class="btn-flat toast-action">ACTUALIZAR</button>';
+	  var toastHTML = '<span>Hay una nueva versión disponible cierre la aplicacion y vuelva a abrirla para acceder a la nueva versión;"    id="reload" class="btn-flat toast-action">ACTUALIZAR</button>';
   	M.toast({html: toastHTML});
   }
 		  /* 
@@ -129,7 +129,8 @@
           switch (newWorker.state) {
             case 'installed':
               if (navigator.serviceWorker.controller) {
-		      alert('recargando');
+			showUpdateBar();
+		      //alert('recargando');
 		      newWorker.postMessage({ action: 'skipWaiting' });
                 // new update available
                 	//showUpdateBar();
