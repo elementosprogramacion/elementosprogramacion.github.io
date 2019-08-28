@@ -124,9 +124,7 @@
       reg.addEventListener('updatefound', () => {
         // A wild service worker has appeared in reg.installing!
 	//onclick="navigator.serviceWorker.update();"
-	 updateBtn.onclick = function() {
-      		reg.update();
-    	}
+	 
         newWorker = reg.installing;
         newWorker.addEventListener('statechange', () => {
           // Has network.state changed?
@@ -162,7 +160,7 @@
 		   
   
 			   
-};
+
 	
 		  
 		   
