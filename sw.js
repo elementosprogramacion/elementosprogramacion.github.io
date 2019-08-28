@@ -1,4 +1,4 @@
-const cacheName = 'epUNLaM-v11';
+const cacheName = 'epUNLaM-v1';
 const resourcesToCache = [
   'index.html',
   'unidades.html',
@@ -28,13 +28,27 @@ self.addEventListener('fetch', function (event) {
 });
 
 
+self.addEventListener("activate", function(event) {
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.map(function(cacheVieja) {
+          if (cacheVieja !== cacheName &&  cacheVieja.startsWith("epUNLaM")) {
+            return caches.delete(cacheVieja);
+          }
+        })
+      );
+    })
+  );
+});
+
 self.addEventListener('message', function (event) {
   if (event.data.action === 'skipWaiting') {
     self.skipWaiting();
   }
 });
 
-
+/*
 self.addEventListener('activate', function(event) 
 {
   var version = 'v7';
@@ -52,7 +66,7 @@ self.addEventListener('activate', function(event)
   );
   });
 
-/*
+
 self.addEventListener('activate', function(event) 
 {
   var version = 'v3';
