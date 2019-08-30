@@ -47,8 +47,6 @@ self.addEventListener('fetch', function (event) {
   );
 });
 
-
-
 self.addEventListener("activate", function(event) {
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
@@ -64,73 +62,3 @@ self.addEventListener("activate", function(event) {
   );
   return self.clients.claim(); //fuerza que todos los clientes se actualicen
 });
-
-
-/*
-self.addEventListener("activate", function(event) {
-  event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames.map(function(cacheVieja) {
-          if (cacheVieja !== cachePaginas &&  cacheVieja.startsWith("epUNLaM")) {
-            return caches.delete(cacheVieja);
-          }
-        })
-      );
-    })
-  );
-  return self.clients.claim();
-});
-
-self.addEventListener('message', function (event) {
-  if (event.data.action === 'skipWaiting') {
-    self.skipWaiting();
-  }
-});
-
-/*
-self.addEventListener('activate', function(event) 
-{
-  var version = 'v7';
-  event.waitUntil(
-    caches.keys()
-      .then(cacheNames =>
-        Promise.all(
-          cacheNames
-            .map(c => c.split('-'))
-            .filter(c => c[0] === 'epUNLaM')
-            .filter(c => c[1] !== version)
-            .map(c => caches.delete(c.join('-')))
-        )
-      )
-  );
-  });
-
-
-self.addEventListener('activate', function(event) 
-{
-  var version = 'v3';
-  event.waitUntil(
-    caches.keys()
-      .then(cacheNames =>
-        Promise.all(
-          cacheNames
-            .map(c => c.split('-'))
-            .filter(c => c[0] === 'epUNLaM')
-            .filter(c => c[1] !== version)
-            .map(c => caches.delete(c.join('-')))
-        )
-      )
-  );
-  });
-
-
-
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request).then(function(response) {
-      return response || fetch(event.request);
-    })
-  );
-});
-*/

@@ -1,0 +1,203 @@
+ <!DOCTYPE html>
+  <html>
+    <head	>	  
+	  <link rel="manifest" href="/manifest.json">
+      <!--Import Google Icon Font
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->	  
+	  
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/estilos.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	    	
+    </head>
+
+    <body>
+	<main>
+	
+		  <nav>
+			<div class="nav-wrapper green lighten-1 center">
+
+			<!--<a href="#" class="brand-logo font-size:1.5rem ">Elementos de Programaci&oacute;n</a>	-->		  
+			  			  <label class="titulo">&nbsp;&nbsp; Elementos de Programaci&oacute;n</label>		
+						  
+			</div>
+		  </nav>
+		  
+		  <div class="container center">
+		  
+		        <div class="row">
+
+            <a href="unidades.html">
+                <div class="col offset-l1 offset-m1 black-text  offset-s1 s5 l2 m3 card-panel hoverable lime lighten-4" id="menu">
+                    <h3 class="center light-blue-text">
+                        <i class="material-icons medium green-text">list</i>
+                    </h3>
+                    <h6 class="center">Todas las Unidades</h6>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="col offset-l1 offset-m1 black-text  offset-s1 s5 l2 m3 card-panel hoverable lime lighten-4" id="menu">
+                    <h3 class="center light-blue-text">
+                        <i class="material-icons medium green-text">group</i>
+                    </h3>
+                    <h6 class="center">Clases de Consulta</h6>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="col offset-l1 offset-m1 black-text  offset-s1 s5 l2 m3 card-panel hoverable lime lighten-4" id="menu">
+                    <h3 class="center light-blue-text">
+                        <i class="material-icons medium green-text">work</i>
+                    </h3>
+                    <h6 class="center">Herramientas Varias<br/></h6>
+                </div>
+            </a>
+			 <a href="">
+                <div class="col offset-l1 offset-m1 black-text  offset-s1 s5 l2 m3 card-panel hoverable lime lighten-4" id="menu">
+                    <h3 class="center light-blue-text">
+                        <i class="material-icons medium green-text">live_help</i>
+                    </h3>
+                    <h6 class="center">Material de Apoyo</h6>
+                </div>
+            </a>
+			<a href="">
+                <div class="col offset-l1 offset-m1 black-text  offset-s1 s5 l2 m3 card-panel hoverable lime lighten-4" id="menu">
+                    <h3 class="center light-blue-text">
+                        <i class="material-icons medium green-text">gamepad</i>
+                    </h3>
+                    <h6 class="center">Programados</h6>
+                </div>
+            </a>
+			<a href="">
+                <div class="col offset-l1 offset-m1 black-text  offset-s1 s5 l2 m3 card-panel hoverable lime lighten-4" id="menu">
+                    <h3 class="center light-blue-text">
+                        <i class="material-icons medium green-text">announcement</i>
+                    </h3>
+                    <h6 class="center">Noticias</h6>
+                </div>
+            </a>
+			
+
+
+        </div>
+            
+		   </div>
+        <!--  
+	<a id="updateBtn"  class="waves-effect waves-light btn-small"><i class="material-icons right">autorenew</i>Buscar Actualizaciones</a>
+
+		   <div id="notification">A new version of this app is available. Click <a id="reload">here</a> to update.</div>-->
+
+		
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>	  
+	  
+	  
+	  
+	   <script>
+		if ('serviceWorker' in navigator)
+		   navigator.serviceWorker.register('/sw.js');
+		   
+		   
+		   /*
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function() {
+			navigator.serviceWorker.register('sw.js').then(function(registration) {
+				// Registration was successful
+				console.log('ServiceWorker registration successful with scope: ', registration.scope);
+			}, function(err) {
+		// registration failed :(
+		console.log('ServiceWorker registration failed: ', err);
+			});
+  });
+}
+
+/*
+		   
+		      let newWorker;
+  function showUpdateBar() {
+    //let snackbar = document.getElementById('snackbar');
+    //snackbar.className = 'show';
+	  
+	  var toastHTML = '<span>Hay una nueva versión disponible cierre la aplicacion y vuelva a abrirla;"    id="reload" class="btn-flat toast-action">ACTUALIZAR</button>';
+  	M.toast({html: toastHTML});
+  }
+		  /* 
+  // The click event on the pop up notification
+  document.getElementById('reload').addEventListener('click', function(){
+    newWorker.postMessage({ action: 'skipWaiting' });
+  });
+  
+ 
+		   */
+		   
+ 
+/*		   
+		   
+  if ('serviceWorker' in navigator) 
+  {
+    navigator.serviceWorker.register('/sw.js').then(reg => {
+      reg.addEventListener('updatefound', () => {
+        // A wild service worker has appeared in reg.installing!
+	//onclick="navigator.serviceWorker.update();"
+	 
+        newWorker = reg.installing;
+        newWorker.addEventListener('statechange', () => {
+          // Has network.state changed?
+          switch (newWorker.state) {
+            case 'installed':
+              if (navigator.serviceWorker.controller) {
+			showUpdateBar();
+		      //alert('recargando');
+		      newWorker.postMessage({ action: 'skipWaiting' });
+                // new update available
+                	//showUpdateBar();
+		      /*
+		   function recargar()
+		   {
+			   alert('recargando');
+			       
+		   }*/
+              }
+              // No update available
+			  /*
+              break;
+          }
+        });
+      });
+    });
+    let refreshing;
+    navigator.serviceWorker.addEventListener('controllerchange', function () {
+      if (refreshing) return;
+      window.location.reload();
+      refreshing = true;
+    });
+  }
+
+		   
+ 
+			   
+
+	
+		  
+		   
+		   /*
+		  */
+	  </script>
+    </main>
+	 <footer>
+	<!--	 <iframe id="inlineFrameExample" src="pie.html">	</iframe>	-->
+	
+          <div class="footer-copyright green lighten-1">
+            <div class="container">
+             	V1.0 Elementos de Programacion - UNLaM
+            <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+            </div>
+          </div> 
+        </footer>
+	</body>
+  </html>
+        
