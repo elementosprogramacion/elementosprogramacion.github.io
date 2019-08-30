@@ -1,17 +1,35 @@
 //cache-control: max-age=0,no-cache,no-store,must-revalidate
-const cacheName = 'epUNLaM-v11';
-const resourcesToCache = [
+const cachePaginas = 'epUNLaM-v1';
+const cacheFija = 'epUNLaMEstatica-v0';
+
+const paginasCache = [
   'index.html',
   'unidades.html',
   'secuencial.html',
-  'secuencial_ejercicios.html'
+  'secuencial_ejercicios.html'  
 ];
 
-self.addEventListener('install', function(event) {
-  event.waitUntil(
-    caches.open(cacheName).then(function(cache) 
+const recursosEstaticos = [
+  'css/materialize.min.css',
+  'css/estilos.css',
+  'js/materialize.min.js'  
+];
+
+self.addEventListener('install', function(event) 
+{
+  event.waitUntil
+  (
+    caches.open(cachePaginas).then(function(cache) 
        {
-        return cache.addAll(resourcesToCache);
+        return cache.adderall(paginasCache);
+       })
+  );
+  
+  event.waitUntil
+  (
+    caches.open(cacheFija).then(function(cache) 
+       {
+        return cache.adderall(recursosEstaticos);
        })
   );
 });
@@ -29,18 +47,38 @@ self.addEventListener('fetch', function (event) {
 });
 
 
+
 self.addEventListener("activate", function(event) {
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
       return Promise.all(
         cacheNames.map(function(cacheVieja) {
-          if (cacheVieja !== cacheName &&  cacheVieja.startsWith("epUNLaM")) {
+          if (cacheVieja !== cachePaginas && cacheVieja !== cacheFija) 	  //&& cacheVieja.startsWith("epUNLaM")) {
+		  {		
             return caches.delete(cacheVieja);
           }
         })
       );
     })
   );
+  return self.clients.claim(); //fuerza que todos los clientes se actualicen
+});
+
+
+/*
+self.addEventListener("activate", function(event) {
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.map(function(cacheVieja) {
+          if (cacheVieja !== cachePaginas &&  cacheVieja.startsWith("epUNLaM")) {
+            return caches.delete(cacheVieja);
+          }
+        })
+      );
+    })
+  );
+  return self.clients.claim();
 });
 
 self.addEventListener('message', function (event) {
