@@ -1,4 +1,4 @@
-importScripts('https://cdnjs.cloudflare.com/ajax/libs/cache.adderall/1.0.0/cache.adderall.js');
+importScripts('cache.adderall.js');
 
 const cachePaginas = 'epUNLaM-v1';
 const cacheFija = 'epUNLaMEstatica-v0';
