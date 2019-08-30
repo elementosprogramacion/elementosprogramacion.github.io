@@ -94,8 +94,28 @@
 		
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>	  
+	  
+	  
+	  
 	   <script>
+		if ('serviceWorker' in navigator)
+		   navigator.serviceWorker.register('/sw.js');
 		   
+		   
+		   /*
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function() {
+			navigator.serviceWorker.register('sw.js').then(function(registration) {
+				// Registration was successful
+				console.log('ServiceWorker registration successful with scope: ', registration.scope);
+			}, function(err) {
+		// registration failed :(
+		console.log('ServiceWorker registration failed: ', err);
+			});
+  });
+}
+
+/*
 		   
 		      let newWorker;
   function showUpdateBar() {
@@ -115,7 +135,7 @@
 		   */
 		   
  
-		   
+/*		   
 		   
   if ('serviceWorker' in navigator) 
   {
@@ -143,6 +163,7 @@
 		   }*/
               }
               // No update available
+			  /*
               break;
           }
         });
@@ -157,24 +178,14 @@
   }
 
 		   
-  
+ 
 			   
 
 	
 		  
 		   
 		   /*
-		  if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('sw.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}*/
+		  */
 	  </script>
     </main>
 	 <footer>
