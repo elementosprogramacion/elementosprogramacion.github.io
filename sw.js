@@ -22,7 +22,7 @@ self.addEventListener('install', function(event)
   (
     caches.open(cachePaginas).then(function(cache) 
        {
-        return cache.adderall(paginasCache);
+        return adderall.addAll(cache, paginasCache);
        })
   );
   
@@ -30,7 +30,7 @@ self.addEventListener('install', function(event)
   (
     caches.open(cacheFija).then(function(cache) 
        {
-        return cache.adderall(recursosEstaticos);
+        return adderall.addAll(cache,recursosEstaticos);
        })
   );
 });
