@@ -1,6 +1,6 @@
 importScripts('cache.adderall.js');
 
-const cachePaginas = 'epUNLaM-v1';
+const cachePaginas = 'epUNLaM-v2';
 const cacheFija = 'epUNLaMEstatica-v0';
 
 const paginasCache = [
