@@ -1,7 +1,7 @@
 //importScripts('cache.adderall.js');
 
-const cachePaginas = 'epUNLaM-v1';
-const cacheFija = 'epUNLaMEstatica-v0';
+const cachePaginas = 'epUNLaM-v12';
+const cacheFija = 'epUNLaMEstatica-v1';
 
 const paginasCache = [
   'index.html',
@@ -13,7 +13,8 @@ const paginasCache = [
 const recursosEstaticos = [
   'css/materialize.min.css',
   'css/estilos.css',
-  'js/materialize.min.js'  
+  'js/materialize.min.js' , 
+  'icons/pdf.svg'
 ];
 
 self.addEventListener('install', function(event) 
