@@ -1,6 +1,6 @@
-importScripts('cache.adderall.js');
+//importScripts('cache.adderall.js');
 
-const cachePaginas = 'epUNLaM-v2';
+const cachePaginas = 'epUNLaM-v3';
 const cacheFija = 'epUNLaMEstatica-v0';
 
 const paginasCache = [
@@ -22,7 +22,7 @@ self.addEventListener('install', function(event)
   (
     caches.open(cachePaginas).then(function(cache) 
        {
-        return adderall.addAll(cache, paginasCache);
+        return cache.addAll(paginasCache);
        })
   );
   
@@ -30,7 +30,7 @@ self.addEventListener('install', function(event)
   (
     caches.open(cacheFija).then(function(cache) 
        {
-        return adderall.addAll(cache,recursosEstaticos);
+        return cache.addAll(recursosEstaticos);
        })
   );
 });
