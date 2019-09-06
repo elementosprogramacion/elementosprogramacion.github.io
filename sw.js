@@ -19,8 +19,8 @@ const recursosEstaticos = [
   'icons/expandir.svg',
   'icons/volver.svg' ,
   'icons/seleccionar.svg' ,
-  'ProgramadosApaisado.svg',
-  'programados.svg'  
+  'icons/ProgramadosApaisado.svg',
+  'icons/programados.svg'  
 ];
 
 self.addEventListener('install', function(event) 
