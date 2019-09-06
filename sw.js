@@ -1,6 +1,6 @@
 //importScripts('cache.adderall.js');
 
-const cachePaginas = 'epUNLaM-v2';
+const cachePaginas = 'epUNLaM-v20';
 const cacheFija = 'epUNLaMEstatica-v1';
 
 const paginasCache = [
@@ -8,6 +8,8 @@ const paginasCache = [
   'unidades.html',
   'secuencial.html',
   'secuencial_ejercicios.html'  
+  'programados.html',
+  'adicionales.html'
 ];
 
 const recursosEstaticos = [
@@ -17,7 +19,10 @@ const recursosEstaticos = [
   'icons/pdf.svg',
   'icons/home.svg',
   'icons/expandir.svg',
-  'icons/volver.svg'  
+  'icons/volver.svg' ,
+  'icons/seleccionar.svg' ,
+  'ProgramadosApaisado.svg',
+  'programados.svg'  
 ];
 
 self.addEventListener('install', function(event) 
