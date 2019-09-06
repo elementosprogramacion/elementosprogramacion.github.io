@@ -7,7 +7,7 @@ const paginasCache = [
   'index.html',
   'unidades.html',
   'secuencial.html',
-  'secuencial_ejercicios.html'  
+  'secuencial_ejercicios.html',
   'programados.html',
   'adicionales.html'
 ];
