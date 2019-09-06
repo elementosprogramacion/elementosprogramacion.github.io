@@ -14,7 +14,10 @@ const recursosEstaticos = [
   'css/materialize.min.css',
   'css/estilos.css',
   'js/materialize.min.js' , 
-  'icons/pdf.svg'
+  'icons/pdf.svg',
+  'icons/home.svg',
+  'icons/expandir.svg',
+  'icons/volver.svg'  
 ];
 
 self.addEventListener('install', function(event) 
