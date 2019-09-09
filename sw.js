@@ -1,4 +1,4 @@
-const cachePaginas = 'epUNLaM-v24';
+const cachePaginas = 'epUNLaM-v25';
 const cacheFija = 'epUNLaMEstatica-v1';
 
 const paginasCache = [
@@ -6,8 +6,7 @@ const paginasCache = [
   'unidades.html',
   'secuencial.html',
   'secuencial_ejercicios.html',
-  'programados.html',
-  'adicionales.html'
+  'programados.html'
 ];
 
 const recursosEstaticos = [
