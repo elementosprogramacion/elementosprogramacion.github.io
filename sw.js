@@ -1,4 +1,4 @@
-const cachePaginas = 'epUNLaM-v22';
+const cachePaginas = 'epUNLaM-v23';
 const cacheFija = 'epUNLaMEstatica-v1';
 
 const paginasCache = [
@@ -15,6 +15,7 @@ const recursosEstaticos = [
   'css/estilos.css',
   'js/materialize.min.js' , 
   'icons/pdf.svg',
+  'icons/linkweb.svg',
   'icons/home.svg',
   'icons/expandir.svg',
   'icons/volver.svg' ,
