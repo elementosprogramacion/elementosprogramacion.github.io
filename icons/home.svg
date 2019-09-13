@@ -1,1 +1,25 @@
-<svg version="1.1" viewBox="0.0 0.0 100.0 100.0" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><clipPath id="p.0"><path d="m0 0l100.0 0l0 100.0l-100.0 0l0 -100.0z" clip-rule="nonzero"/></clipPath><g clip-path="url(#p.0)"><path fill="#000000" fill-opacity="0.0" d="m0 0l100.0 0l0 100.0l-100.0 0z" fill-rule="evenodd"/><path fill="#ffffff" d="m0.5511811 49.700787l49.44882 -49.700787l49.448822 49.700787z" fill-rule="evenodd"/><path stroke="#ffffff" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m0.5511811 49.700787l49.44882 -49.700787l49.448822 49.700787z" fill-rule="evenodd"/><path fill="#ffffff" d="m12.209973 42.41995l28.629921 0l0 55.43307l-28.629921 0z" fill-rule="evenodd"/><path stroke="#ffffff" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m12.209973 42.41995l28.629921 0l0 55.43307l-28.629921 0z" fill-rule="evenodd"/><path fill="#ffffff" d="m59.755905 42.41995l27.590553 0l0 55.43307l-27.590553 0z" fill-rule="evenodd"/><path stroke="#ffffff" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m59.755905 42.41995l27.590553 0l0 55.43307l-27.590553 0z" fill-rule="evenodd"/><path fill="#ffffff" d="m33.228348 41.795277l32.44094 0l0 31.874012l-32.44094 0z" fill-rule="evenodd"/><path stroke="#ffffff" stroke-width="1.0" stroke-linejoin="round" stroke-linecap="butt" d="m33.228348 41.795277l32.44094 0l0 31.874012l-32.44094 0z" fill-rule="evenodd"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#6CBD99;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#FBC672;}
+</style>
+<title>035 - Creative Thinking</title>
+<desc>Created with Sketch.</desc>
+<circle class="st0" cx="256" cy="255.4" r="251.8"/>
+<g>
+	<path class="st1" d="M100.8,259.3l16.6,2.3c2.1,0.3,5.7,2.1,5.7,4.3v147.5c0,2.4,10.6,0.3,2.3,0.3h260.2c2.4,0,4.3,2.1,4.3-0.3V269
+		c0-2.4,1.9-4.3,4.3-4.3l20.6-3.3c3.7,0,5.7-4.5,3.2-7.2L259.2,94c-1.7-1.8-4.5-1.9-6.2-0.1L98.4,252.1
+		C95.9,254.6,97.4,258.8,100.8,259.3z"/>
+	<rect x="211.4" y="281.5" class="st2" width="90.4" height="135.9"/>
+	<path d="M420.1,244.9L266.4,91.2c-5.8-5.8-15.2-5.8-20.9,0L91.8,244.9c-4.3,4.3-5.5,10.5-3.2,16.1c2.3,5.6,7.6,9.1,13.7,9.1h14.8
+		v54c0,2.7,2.2,4.9,4.9,4.9s4.9-2.2,4.9-4.9v-59c0-2.7-2.2-4.9-4.9-4.9h-19.7c-3.1,0-4.3-2.3-4.6-3c-0.3-0.7-1.1-3.2,1.1-5.4
+		L252.5,98.2c1.9-1.9,5.1-1.9,7,0l153.7,153.7c2.2,2.2,1.4,4.7,1.1,5.4c-0.3,0.7-1.5,3-4.6,3h-19.7c-2.7,0-4.9,2.2-4.9,4.9V414
+		h-79.4V284c0-2.7-2.2-4.9-4.9-4.9h-89.3c-2.7,0-4.9,2.2-4.9,4.9v130H127v-62c0-2.7-2.2-4.9-4.9-4.9c-2.7,0-4.9,2.2-4.9,4.9v67
+		c0,2.7,2.2,4.9,4.9,4.9h89.3c2.7,0,4.9-2.2,4.9-4.9v-130h79.4v130c0,2.7,2.2,4.9,4.9,4.9h89.3c2.7,0,4.9-2.2,4.9-4.9V270.2h14.8
+		c6.1,0,11.3-3.5,13.7-9.1C425.6,255.4,424.4,249.2,420.1,244.9L420.1,244.9z"/>
+</g>
+</svg>

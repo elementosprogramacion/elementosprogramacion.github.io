@@ -23,7 +23,10 @@
 		width: 55px;		
 }
 
-
+.codigo
+{
+	font-family: courier;
+}
 .fraction {
     display: inline-block;
     vertical-align: middle; 
