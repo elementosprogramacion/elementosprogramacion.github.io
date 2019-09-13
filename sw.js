@@ -1,26 +1,14 @@
-const cachePaginas = 'epUNLaM-v25';
-const cacheFija = 'epUNLaMEstatica-v1';
+const cachePaginas = 'epUNLaM-v26';
+const cacheFija = 'epUNLaMEstatica-v2';
 
 const paginasCache = [
-  'index.html',
-  'unidades.html',
-  'secuencial.html',
-  'secuencial_ejercicios.html',
-  'programados.html'
+  'oldindex.html'
 ];
 
 const recursosEstaticos = [
   'css/materialize.min.css',
-  'css/estilos.css',
-  'js/materialize.min.js' , 
-  'icons/pdf.svg',
-  'icons/linkweb.svg',
-  'icons/home.svg',
-  'icons/expandir.svg',
-  'icons/volver.svg' ,
-  'icons/seleccionar.svg' ,
-  'icons/ProgramadosApaisado.svg',
-  'icons/programados.svg'  
+  'js/materialize.min.js' 
+  
 ];
 
 self.addEventListener('install', function(event) 
