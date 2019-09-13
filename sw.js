@@ -1,4 +1,4 @@
-const cachePaginas = 'epUNLaM-v26';
+const cachePaginas = 'epUNLaM-v27';
 const cacheFija = 'epUNLaMEstatica-v2';
 
 const paginasCache = [
