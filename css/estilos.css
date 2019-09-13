@@ -18,6 +18,19 @@
 
 }
 
+.boton
+{
+	width: 7rem;
+	padding-top: 2rem;
+} 
+
+.textoBoton
+{
+	font-weight: bold;
+	color: gray;
+	font-size: 1rem;
+}
+
 .logo
 {
 		width: 55px;		
