@@ -2,19 +2,9 @@
   "short_name": "Elem.Prog.",
   "name": "UNLaM Elementos de Programacion",
   "background_color": "#34D131",
-  "icons": [
+  "icons": [    
     {
-      "src": "icons/launcher-icon-1x.png",
-      "type": "image/png",
-      "sizes": "48x48"
-    },
-    {
-      "src": "icons/launcher-icon-2x.png",
-      "type": "image/png",
-      "sizes": "96x96"
-    },
-    {
-      "src": "icons/launcher-icon-4x.png",
+      "src": "icons/icon192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
