@@ -1,0 +1,244 @@
+ <!DOCTYPE html>
+  <html>
+    <head>      
+	   <title>Ejercicios Unidad 11 - Corte de Control<</title>
+	  <link rel="manifest" href="/manifest.json">      
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/estilos.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>	  
+    </head>
+<body>
+    <main>	
+		  <nav>
+			<div class="nav-wrapper green lighten-1">		
+		<img src="icons/logo.svg" class="logo"  />			
+			  <label class="titulo flow-text">U11&nbsp;Corte de Control</label>		
+				<ul id="nav-mobile" class="right">
+					<li><a href="Corte de Control.html"> <img src="icons/volver.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+					<li><a href="index.html"> <img src="icons/home.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+				</ul>
+			</div>
+		  </nav>
+		  
+		  <div class="container center">
+		  
+		    <div class="row">
+				<ul class="collapsible  z-depth-5">
+					<li>
+					  <div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" /> Ejercicio 11.1</div>
+					  <div class="collapsible-body">
+						<span>
+							<p>Se dispone de un archivo llamado Rating.dat que guarda la informaci&oacute;n de los puntos obtenidos de rating en los distintos programas de canales de cable a lo largo del d&iacute;a. Cada registro contiene:</p> 
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de canal (entero) <br> &nbsp;&bull; &nbsp;Programa (texto de 35 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;Rating (float)</p>
+							<p>El archivo se encuentra ordenado por canal. Se solicita informar:</p>
+							<p>&nbsp;a. &nbsp;Aquellos canales que obtengan menos de 15 puntos en total. <br> &nbsp;b. &nbsp;El canal m&aacute;s visto. <br> &nbsp;c. &nbsp;Generar un archivo con el promedio de rating de cada canal que incluya dos campos:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de canal <br> &nbsp;&bull; &nbsp;Promedio</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 11.2</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Se dispone de un archivo con las ventas del mes de cada una de las sucursales de una empresa. El archivo se encuentra ordenado por sucursal y contiene la siguiente estructura:</p>
+							<p>&nbsp;&bull; &nbsp;Sucursal (15 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;C&oacute;digo de producto (entero) <br> &nbsp;&bull; &nbsp;Cantidad (entero)</p>
+							<p>Por otro lado se dispone de un archivo de los productos que vende la empresa y el estado del stock al mes pasado con la siguiente estructura:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de producto (entero) <br> &nbsp;&bull; &nbsp;Descripci&oacute;n (20 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;Precio (float) <br> &nbsp;&bull; &nbsp;Stock (entero) <br> &nbsp;&bull; &nbsp;Punto de pedido (entero) <br> &nbsp;&bull; &nbsp;Cantidad para pedido (entero)</p>
+							<p>No se sabe la cantidad exacta de productos pero sí se sabe que no hay más de 200. Se desea:</p>
+							<p style="text-align: justify;">&nbsp;a. &nbsp;Mostrar el importe total vendido en cada sucursal. <br> &nbsp;b. &nbsp;Mostrar la recaudaci&oacute;n total de la empresa en el mes. <br> &nbsp;c. &nbsp;Determinar la sucursal que vendi&oacute; mayor cantidad de productos. <br> &nbsp;d. &nbsp;Actualizar el archivo de productos con el nuevo stock. <br> &nbsp;e. &nbsp;Realizar un archivo llamado pedidos.dat que incluya aquellos productos que deben solicitarse (c&oacute;digo y cantidad) de aquellos productos que al finalizar de procesar las ventas del mes queden con stock menor al punto de pedido.</p>
+							<p></p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 11.3</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Se dispone de un archivo con nombre Llamadas.dat que contiene llamadas telef&oacute;nicas realizadas en una empresa. Por cada llamada se dispone de la siguiente informaci&oacute;n:</p>
+							<p>&nbsp;&bull; &nbsp;Sector (15 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;Duraci&oacute;n en segundos (entero) <br> &nbsp;&bull; &nbsp;Tipo de llamada (entero: 1 local, 2 larga distancia, 3 celular)</p>
+							<p>El archivo se encuentra organizado por Sector. Se solicita:</p>
+							<p style="text-align: justify;">&nbsp;a. &nbsp;Calcular y mostrar por cada sector, la cantidad de llamadas realizadas de cada tipo. <br> &nbsp;b. &nbsp;Determinar cu&aacute;l es el sector que habl&oacute; la mayor cantidad de tiempo.<br>  &nbsp;c. &nbsp;En un archivo llamado costos.dat hay un &uacute;nico registro que contiene los costos por segundo de los tres tipos de llamadas (3 float). Se debe generar el archivo gastos.dat que totalice los gastos de llamadas de cada sector.<br> &nbsp;d. &nbsp;Realizar una funci&oacute;n que muestre los datos almacenados en gastos.dat en forma de listado. <br> &nbsp;e. &nbsp;Generar un archivo para cada sector con el detalle de llamadas valorizado. El archivo se debe generar con nombresector.dat y debe contener:</p>
+							<p>&nbsp;&bull; &nbsp;Duraci&oacute;n en segundos (entero) <br> &nbsp;&bull; &nbsp;Tipo de llamada (entero) <br> &nbsp;&bull; &nbsp;Costo de la llamada (float)</p>
+						</span>
+					  </div>
+					</li>	
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 11.4</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">La empresa de colectivos l&iacute;nea 166 desea saber cu&aacute;nto debe cobrar en un mes determinado seg&uacute;n los viajes realizados y registrados en el sistema mediante la tarjeta SUBE para ello dispone de un archivo de viajes los viajes del mes que est&aacute; ordenado por n&uacute;mero de Interno (colectivo) que contiene la siguiente informaci&oacute;n:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de Interno (entero) <br> &nbsp;&bull; &nbsp;N&uacute;mero tarjeta SUBE (entero) <br> &nbsp;&bull; &nbsp;C&oacute;digo de Tarifa (texto de 10 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;D&iacute;a (entero) <br> &nbsp;&bull; &nbsp;Hora (entero)</p>
+							<p>Se dispone de un segundo archivo llamado tarifas.dat que contiene informaci&oacute;n de las tarifas por cada mes con la siguiente estructura:</p>							
+							<p>&nbsp;&bull; &nbsp;Mes (entero) <br> &nbsp;&bull; &nbsp;C&oacute;digo de Tarifa (texto de 10 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;&nbsp;Precio (float)</p>
+							<p>Se sabe que como m&aacute;ximo se manejan 8 tarifas distintas en cada mes. <br> Se solicita:</p>
+							<p>&nbsp;a. &nbsp;Ingresar por teclado el mes a procesar y recuperar las tarifas correspondientes. <br> &nbsp;b. &nbsp;Mostrar el importe total a cobrar por la empresa. <br> &nbsp;c. &nbsp;Generar un archivo que contenga la cantidad de viajes y la recaudaci&oacute;n de cada interno en el mes. <br> &nbsp;d. &nbsp;Informar el interno que realiz&oacute; menos cantidad de viajes. <br>  &nbsp;e. &nbsp;Por cada interno mostrar cuantos viajes se realizaron por cada tipo de tarifa ordenado por cantidad de viajes en forma descendente.</p>	
+							<p>Funciones obligatorias:</p>
+							<p>&nbsp;&bull; &nbsp;CargaTarifas: que levanta a un vector en memoria las tarifas del mes ingresado por teclado. <br> &nbsp;&bull; &nbsp;OrdenarViajes: para ordenar los viajes seg&uacute;n lo pedido en el punto d.<br> &nbsp;&bull; &nbsp;MostrarViajes: para mostrar en forma de listado los viajes ordenados del punto d./p>
+						</span>
+					  </div>
+					</li>										
+				<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 11.5</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">En un estadio de f&uacute;tbol se incorpor&oacute; un nuevo sistema para censar la cantidad de espectadores que pasan por cada una de las entradas de forma de analizar el comportamiento de la gente y poder dise&ntilde;ar una mejor distribuci&oacute;n de las v&iacute;as de acceso.</p>
+							<p style="text-align: justify;">El estadio tiene 15 puertas numeradas del 1 al 15. La recolecci&oacute;n de datos se realiz&oacute; en todos los partidos disputados en el estadio a lo largo de varios meses para poder tener un volumen de informaci&oacute;n suficiente que permita realizar un an&aacute;lisis.</p>
+							<p>La informaci&oacute;n registrada se encuentra en un archivo con la siguiente estructura:</p>	
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo del Evento (texto de 10 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;N&uacute;mero de puerta (entero) <br> &nbsp;&bull; &nbsp;Cantidad de Espectadores (entero)</p>													
+							<p>La informaci&oacute;n se haya ordenada por C&oacute;digo de Evento. Se solicita calcular y mostrar:</p>	
+							<p style="text-align: justify;">&nbsp;a. &nbsp;Cantidad de espectadores por cada evento. <br> &nbsp;b. &nbsp;El evento con menor cantidad de espectadores. <br> &nbsp;c. &nbsp;Grabar un archivo con el promedio de espectadores que ingresaron por cada una de las 15 entradas en todos los eventos analizados, informando el n&uacute;mero de puerta y promedio.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 11.6</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>En la feria internacional del autom&oacute;vil, una empresa autopartista que dispone de un stand registra la informaci&oacute;n de los visitantes interesados en sus productos. Por cada visitante se ingresa:</p>
+							<p>&nbsp;&bull; &nbsp;Nombre y Apellido (texto de m&aacute;ximo 35 caracteres) <br> &nbsp;&bull; &nbsp;DNI (entero) <br>  &nbsp;&bull; &nbsp;Localidad (texto de 40 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;Email (texto de m&aacute;ximo 20 caracteres) <br> &nbsp;&bull; &nbsp;Fecha (estructura con d&iacute;a, mes y a&ntilde;o)<p>	
+							<p>Se solicita:</p>
+							<p style="text-align: justify;">&nbsp;a. &nbsp;Realizar una funci&oacute;n para ingresar la informaci&oacute;n por teclado hasta que se ingrese un visitante con nombre FIN. (se admite como m&aacute;ximo cargar 500 visitantes).</p>
+							<p style="text-align: justify;">&nbsp;b. &nbsp;Una vez finalizado el ingreso de datos se debe generar un archivo llamado visitantes.dat que est&eacute; ordenado por localidad.</p>
+							<p style="text-align: justify;">&nbsp;c. &nbsp;Tomando el archivo visitantes.dat se debe calcular y mostrar la cantidad de visitas recibidas por cada localidad y generar un archivo para cada una de ellos conteniendo la informaci&oacute;n de los visitantes para que dicho archivo puede ser enviado a la sucursal m&aacute;s cercada de forma de contactar a los interesados. Cada archivo generado ser&aacute; nombrado con Nombre de la Localidad.dat.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 11.7</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">La empresa RED VIAL S.A. desea controlar el flujo vehicular en sus cabinas de peaje a lo largo del mes. Para ello se debe procesar la informaci&oacute;n provista por las barreras que se encuentra almacenada en el archivo barreras.dat que contiene la siguiente informaci&oacute;n:</p>
+							<p>&nbsp;&bull; &nbsp;D&iacute;a (entero) <br> &nbsp;&bull; &nbsp;Hora (0 a 24) <br> &nbsp;&bull; &nbsp;N&uacute;mero de barrera (entero)</p>
+							<p>Dentro del archivo la informaci&oacute;n se encuentra ordenada por d&iacute;a y hora. Determinar:</p>
+							<p style="text-align: justify;">&nbsp;a. &nbsp;La cantidad de veh&iacute;culos por cada hora. <br> &nbsp;b. &nbsp;La cantidad de veh&iacute;culos de cada d&iacute;a. <br> &nbsp;c. &nbsp;Ingresar por teclado el costo del peaje. <br> &nbsp;d. &nbsp;Ingresar por teclado los precios del peaje para horario normal y horario pico (de 7 a 11 y de 17 a 19). Con esos valores guardar un archivo con la recaudaci&oacute;n de cada d&iacute;a.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 11.8</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Una empresa dispone de un archivo ARTIC_PRECIO, con los siguientes datos de sus casi 500 art&iacute;culos:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de Art&iacute;culo (entero, de 8 cifras) <br> &nbsp;&bull; &nbsp;Precio Unitario (real, mayor que cero)</p>
+							<p>Existe un segundo archivo PROVIN, con los siguientes datos de sus 30 vendedores:</p>
+							<p>&nbsp;&bull; &nbsp;Nombre del Vendedor (alfanum&eacute;rico de 30 caracteres) <br> &nbsp;&bull; &nbsp;N&uacute;mero de Provincia (entero, de 1 a 24)</p>
+							<p>Se tiene un tercer archivo llamado VTA_CANT, ordenado por regi&oacute;n del pa&iacute;s, con las ventas realizadas. Por cada venta se informa lo siguiente:</p>
+							<p>&nbsp;&bull; &nbsp;Regi&oacute;n del pa&iacute;s (alfanum&eacute;rico de 3 caracteres) <br> &nbsp;&bull; &nbsp;Nombre de Vendedor <br> &nbsp;&bull; &nbsp;Mes (entero, de 1 a 12) <br> &nbsp;&bull; &nbsp;N&uacute;mero de Art&iacute;culo <br> &nbsp;&bull; &nbsp;Unidades Vendidas (entero mayor que cero)</p>
+							<p>Confeccionar un programa que partiendo de la informaci&oacute;n suministrada permita determinar e informar:</p>
+							<p>&nbsp;a. &nbsp;Un listado con el importe de las ventas realizadas en cada provincia en cada uno de los meses:</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROVINCIA&nbsp;&nbsp;&nbsp;&nbsp;MES1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MES2...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MES12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+													
+							<br/>							
+							</p>
+							
+							<p>&nbsp;b. &nbsp;Un listado con los nombres de los vendedores que no han tenido ventas en m&aacute;s de 3 meses consecutivos. <br> &nbsp;c. &nbsp;Informar en qu&eacute; regi&oacute;n del pa&iacute;s se vendi&oacute; menos (en importe).</p>
+						</span>
+					  </div>
+					</li>	
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 11.9</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Un organismo Municipal dispone de un archivo secuencial, ordenado por c&oacute;digo de patente, llamado PARQUE con los datos de su parque automotor. Se sabe que en la comuna no hay m&aacute;s de 1000 autom&oacute;viles registrados. <br> Cada registro contiene:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de patente (alfanum&eacute;rico de 6 caracteres). <br> &nbsp;&bull; &nbsp;Apellido y nombre del titular (alfanum&eacute;rico de 30 caracteres) <br> &nbsp;&bull; &nbsp;Domicilio (alfanum&eacute;rico de 30 caracteres) <br> &nbsp;&bull; &nbsp;Categor&iacute;a del veh&iacute;culo (alfanum&eacute;rico de 4 caracteres) <br>  &nbsp;&bull; &nbsp;A&ntilde;o de fabricaci&oacute;n (entero mayor a 1900)</p>
+							<p>Dispone adem&aacute;s del archivo llamado PAGO_PAT, ordenado por categor&iacute;a del veh&iacute;culo, con lo recaudado durante todo el a&ntilde;o, mes a mes, donde cada registro contiene:</p>
+							<p>&nbsp;&bull; &nbsp;Categor&iacute;a del veh&iacute;culo <br> &nbsp;&bull; &nbsp;C&oacute;digo de patente <br> &nbsp;&bull; &nbsp;Importe abonado en el mes 1 &oacute; un cero si no abon&oacute;. <br> &nbsp;&bull; &nbsp;&Iacute;dem desde el mes 2 hasta el mes 12</p>
+							<p>Solo hay informaci&oacute;n de aquellas patentes en las que se abonaron uno o m&aacute;s meses. <br> Confeccionar un programa que determine e informe:</p>
+							<p>&nbsp;a. &nbsp;La siguiente salida para quienes mantienen deudas:</p>							
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PATENTE&nbsp;&nbsp;&nbsp;NRO.DE MESES ADEUDADOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DOMICILIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IVU977&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;5&nbsp;10&nbsp;11&nbsp;12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MASPERO 137&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+													
+							<br/>							
+							</p>
+							<p>&nbsp;b. &nbsp;Indicar cu&aacute;l es la categor&iacute;a de veh&iacute;culo que recibi&oacute; la menor cantidad de importe recaudado.</p>
+						</span>
+					  </div>
+					</li>	
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 11.10</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Confeccionar un programa, con su correspondiente diagrama, para:</p>
+							<p>&nbsp;a. &nbsp;Recuperar la informaci&oacute;n de las ventas acumuladas por cada art&iacute;culo hasta la fecha de los 15 vendedores de una empresa, guardadas en el archivo ACUMULADO de acuerdo al siguiente formato de registro:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de vendedor (entero de 1 a 15) <br> &nbsp;&bull; &nbsp;N&uacute;mero de art&iacute;culo (entero de 1 a 50) <br> &nbsp;&bull; &nbsp;Importe total vendido a la fecha (real mayor que cero)</p>
+							<p>Este archivo solamente tiene datos de los vendedores que vendieron alguna vez alg&uacute;n art&iacute;culo. El dato del mismo vendedor para el mismo art&iacute;culo en este archivo no se repite.</p>
+							<p>&nbsp;b. &nbsp;Ingresar la fecha del proceso (d&iacute;a, mes, a&ntilde;o). <br> &nbsp;c. &nbsp;Procesar luego los datos de las ventas del mes, que se encuentran en el archivo VENMES, ordenado por n&uacute;mero de cliente, con el siguiente dise&ntilde;o:</p>
+							<p>&bull; N&uacute;mero de cliente (entero de 6 cifras no correlativos) <br> &bull; Raz&oacute;n Social del cliente (alfanum&eacute;rico de 35 caracteres). <br>  &bull; N&uacute;mero de vendedor &bull; N&uacute;mero de art&iacute;culo <br> &bull; Cantidad vendida (entero mayor que cero) <br>  &bull; Precio unitario (real mayor que cero)</p>
+							<p>&nbsp;d. &nbsp;Actualizar los importes de las ventas anteriores acumuladas en ACUMULADO, generando el archivo ACUMLADO2. <br> &nbsp;e. &nbsp;Informar cu&aacute;ntas ventas se hicieron a cada cliente en el tiempo analizado. <br> &nbsp;f. &nbsp;Informar el n&uacute;mero del vendedor que en total tiene registrado el mayor importe de ventas del art&iacute;culo n&uacute;mero 2. Puede haber m&aacute;s de un vendedor en esta condici&oacute;n.</p>
+							<p></p>
+							<p></p>
+						</span>
+					  </div>
+					</li>	
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 11.11</div>
+					  <div class="collapsible-body">
+					    <span>
+							<pstyle="text-align: justify;"></p>
+							<p>Un banco tiene el archivo CTAS_CTES de 100.000 registros como m&aacute;ximo, con informaci&oacute;n sobre las cuentas corrientes, que se actualiza con los movimientos realizados durante un per&iacute;odo. La informaci&oacute;n del archivo consiste en:</p>
+							<p>&bull; N&uacute;mero de Cuenta (entero no correlativo) <br> &bull; Nombre del titular (cadena de 30 caracteres) <br> &bull; Fecha de &uacute;ltimo movimiento <br> &bull; Saldo (real) <br> &bull; Estado (caracter)</p>
+							<p>En un segundo archivo MOVIMIENTOS, ordenado por c&oacute;digo de sucursal, vienen los movimientos del per&iacute;odo (que son d&eacute;bitos y cr&eacute;ditos), de los cuales se informan:</p>
+							<p>&bull; C&oacute;digo de Sucursal (cadena de 3 caracteres) <br> &bull; N&uacute;mero de cuenta <br> &bull; C&oacute;digo de movimiento (car&aacute;cter, C: cr&eacute;dito; D: d&eacute;bito) <br>  &bull; Fecha de movimiento <br> &bull; Importe de movimiento (real, mayor que cero)</p>
+							<p>Hacer un programa (Diagrama de l&oacute;gica y codificaci&oacute;n en C) que:</p>
+							<p>a. Se ingrese por teclado la fecha del proceso (d&iacute;a, mes, a&ntilde;o) <br> b. Se actualice la informaci&oacute;n del archivo CTAS_CTES con los movimientos del archivo MOVIMIENTOS, verificando:</p>
+							<p>&bull; El n&uacute;mero de Cuenta del Movimiento que debe existir. <br> &bull; El estado de la cuenta no debe ser &acute;I&acute;(Inactiva).</p>
+							<p style="text-align: justify;">Si se cumplen las dos condiciones, actualizar el saldo con el importe del movimiento (cr&eacute;ditos suman, d&eacute;bito restan) y la fecha de &uacute;ltimo movimiento de la cuenta con fecha de movimiento del movimiento si &eacute;sta es posterior a aquella (*). Si esto &uacute;ltimo no se cumple, grabar los datos del archivo MOVIMIENTOS en el archivo ERRORES.</p>
+							<p style="text-align: justify;">c. Despu&eacute;s de procesar el archivo MOVIMIENTOS, actualizar el campo Estado con el valor &acute;I&acute; cuando el saldo quede en cero y el a&ntilde;o de la fecha de &uacute;ltimo movimiento sea anterior al a&ntilde;o del proceso menos 3 a&ntilde;os. <br> d. Generar y grabar 2 archivos: <br> &bull; El primero de cuentas actualizadas llamado CUENTAS_ACT, con los registros que no tengan el valor &acute;I&acute; en el campo Estado; <br> &bull; y otro archivo llamado CUENTA_INACT, con los registros que tengan el valor &acute;I&acute; en el campo Estado.<br>  e. Indicar el importe de las operaciones de d&eacute;bito y cantidad de operaciones de cr&eacute;dito por sucursal.</p>
+							<p>(*) Utilizar la funci&oacute;n FechaMayor (&hellip;), a la que se le env&iacute;an dos fechas y devuelve 1 (uno) si la segunda es mayor a la primera o 0 (cero) si la segunda es menor o igual a la primera. <b>No definirla, s&oacute;lo utilizarla</b>.</p>
+						</span>
+					  </div>
+					</li>	
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 11.12</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;"></p>
+							<p></p>
+							<p style="text-align: justify;">Este archivo est&aacute; clasificado y ordenado en forma ascendente por n&uacute;mero de visitador m&eacute;dico y luego por el c&oacute;digo del medicamento. Pueden NO estar todos los c&oacute;digos de medicamentos ni todos los visitadores m&eacute;dicos &ldquo;activos&rdquo;.</p>
+							<p>Se desea actualizar las ventas de una empresa con varias sucursales que comercializa caso 2650 art&iacute;culos. Para ello cuenta con siguientes archivos:</p>
+							<p>&bull; Archivo ARTICULOS, con el siguiente dise&ntilde;o:</p>
+							<p>i. C&oacute;digo de art&iacute;culo (n&uacute;meros no consecutivos) <br> ii. Descripci&oacute;n )20 caracteres) <br> iii. Unidades en stock <br> iv. Stock m&iacute;nimo <br> v. Precio unitario</p>
+							<p>Este archivo est&aacute; ordenado por c&oacute;digo de art&iacute;culo:</p>
+							<p>&bull; Archivos VENTAS, ordenado por sucursal, con el siguiente dise&ntilde;o:</p>
+							<p>i. C&oacute;digo de sucursal <br> ii. C&oacute;digo de producto <br> iii. Cantidad unidades vendidas <br> iv. N&uacute;mero de cliente <br> v. C&oacute;digo de vendedor <br> vi. Fecha de la venta (d&iacute;a, mes, a&ntilde;o)</p>
+							<p>Desarrollar el diagrama de l&oacute;gica y su correspondiente codificaci&oacute;n C para que permita:</p>
+							<p style="text-align: justify;">a. Ingresar por teclado la fecha del d&iacute;a (d&iacute;a, mes, a&ntilde;o) <br> b. Actualizar los art&iacute;culos con la informaci&oacute;n del archivo VENTAS. Si no existe el art&iacute;culo, o la cantidad de la venta es mayor que las unidades en stock, rechazar la venta con la leyenda aclaratoria y guardarle en el archivo ERROR. <br> c. Grabar el archivo ARTICULOS actualizado. <br> d. Informar, para cada sucursal, el c&oacute;digo de sucursal, la cantidad de ventas y el importe total vendido. (no considerar las ventas rechazadas). Encabezar el listado con el t&iacute;tulo <b>&ldquo;Ventas por Sucursal al d&iacute;a XX/XX/XXXX&rdquo;</b>. <br> e. Finalmente informar cu&aacute;les son los art&iacute;culos que, una vez actualizados, han quedado con stock menor que el stock m&iacute;nimo (informar c&oacute;digo y descripci&oacute;n del art&iacute;culo)</p>
+						</span>
+					  </div>
+					</li>	
+						
+				
+					</li>
+						</div>					
+				</ul>         
+			</div>            
+		   </div>         		  	
+	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <script type="text/javascript" src="js/init.js"></script>
+    </main>
+	 <footer>
+          <div class="footer-copyright green lighten-1">
+            <div class="container">
+				Elementos de Programaci&oacute;n - UNLaM             
+            </div>
+          </div>
+        </footer>
+		</body>
+  </html>
+        

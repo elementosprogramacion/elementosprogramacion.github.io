@@ -1,0 +1,472 @@
+ <!DOCTYPE html>
+  <html>
+    <head>      
+	   <title>Ejercicios Unidad 10 - Archivos<</title>
+	  <link rel="manifest" href="/manifest.json">      
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/estilos.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>	  
+    </head>
+<body>
+    <main>	
+		  <nav>
+			<div class="nav-wrapper green lighten-1">		
+		<img src="icons/logo.svg" class="logo"  />			
+			  <label class="titulo flow-text">U10&nbsp;Archivos</label>		
+				<ul id="nav-mobile" class="right">
+					<li><a href="Archivos.html"> <img src="icons/volver.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+					<li><a href="index.html"> <img src="icons/home.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+				</ul>
+			</div>
+		  </nav>
+		  
+		  <div class="container center">
+		  
+		    <div class="row">
+				<ul class="collapsible  z-depth-5">
+					<li>
+					  <div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" /> Ejercicio 10.1</div>
+					  <div class="collapsible-body">
+						<span>
+							<p>Los datos de los alumnos de una comisi&oacute;n de Computaci&oacute;n Transversal son:</p> 
+							<p>&bull; N&uacute;mero de DNI (entero). <br> &bull; Nombre y Apellido (80 caracteres). <br> &bull; Nota1, Nota2 (entero). <br> &bull; Nota Promedio (real, calculado seg&uacute;n Nota1 y Nota2)</p>
+							<p>&nbsp;a. &nbsp;Declarar un tipo de dato que contenga la informaci&oacute;n del alumno. <br> &nbsp;b. &nbsp;Con la informaci&oacute;n indicada para los alumnos. Grabar los datos en el archivo &ldquo;ALUMNOS.dat&rdquo;. Esta informaci&oacute;n de grabaci&oacute;n finaliza con DNI cero. <br> &nbsp;c. &nbsp;Leer los datos del archivo, mediante la Funci&oacute;n <b>LECTURA</b>.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.2</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Tomando como base el archivo ALUMNOS.DAT creado en el ejercicio anterior se desea desarrollar un programa que, basado en la informaci&oacute;n del archivo, genere 3 archivos:</p>
+							<p>&nbsp;&bull; &nbsp;Uno con los alumnos PROMOCIONADOS (ambas notas mayores o igual a 7) <br> &nbsp;&bull; &nbsp;Otro archivo con los alumnos en condici&oacute;n CURSADO (ambas notas mayores o igual a 4 pero no promocionados) <br> &nbsp;&bull; &nbsp;Y un tercer archivo con los REPROBADOS (al menos una nota, menor que 4)</p>
+							<p>Para comprobar los datos guardados realizar una funci&oacute;n que reciba por par&aacute;metro el nombre del archivo a mostrar, lo abre y muestre su contenido. Se debe invocar a la funci&oacute;n 3 veces para mostrar todos los archivos generados.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.3</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Se desea realizar un programa que permita actualizar la lista de precios de una empresa en forma individual a cada uno de sus productos.</p>
+							<p>La empresa trabaja con a lo sumo 100 productos que est&aacute;n guardados en el archivo productos.dat con la siguiente estructura:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo (entero) <br> &nbsp;&bull; &nbsp;Precio (float) <br> &nbsp;&bull; &nbsp;Descripci&oacute;n (de hasta 50 caracteres)</p>
+							<p>Para modificar un precio se ingresa por teclado el c&oacute;digo del producto y el nuevo precio. La modificaci&oacute;n de precios finaliza con un c&oacute;digo de producto igual a 0.</p>
+							<p>Al finalizar actualizar el archivo de productos con los nuevos precios.</p>
+						</span>
+					  </div>
+					</li>	
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.4</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Realizar un programa que permite actualizar una lista de precios en forma masiva, ingresando un porcentaje de incremento. El archivo original se llama precios.dat y fue generado utilizando la siguiente estructura:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo (entero) <br> &nbsp;&bull; &nbsp;Precio (float) <br> &nbsp;&bull; &nbsp;Descripci&oacute;n (de hasta 50 caracteres)</p>
+							<p>No se sabe la cantidad de registros del archivo. <br> Se solicita generar un nuevo archivo llamado Precios_actualizados.dat</p>							
+						</span>
+					  </div>
+					</li>										
+				<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.5</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p></p>
+							<p>Se dispone de un archivo llamado Stock.dat que contiene la informaci&oacute;n de los 10 productos que vende una f&aacute;brica. En el archivo se guarda:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de art&iacute;culo (entero) <br> &nbsp;&bull; &nbsp;Descripci&oacute;n (50 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;Stock (entero)</p>	
+							<p>Luego se ingresan por teclado las ventas a realizar indicando:</p>													
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de art&iacute;culo <br> &nbsp;&bull; &nbsp;Cantidad</p>	
+							<p style="text-align: justify;">Por cada venta se debe controlar si hay stock suficiente y si lo hay, restar el stock de dicho producto, 
+							sino hay stock se debe vender lo que quede disponible y grabar un registro en un archivo Faltantes.dat con la cantidad que no pudo venderse, 
+							dicho registro debe contener:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de art&iacute;culo <br> &nbsp;&bull; &nbsp;Cantidad</p>
+							<p style="text-align: justify;">Se genera un registro por cada venta que no pudo concretarse, pudiendo quedar en el archivo varios registros faltantes del mismo producto. Al finalizar actualizar el archivo Stock.dat con el stock actualizado luego de procesar las ventas.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.6</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Realizar un programa que tome el archivo Faltantes.dat del ejercicio anterior y unifique las cantidades sumari&aacute;ndolas por art&iacute;culo (la empresa trabaja con 10 art&iacute;culos en total, pero no todos pueden estar en falta).  <br> Grabar un nuevo archivo llamado Pedido.dat que contenga los registros por art&iacute;culo conteniendo:</p>
+							<p>	<p>&nbsp;&bull; &nbsp;C&oacute;digo de art&iacute;culo (entero) <br> &nbsp;&bull; &nbsp;Cantidad (entero)</p>	
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.7</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Se dispone de un archivo que contiene informaci&oacute;n de los vuelos realizados por las distintas aerol&iacute;neas a lo largo del mes. El archivo se denomina Vuelos.dat y guarda los registros con la siguiente estructura:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo Aerol&iacute;nea (alfanum&eacute;rico de 10 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;D&iacute;a (entero) &nbsp;&bull; &nbsp;N&uacute;mero de Vuelo (entero) <br> &nbsp;&bull; &nbsp;Costo del pasaje (real) <br> &nbsp;&bull; &nbsp;Pasajeros (inicialmente en el archivo viene en 0)</p>
+							<p style="text-align: justify;">El mes tiene 30 d&iacute;as y se sabe que como m&aacute;ximo cada aerol&iacute;nea realiza 5 vuelos diarios. Luego se dispone de un segundo archivo llamado Pasajeros.dat que incluye la informaci&oacute;n de los viajeros del mes para la aerol&iacute;nea con c&oacute;digo &ldquo;Aero1&rdquo;, el archivo contiene los siguientes campos:</p>
+							<p>&nbsp;&bull; &nbsp;DNI (entero) <br> &nbsp;&bull; &nbsp;N&uacute;mero de Vuelo (entero)</p>
+							<p style="text-align: justify;"> Se desea realizar un programa que actualice la cantidad de pasajeros de la aerol&iacute;nea con c&oacute;digo &ldquo;Aero1&rdquo; con la informaci&oacute;n de los pasajeros que realizar los viajes. Al finalizar, grabar la informaci&oacute;n en un nuevo archivo llamado Aero1.dat.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.8</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Se dispone de un archivo denominado INSCRIPTOS.dat que contiene la informaci&oacute;n de los inscriptos a un curso de programaci&oacute;n. El curso tiene una capacidad m&aacute;xima para 60 personas. El archivo a&uacute;n no est&aacute; completo ya que la inscripci&oacute;n se realiza por partes. Por cada inscripto se tiene la siguiente informaci&oacute;n:</p>
+							<p>&nbsp;&bull; &nbsp;DNI (entero) <br> &nbsp;&bull; &nbsp;Apellido y Nombres (texto de 20 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;Pagado (campo entero donde 1 indica que pag&oacute; y 0 que a&uacute;n adeuda la matr&iacute;cula)</p>
+							<p>Se desea realizar un programa que cumpla con dos funciones:</p>
+							<p>&nbsp;a. &nbsp;Registrar los pagos de los alumnos ya inscriptos <br> &nbsp;b. &nbsp;Si hay cupo, agregar nuevos inscriptos</p>
+							<p style="text-align: justify;">El programa solicitar&aacute; el ingreso del DNI y lo buscar&aacute; entre los inscriptos, en caso de que lo encuentre dar&aacute; la opci&oacute;n para registrar el pago (si es que no est&aacute; pago ya).
+							En caso de que no lo encuentre dar&aacute; la opci&oacute;n para inscribirlo al curso (el pago se realiza luego). En el momento que ya no quede cupo en el curso si llega un nuevo inscripto se le preguntar&aacute; si desea quedar registrado para un curso futuro, 
+							y en caso afirmativo se le solicitar&aacute; el tel&eacute;fono y se guardar&aacute; el nombre, DNI y tel&eacute;fono en un archivo Interesados.dat.</p>
+							<p>El ingreso de datos finaliza con un DNI negativo. 2 Al finalizar se debe actualizar el archivo de inscriptos con los cambios realizados.</p>
+						</span>
+					  </div>
+					</li>	
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.9</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Una f&aacute;brica produce como m&aacute;ximo 20 productos diferentes y necesita un reporte de la producci&oacute;n realizada durante el a&ntilde;o. Para ello se dispone del archivo &ldquo;ARTICULOS.dat&rdquo;, el cual contiene:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de art&iacute;culo (entero de 4 cifras no correlativo) <br> &nbsp;&bull; &nbsp;Descripci&oacute;n del art&iacute;culo (30 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;Cantidad de stock remanente del a&ntilde;o anterior (entero)</p>
+							<p>A continuaci&oacute;n, se procesa por teclado, la informaci&oacute;n correspondiente a todo el a&ntilde;o:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero del mes de producci&oacute;n. Ingresar y controlar mediante la Funci&oacute;n <b>LEE_CONTROL</b>. <br> &nbsp;&bull; &nbsp;C&oacute;digo de art&iacute;culo (entero de 4 cifras no correlativo) Ingresar y controlar un n&uacute;mero de 4 cifras. Funci&oacute;n <b>LEE_CONTROL</b>. <br> &nbsp;&bull; &nbsp;Cantidad de unidades que se produjeron en ese mes. Controlar si el n&uacute;mero es mayor que 0. Funci&oacute;n <b>MAYOR_CERO</b>.</p>
+							<p>Esta informaci&oacute;n no se encuentra ordenada, y termina con n&uacute;mero de mes igual a 0. <br> Se solicita construir un programa que determine e informe:</p>
+							<p>&nbsp;a. &nbsp;Para cada art&iacute;culo, la cantidad de unidades producidas en cada uno de los 12 meses del a&ntilde;o, de acuerdo con el siguiente modelo:</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODIGO ARTICULO&nbsp;&nbsp;&nbsp;DESCRIPCION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENERO&nbsp;&nbsp;FEBRERO&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;DICIEMBRE&nbsp;&nbsp; <br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXXXXXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp; <br/>
+													
+							<br/>							
+							</p>									
+													
+							<p>&nbsp;b. &nbsp;Confeccionar un listado con el/los c&oacute;digos y descripci&oacute;n de aquellos art&iacute;culos que NO se produjeron en todo el a&ntilde;o.<br> &nbsp;c. &nbsp;Generar el archivo actualizado llamado &ldquo;ARTI_ACTUALIZADO.dat&rdquo; con la suma del stock remanente del a&ntilde;o anterior m&aacute;s la cantidad producida en el primer trimestre del presente a&ntilde;o.</p>
+						</span>
+					  </div>
+					</li>	
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.10</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>La empresa TODOLIMPIO que comercializa un m&aacute;ximo de 25 productos, dispone del archivo &ldquo;LIMPIEZA.dat&rdquo;, donde cada registro contiene:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de Art&iacute;culo (entero, 5 cifras) <br> &nbsp;&bull; &nbsp;Unidades en stock (entero) <br> &nbsp;&bull; &nbsp;Precio unitario (real)</p>
+							<p>Cada vez que se realiza una venta se ingresa por teclado, los siguientes datos:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de Cliente (1 a 20) Funci&oacute;n LEE_CONTROL  <br> &nbsp;&bull; &nbsp;N&uacute;mero de Art&iacute;culo (entero, 5 cifras). Funci&oacute;n LEE_CONTROL <br> &nbsp;&bull; &nbsp;Cantidad de Unidades Vendidas. Funci&oacute;n MAYORCERO.</p>
+							<p>Esta informaci&oacute;n termina con n&uacute;mero de cliente igual a 0. <br> Si la cantidad de unidades vendidas es superior al stock existente de cada uno de los productos, NO realizar la venta y marcarla para un posterior reporte. <br> Se solicita confeccionar un programa que actualice el archivo &ldquo;PRODUCTOS.dat&rdquo; y e informar:</p>
+							<p>&nbsp;a. &nbsp;La facturaci&oacute;n total por cliente. <br> &nbsp;b. &nbsp;La cantidad de veces que cada cliente realiz&oacute; una compra. <br> &nbsp;c. &nbsp;Emitir un listado ordenado por monto de facturaci&oacute;n de forma descendente de acuerdo con el siguiente dise&ntilde;o:</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLIENTE&nbsp;&nbsp;&nbsp;MONTO FACTURADO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CANTIDAD DE VECES QUE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REALIZO UNA COMPRA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp; <br/>
+													
+							<br/>							
+							</p>							
+														
+							<p>&nbsp;d. &nbsp;Emitir un listado con el n&uacute;mero de art&iacute;culos que no se pudo realizar las ventas por falta de stock. <br> &nbsp;e. &nbsp;Actualizar el archivo &ldquo;LIMPIEZA.dat&rdquo;, en UNIDADES en STOCK seg&uacute;n las ventas ingresadas.</p>
+						</span>
+					  </div>
+					</li>	
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.11</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>La municipalidad de Marina del Mar desea efectuar un control de la cobranza del impuesto Municipal en los 6 bimestres del a&ntilde;o. Existen 50 contribuyentes, numerados de 1 a 50.</p>
+							<p>&nbsp;&bull; &nbsp;El primer dato para ingresar es el n&uacute;mero del a&ntilde;o a procesar (xxxx)</p>
+							<p>Se suministra el archivo &ldquo;IMPORTES.dat&rdquo;, ordenado por a&ntilde;o-bimestre, con 18 &iacute;tems, que contienen los importes de los impuestos de los &uacute;ltimos 3 a&ntilde;os, cada &iacute;tem contiene:</p>
+							<p>&nbsp;&bull; &nbsp;A&ntilde;o del impuesto (entero) <br> &nbsp;&bull; &nbsp;Bimestre (entero) <br> &nbsp;&bull; &nbsp;Importe (real)</p>
+							<p>Se dispone adem&aacute;s de un segundo archivo, llamado &ldquo;CONTROL.dat&rdquo;, ordenado por n&uacute;mero de contribuyente, con un registro por cada cobro efectuado, con los siguientes datos (solo considerar los del a&ntilde;o en estudio).</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de contribuyente (entero) <br> &nbsp;&bull; A&ntilde;o del impuesto (entero) <br> &nbsp;&bull; Bimestre (entero)</p>
+							<p>Se solicita confeccionar un programa para determinar e informar:</p>
+							<p>&nbsp;a. &nbsp;El importe total recaudado en el a&ntilde;o. <br> &nbsp;b. &nbsp;Las deudas de cada contribuyente seg&uacute;n el siguiente formato de impresi&oacute;n:</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEUDAS REGISTRADAS EN EL AÑO XXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONTRIBUYENTE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BIMESTRE 1 2 3 4 5 6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IMPORTE ADEUDADO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ XXXXXXX,XX <br/>
+													
+							<br/>							
+							</p>	
+							
+						</span>
+					  </div>
+					</li>	
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.12</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Un Laboratorio de medicamentos quiere actualizar las ventas acumuladas a la fecha, dispone para este trabajo de un archivo llamado &ldquo;VENTAS.dat&rdquo; con las ventas acumuladas del a&ntilde;o, hasta la fecha de proceso con los siguientes datos:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de visitador m&eacute;dico de 1 a 15 (entero) <br> &nbsp;&bull; &nbsp;C&oacute;digo del medicamento de 1 a 30 (entero) <br> &nbsp;&bull; &nbsp;Cantidad de unidades vendidas (entero)</p>
+							<p style="text-align: justify;">Este archivo est&aacute; clasificado y ordenado en forma ascendente por n&uacute;mero de visitador m&eacute;dico y luego por el c&oacute;digo del medicamento. Pueden NO estar todos los c&oacute;digos de medicamentos ni todos los visitadores m&eacute;dicos &ldquo;activos&rdquo;.</p>
+							<p>La informaci&oacute;n que se registra por teclado de las ventas del d&iacute;a NO est&aacute; ordenada y para finalizar se ingresa un n&uacute;mero de cliente igual a 0. Los datos disponibles son:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de Cliente (entero entre 1 y 50000) <br> &nbsp;&bull; &nbsp;N&uacute;mero de Visitador M&eacute;dico (entero) <br> &nbsp;&bull; &nbsp;C&oacute;digo de medicamento (entero) <br> &nbsp;&bull; &nbsp;Cantidad vendida (entero) <br>&nbsp;&bull; &nbsp;Importe facturado (float)</p>
+							<p>Se solicita escribir un programa que permita:</p>
+							<p>&nbsp;a. &nbsp;Leer el archivo &ldquo;VENTAS.dat&rdquo; y los cargue en la matriz TOTAL de 15 por 30 elementos. <br> &nbsp;b. &nbsp;Ingresar por teclado, la fecha de proceso (d&iacute;a, mes, a&ntilde;o) <br> &nbsp;c. &nbsp;Procesar las ventas del d&iacute;a <br> &nbsp;d. &nbsp;Actualizar los acumulados de la matriz TOTAL y al finalizar actualizar el archivo &ldquo;VENTAS.dat&rdquo; <br> &nbsp;e. &nbsp;Imprimir un listado con el siguiente dise&ntilde;o:</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VENTAS DEL XX/XX/XXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODIGO DE MEDICAMENTO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IMPORTE DE LA FACTURACION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>						
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/><br/>							
+							<br/>
+							
+							</p>	
+							
+							
+							<p>&nbsp;f. &nbsp;Al finalizar el proceso informe el n&uacute;mero de Visitador M&eacute;dico que en el d&iacute;a vendi&oacute; el mayor importe. (Total Facturado).</p>
+						</span>
+					  </div>
+					</li>						
+						<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.13</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Se desean procesar las transacciones bancarias de las Cuentas Corrientes del BANCO NACI&Oacute;N. Se solicita:</p>
+							<p style="text-align: justify;">a. &nbsp;Leer los archivos &ldquo;SALDOS.dat&rdquo; con el saldo del d&iacute;a anterior de cada cliente y lo almacene en la memoria. El archivo est&aacute; ordenado por n&uacute;mero de cuenta y est&aacute; formado por registros con el siguiente dise&ntilde;o (m&aacute;ximo 300 clientes).</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de cuenta (8 d&iacute;gitos) <br> &nbsp;&bull; &nbsp;Raz&oacute;n Social (28 caracteres)<br> &nbsp;&bull; &nbsp;Cr&eacute;dito m&aacute;ximo (real) <br> &nbsp;&bull; &nbsp;Saldo (real, que puede contener signo -)</p>
+							<p style="text-align: justify;">&nbsp;b. &nbsp;Ingresar la fecha del d&iacute;a de proceso, controlando que sean valores &ldquo;l&oacute;gicos&rdquo;, confeccionando y utilizando una funci&oacute;n, llamada LeerValorLogico y utilizarla para el ingreso y validaci&oacute;n. (d&iacute;a, mes y A&ntilde;o). Utilizar una estructura.</p>
+							<p>&nbsp;c. &nbsp;Tambi&eacute;n se dispone de otro archivo &ldquo;MOVIM.dat&rdquo; con los movimientos del d&iacute;a para actualizar los saldos de las cuentas. Cada registro consta de:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de Cuenta <br> &nbsp;&bull; &nbsp;C&oacute;digo de Operaci&oacute;n (R: retiro / D: dep&oacute;sito) <br> &nbsp;&bull; &nbsp;Importe (real)</p>
+							<p style="text-align: justify;">&nbsp;d. &nbsp;Si el cliente no se encuentra en el archivo, puede ser una CUENTA NUEVA (Nro. De cuenta mayor al &uacute;ltimo n&uacute;mero existente en el archivo Saldos.dat.) o debido a un error. Esta verificaci&oacute;n de b&uacute;squeda, realizarla confeccionando y utilizando una Funci&oacute;n llamada VeriCuenta. Si hay error se muestra y rechaza la operaci&oacute;n, si es cuenta nueva, solo puede ser un dep&oacute;sito, en cuyo caso se solicita por teclado el ingreso de la Raz&oacute;n Social y se lo agrega al final, con el doble del importe como cr&eacute;dito m&aacute;ximo y con el importe como saldo.</p>
+							<p>&nbsp;e. &nbsp;Listar las Cuentas Nuevas, con el siguiente dise&ntilde;o:</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CUENTAS NUEVAS DEL XX/XX/XXXX;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NUMERO DE CUENTA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CREDITO MAXIMO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SALDO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ XXXXXXX,XX <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ XXXXXXX,XX <br/>						
+							<br/>							
+							</p>								
+														
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.14</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Se dispone de un archivo &ldquo;EXPENSAS.dat&rdquo; con los importes seg&uacute;n cada uno de las 5 categor&iacute;as de un complejo de edificios. Este archivo consta de un (1) solo registro con los 5 importes correspondientes en forma correlativa a la categor&iacute;a 1, categor&iacute;a 2 hasta la 5. Adem&aacute;s, se dispone del archivo &ldquo;PROPIETARIO.dat&rdquo; con los datos de cada propietario:</p>
+							<p>&bull; DNI (entero) <br> &bull; Apellido y Nombre (50 caracteres) <br>  &bull; Domicilio (50 caracteres)</p>
+							<p>Se sabe que existen como M&Aacute;XIMO 100 PROPIETARIOS. Tambi&eacute;n se dispone del archivo &ldquo;PAGOS.dat&rdquo; con los efectuados por cada propietario que ha pagado la expensa:</p>
+							<p>&nbsp;&bull; &nbsp;DNI (entero) <br> &nbsp;&bull; &nbsp;Mes de pago (entero) <br> &nbsp;&bull; &nbsp;Categor&iacute;a (entero de 1 a 5)</p>
+							<p>Se solicita:</p>
+							<p>&nbsp;a. &nbsp;Informar el siguiente listado, con &ldquo;x&rdquo; el mes o meses que NO pag&oacute;.</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APELLIDO Y NOMBRE&nbsp;&nbsp;&nbsp;MES 1&nbsp;&nbsp;&nbsp;&nbsp;MES 2...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MES 12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXX, XXXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXX, XXXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X <br/>						
+							<br/>							
+							</p>	
+							
+							<p>&nbsp;b. &nbsp;Total pagado por cada propietario, ordenando en forma ascendente por total pagado.</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APELLIDO Y NOMBRE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL PAGADO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXX, XXXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ XXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXX, XXXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ XXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>						
+							<br/>							
+							</p>	
+							<p>&nbsp;c. &nbsp;Generar el archivo &ldquo;DEUDAS.dat&rdquo; con aquellos propietarios que NO han pagado m&aacute;s de 6 meses, con igual dise&ntilde;o que el archivo &ldquo;PROPIETARIOS.dat&rdquo;.</p>
+							<p>&nbsp;d. &nbsp;Cuando NO se encuentra el DNI, grabar en el archivo &ldquo;ERROR.dat&rdquo; la informaci&oacute;n contenida en el archivo &ldquo;PAGOS.dat&rdquo;.</p>	
+						</span>
+					  </div>
+					</li>	
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.15</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Desarrollar un programa que permita:</p>
+							<p style="text-align: justify;">&nbsp;a. &nbsp;Solicitar el ingreso desde el teclado del c&oacute;digo de uno de los 3 departamento de la empresa AZ CONSULTORES, confeccionando y utilizando una funci&oacute;n con par&aacute;metros que controles su validez (los c&oacute;digos de departamento pueden ser 100, 200 o 300), llamarla <b>LeeCodigoDeparta</b>.</p>
+							<p style="text-align: justify;">&nbsp;b. &nbsp;Leer luego desde un archivo secuencial, llamado &ldquo;PERSONAL.dat&rdquo;, los datos que sean necesarios de los empleados que corresponden al departamento seleccionado, reserv&aacute;ndolos en memoria y utilizando una adecuada estructura de datos.<br> El dise&ntilde;o de los registros es:</p>
+							<p>&nbsp;&bull; &nbsp;Departamento (entero) <br> &nbsp;&bull; &nbsp;Legajo (N&uacute;mero, entero NO correlativo de 4 cifras) <br> &nbsp;&bull; &nbsp;Apellido y Nombres (60 caracteres) <br> &nbsp;&bull; &nbsp;A&ntilde;os de Antig&uuml;edad (entero)</p>
+							<p>Cada departamento tiene como m&aacute;ximo 300 empleados.</p>
+							<p>&nbsp;c. &nbsp;Ingresar desde el teclado los sueldos de dichos empleados:</p>
+							<p>&nbsp;&bull; &nbsp;Legajo (N&uacute;mero, entero NO correlativo de 4 cifras) <br> &nbsp;&bull; &nbsp;Sueldo (real)</p>
+							<p>El ingreso se tiene que finalizar con un n&uacute;mero de legajo negativo.</p>							
+							<p style="text-align: justify;">&nbsp;d. &nbsp;Controlar la validez del legajo (existencia dentro del Departamento) confeccionando y utilizando una Funci&oacute;n llamada <b>ControLega</b>. Si se detecta un legajo inexistente se debe informar Error y solicitarlo nuevamente. Grabar un archivo &ldquo;ERROR.dat&rdquo; solamente con el n&uacute;mero de legajo.</p>	
+							<p style="text-align: justify;">&nbsp;e. &nbsp;Confeccionar un listado con los empleados cuyo sueldo es menor que el promedio general de sueldos del departamento en estudio, informando el sueldo y el nuevo sueldo con el suplemento por antig&uuml;edad incluido. El suplemento por antig&uuml;edad (sobre el sueldo ingresado en el punto c.) es de un 1&rsquo;% para menos de 10 a&ntilde;os y 15% para 10 o m&aacute;s a&ntilde;os.</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REMUNERACIONES MENORES AL PROMEDIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LEGAJO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUELDO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ANTIGUEDAD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NUEVO SUELDO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ XXXXXXX,XX <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----------- <br/>						
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ XXXXXXX,XX <br/>						
+							<br/>							
+							</p>
+							
+							
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.16</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Se dispone de un archivo ventas.dat con el siguiente formato:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de producto (alfanum&eacute;rico 10 caracteres) <br> &nbsp;&bull; &nbsp;C&oacute;digo de vendedor (entero 1 a 5) <br>&nbsp;&bull; &nbsp;Cantidad (entero).</p>
+							<p>El archivo puede contener m&aacute;s de una venta para el mismo producto/vendedor. Luego se dispone de un segundo archivo llamado productos.dat que contiene:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de producto (alfanum&eacute;rico 10 caracteres) <br> &nbsp;&bull; &nbsp;Precio de venta (float)</p>
+							<p>Como m&aacute;ximo hay 15 productos.</p>
+							<p>&nbsp;a. &nbsp;Se desea mostrar la cantidad de ventas realizada por cada vendedor de cada producto (utilizar una matriz).</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRODUCTO&nbsp;&nbsp;&nbsp;&nbsp;VENDEDOR 1&nbsp;&nbsp;&nbsp;&nbsp;VENDEDOR 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VENDEDOR 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VENDEDOR 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VENDEDOR 5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROD 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROD 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1<br/>						
+							
+							<br/>							
+							</p>
+							<p>&nbsp;b. &nbsp;Registrar nuevas ventas ingresando por teclado:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de producto <br> &nbsp;&bull; &nbsp;C&oacute;digo de vendedor <br> &nbsp;&bull; &nbsp;Cantidad.<br> (el ingreso por teclado finaliza con vendedor igual a 99) </p>							
+							<p>&nbsp;c. &nbsp;Mostrar nuevamente el listado del punto a actualizado con las nuevas ventas. <br> &nbsp;d. &nbsp;Mostrar un listado ordenado de mayor a menor por importe de ventas mostrando c&oacute;digo de vendedor e importe total vendido.<br> &nbsp;e. &nbsp;Mostrar el / los productos que vendieron menor cantidad de unidades. <br> &nbsp;f. &nbsp;Actualizar el archivo ventas.dat.</p>	
+						</span>
+					  </div>
+					</li>
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.17</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>El archivo temperaturas.dat contiene informaci&oacute;n de las temperaturas registradas en 5 localidades a lo largo del primer trimestre del a&ntilde;o con la siguiente estructura:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo Localidad (alfanum&eacute;rico 10 caracteres) <br> &nbsp;&bull; &nbsp;Mes (entero 1 a 12) <br> &nbsp;&bull;&nbsp;Temperatura (float)</p>
+							<p style="text-align: justify;">Por cada localidad pueden existir varias mediciones para un mismo mes, pero no se sabe la cantidad. Adem&aacute;s, se dispone de un segundo archivo llamado localidades.dat que contiene 5 registros con la informaci&oacute;n de las localidades:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo Localidad (alfanum&eacute;rico 10 caracteres) <br> &nbsp;&bull; &nbsp;Descripci&oacute;n</p>
+							<p>Se desea realizar un programa que basado en la informaci&oacute;n del archivo temperaturas.dat:</p>
+							<p style="text-align: justify;">&nbsp;a. &nbsp;Genere un listado de temperaturas promedio en cada localidad en cada mes con el siguiente formato (para ello usar una matriz), es posible que para una localidad mes no se tengan lecturas de temperaturas por lo tanto deber&aacute; mostrarse con un signo de interrogaci&oacute;n.</p>
+							
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOCALIDAD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENERO&nbsp;&nbsp;&nbsp;&nbsp;FEBRERO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MARZO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VARIACION TERMICA <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MAR DEL PLATA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHILECITO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;35&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>						
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MENDOZA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>						
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CALAFATE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>						
+							<br/>							
+							</p>
+							
+							<p style="text-align: justify;">&nbsp;b. &nbsp;Grabar un archivo llamado promedios.dat que guarde por cada localidad y cada mes el promedio de temperaturas donde cada registro contenga: c&oacute;digo de localidad, mes y promedio.</p>
+							<p style="text-align: justify;">&nbsp;c. &nbsp;Grabar un archivo llamado variaciones.dat que por cada localidad guarde la variaci&oacute;n t&eacute;rmica (temperatura m&aacute;xima - temperatura m&iacute;nima). Los registros de este archivo contendr&aacute;n dos datos c&oacute;digo de localidad y el valor de la variaci&oacute;n.</p>							
+						</span>
+					  </div>
+					</li>
+
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.18</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Realizar un programa que leyendo los archivos generados en el ejercicio anterior (promedios.dat, variaciones.dat y localidades.dat) vuelva a mostrar el listado de temperaturas promedio y variaci&oacute;n t&eacute;rmica del punto a del ejercicio anterior (matriz).</p>						
+						</span>
+					  </div>
+					</li>						
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.19</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Se dispone del archivo <b>Productos.dat</b> que contiene informaci&oacute;n acerca de los 100 productos que comercializa una empresa, adem&aacute;s, sabe que cada dep&oacute;sito produce como m&aacute;ximo de 10 productos. Cada registro del archivo contiene:</p>						
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de producto (7 caracteres alfanum&eacute;ricos). <br> &nbsp;&bull; &nbsp;Descripci&oacute;n (M&aacute;ximo de 20 caracteres). <br> &nbsp;&bull; &nbsp;Precio Unitario (float, mayor a cero). <br> &nbsp;&bull; &nbsp;N&uacute;mero de dep&oacute;sito (int 1 a 10).</p>
+							<p>Luego se dispone del archivo <b>VentasDeposito5.dat</b> con las ventas realizadas por la empresa de los productos enviados por el dep&oacute;sito n&uacute;mero 5. Cada registro del archivo contiene:</p>
+						    <p>&nbsp;&bull; &nbsp;C&oacute;digo de producto (7 caracteres alfanum&eacute;ricos). <br> &nbsp;&bull; &nbsp;Cantidad vendida (entero 1 y 1000). <br>  &nbsp;&bull; &nbsp;C&oacute;digo de comercio (int 1 y 5).</p>
+							<p>No se sabe la cantidad de registros del archivo y un producto puede ser vendido por varios comercios. Se pide:</p>
+							<p>&nbsp;a. &nbsp;Cargar la informaci&oacute;n del archivo <b>Productos.dat</b> en un vector de estructuras. <br> &nbsp;b. &nbsp;Cargar la informaci&oacute;n del archivo <b>VentasDeposito5.dat</b> en una matriz.<br>  &nbsp;c. &nbsp;Informar el importe total vendido de cada producto por cada comercio con el siguiente formato:</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRODUCTO&nbsp;&nbsp;&nbsp;&nbsp;VENDEDOR 1&nbsp;&nbsp;&nbsp;&nbsp;VENDEDOR 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VENDEDOR 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VENDEDOR 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VENDEDOR 5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABC1023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx.xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx.xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx.xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx.xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx.xx <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GHT1028&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx.xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx.xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx.xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx.xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx.xx<br/>						
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ZDR1035&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx.xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx.xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx.xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx.xx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx.xx<br/>						
+							<br/>							
+							</p>
+														
+							<p>&nbsp;d. &nbsp;Generar el archivo <b>ImporteDeVentas.dat</b> la informaci&oacute;n del punto 3.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.20</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Se desea efectuar un estudio estad&iacute;stico del movimiento de encomiendas dentro del pa&iacute;s. Se dispone de un primer archivo llamado GEOGRA, de m&aacute;ximo 200 registros con los siguientes campos:</p>						
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de Localidad (entero, Mayor que 0, no consecutivo) <br> &nbsp;&bull; &nbsp;C&oacute;digo de Provincia (entero, de 1 a 24) <br> &nbsp;&bull; &nbsp;C&oacute;digo de Zona Geogr&aacute;fica (entero, de 1 a 9)</p>
+							<p>Tambi&eacute;n se cuenta con el archivo ENCOM, con los datos de las encomiendas despachadas que posee los siguientes campos:</p>
+						    <p>&nbsp;&bull; &nbsp;C&oacute;digo de Localidad (entero, Mayor que 0, no consecutivo) <br> &nbsp;&bull; &nbsp;Peso de la Encomienda en kg. (real, Mayor que 0)</p>
+							<p>Si un c&oacute;digo de Localidad del archivo ENCOM no se encuentra ene l archivo GEOGR, debe guardarse el registro en un archivo llamado ERROR.</p>
+							<p>Se solicita confeccionar un programa que determine e informe:</p>
+							<p>&nbsp;a. &nbsp;Los c&oacute;digos de las localidades que se encuentran dentro de la zona que ha recibido la menor cantidad de encomiendas. <br> &nbsp;b. &nbsp;La distribuci&oacute;n del toral de kilos de encomiendas por zona de acuerdo al siguiente formato:</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ZONA&nbsp;&nbsp;&nbsp;&nbsp;TOTAL DE KILOS <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXX<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXX<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXX<br/>
+							<br/>							
+							</p>
+							
+							<p>&nbsp;c. &nbsp;Las provincias que no han recibido encomiendas.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.21</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Un banco tiene el archivo secuencia SALDOS, con los saldos de sus casos 20.000 clientes de caja de ahorro, al inicio del mes. Cada registro tiene los siguientes datos:</p>						
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de caja de ahorro (entero, de 6 cifras) <br> &nbsp;&bull; &nbsp;Apellido y nombre (alfanum&eacute;ricos de 30 caracteres) <br> &nbsp;&bull; &nbsp;Saldo (real, mayor o igual a cero)</p>
+							<p>Existe, adem&aacute;s, un segundo archivo secuencial con los movimientos del mes, MOVI, ordenado por sucursal del banco, Cada registro contiene:</p>
+						    <p>&nbsp;&bull; &nbsp;Sucursal del banco (entero de 4 cifras no correlativos). <br> &nbsp;&bull; &nbsp;N&uacute;mero de cuenta de ahorro.<br> &nbsp;&bull; &nbsp;Mes (entero). <br> &nbsp;&bull; &nbsp;D&iacute;a entero). <br> &nbsp;&bull; &nbsp;C&oacute;digo de Operaci&oacute;n (entero 1: dep&oacute;sito (suma al saldo); 2: extracci&oacute;n (resta al saldo)). <br> &nbsp;&bull; &nbsp;Importe (real, mayor que cero)</p>
+							<p style="text-align: justify;">En el caso de las extracciones, antes de proceder a realizar la resta del importe al saldo, evaluar si &eacute;ste es mayor al importe (no puede quedar saldo negativo en la Caja de Ahorro). En este caso, guardar en el archivo SIN_SALDO los datos que vienen en el archivo MOVI. <br> Confeccionar un programa para que:</p>
+							<p>&nbsp;a. &nbsp;Se actualice el archivo SALDOS con los movimientos registrados. <br> &nbsp;b. &nbsp;Imprima un listado con las cuentas que en el mes han realizado m&aacute;s de 5 extracciones.</p>
+							<p></p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.22</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Para estudiar la poblaci&oacute;n extranjera en la Argentina, se decide realizar un censo por las distintas provincias. Para ello, se dispone del archivo PROVINCIAS de 30 registros de dos campos:</p>						
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de Provincia (cadena de 3 posiciones) <br> &nbsp;&bull; &nbsp;Nombre de la Provincia (cadena de 30 posiciones) Argentina tiene 24 provincias, incluyendo CABA.</p>
+							<p>La informaci&oacute;n sobre el censo realizado se encentra en un archivo secuencia (CENSO) cuyos registros est&aacute;n formados por:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de Provincia <br> &nbsp;&bull; &nbsp;Nacionalidad (entero 1 a 50) <br> &nbsp;&bull; &nbsp;Cantidad de habitantes (entero, mayor a cero)</p>
+							<p>El archivo no est&aacute; ordenado.</p>
+							<p>En otro archivo secuencial (MODIF_CENSO), que tampoco est&aacute; ordenado, se tienen modificaciones, cuyo formato de registro es:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de modificaci&oacute;n (car&aacute;cter: &acute;A&acute; o &acute;M&acute;) <br> &nbsp;&bull; &nbsp;C&oacute;digo de Provincia <br> &nbsp;&bull; &nbsp;Nacionalidad <br> &nbsp;&bull; &nbsp;Cantidad (entero, mayor a cero)</p>
+							<p>Si el c&oacute;digo de modificaci&oacute;n es &acute;A&acute;, debe sumarse la Cantidad a la existente; si es &acute;M&acute;, debe reemplazarse Cantidad de Habitantes con la informada. Se pide:</p>
+							<p>&nbsp;a. &nbsp;Almacenar la informaci&oacute;n del archivo en memoria utilizando una estructura adecuada. Puede ocurrir que no haya informaci&oacute;n alguna Provincia &ndash; Nacionalidad, en cuyo caso se asume 0 habitantes. <br> &nbsp;b. &nbsp;Actualizar los datos con las modificaciones.<br> &nbsp;c. &nbsp;Informar el total de habitantes por Provincia ordenado en forma descendente por cantidad de habitantes. <br> &nbsp;d. &nbsp;Grabar el archivo actualizado.</p>
+						</span>
+					  </div>
+					</li>
+					</li>
+						</div>					
+				</ul>         
+			</div>            
+		   </div>         		  	
+	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <script type="text/javascript" src="js/init.js"></script>
+    </main>
+	 <footer>
+          <div class="footer-copyright green lighten-1">
+            <div class="container">
+				Elementos de Programaci&oacute;n - UNLaM             
+            </div>
+          </div>
+        </footer>
+		</body>
+  </html>
+        

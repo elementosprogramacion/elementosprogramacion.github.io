@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+  <html>
+    <head>      
+	   <title>Ejercicios Unidad 8 - Strings<</title>
+	  <link rel="manifest" href="/manifest.json">      
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/estilos.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>	  
+    </head>
+<body>
+    <main>	
+		  <nav>
+			<div class="nav-wrapper green lighten-1">		
+		<img src="icons/logo.svg" class="logo"  />			
+			  <label class="titulo flow-text">U8&nbsp;Strings</label>		
+				<ul id="nav-mobile" class="right">
+					<li><a href="Strings.html"> <img src="icons/volver.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+					<li><a href="index.html"> <img src="icons/home.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+				</ul>
+			</div>
+		  </nav>
+		  
+		  <div class="container center">
+		  
+		    <div class="row">
+				<ul class="collapsible  z-depth-5">
+					<li>
+					  <div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" /> Ejercicio 8.1</div>
+					  <div class="collapsible-body">
+						<span>
+							<p>Ingresar una frase de hasta 500 caracteres y contar cu&aacute;ntas palabras contiene dicha frase.</p>
+							<p>&nbsp;a. &nbsp;Considerar que las palabras est&aacute;n separadas por un &uacute;nico espacio.</p>
+							<p>&nbsp;b. &nbsp;Considerar que las palabras pueden estar separadas por m&aacute;s de un espacio consecutivo.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 8.2</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Ingresar dos Strings, uno con el nombre y el otro con el apellido de una persona. Utilizando las funciones de la biblioteca string.h 
+							generar un tercer string formado por: NOMBRE, APELLIDO (nombre coma espacio y apellido) y mostrarlo.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 8.3</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Ingresar nombre y DNI de los alumnos de un curso. Como m&aacute;ximo el curso puede tener 50 alumnos. 
+							La carga finaliza con un alumno de nombre FIN. Luego de cargar los alumnos se pide:</p>
+							<p>&nbsp;a. &nbsp;Ingresar nombres de a uno en uno y buscarlos. Si el nombre est&aacute; en el curso mostrar su DNI y sino informar que no est&aacute;. 
+							Seguir ingresando nombres hasta que se ingrese un nombre igual a NOBUSCARMAS.</p>
+							<p>&nbsp;b. &nbsp;Mostrar el listado de alumnos ordenado alfab&eacute;ticamente de menor a mayor.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 8.4</div>
+					  <div class="collapsible-body">
+					    <span>
+						<p style="text-align: justify;">Se ingresan c&oacute;digo y precio unitario de los productos que vende un negocio. No se sabe la cantidad exacta de productos, pero s&iacute; se sabe que son menos de 50. 
+						El c&oacute;digo es alfanum&eacute;rico de 3 caracteres y la carga de los datos de productos termina con un c&oacute;digo igual al &ldquo;FIN&rdquo;. 
+						Luego se registran las ventas del d&iacute;a y por cada venta se ingresa el c&oacute;digo de producto y cantidad de unidades vendidas terminando con una cantidad igual a 0. Se solicita:</p>						
+						<p>&nbsp;a. &nbsp;Calcular la recaudaci&oacute;n total del d&iacute;a y el producto del cual se vendi&oacute; menor cantidad de unidades. <br> &nbsp;b. &nbsp;Mostrar el listado de productos con su precio ordenado en forma alfab&eacute;tica por c&oacute;digo de producto.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 8.5</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Una empresa de alquiler de autos tiene una flota de 30 autos de alta gama, identificados por su n&uacute;mero de patente, 
+							cargado en la memoria principal en un vector de 30 posiciones. Al comenzar el procesamiento de los alquileres, se ingresa la fecha y la cotizaci&oacute;n del d&oacute;lar de ese d&iacute;a. 
+							A continuaci&oacute;n, se ingresan los siguientes datos correspondiente a cada alquiler realizado en el d&iacute;a:</p>
+							<p>&nbsp;&bull; &nbsp;Patente del auto (alfanum&eacute;rico, de 6 caracteres) <br> &nbsp;&bull; &nbsp;Cantidad de d&iacute;as de alquiler (entero, mayor que 0) <br> &nbsp;&bull; &nbsp;Precio diario del alquiles en d&oacute;lares (real, mayor que 0)</p>
+							<p>Para finalizar la carga del d&iacute;a, se ingresa una patente de auto igual a &ldquo;FINDIA&rdquo; <br> Determinar e informar:</p>
+							<p>&nbsp;a. &nbsp;El porcentaje de autos alquilados durante el d&iacute;a. <br> &nbsp;b. &nbsp;Realizar el informe con el formato siguiente:</p>													
+							<p style="text-align: center;";<p class="codigo">ALQUILER DE AUTOS DEL DIA: DD-MM-AAAA <br> COTIZACION DEL DOLAR: $ XX,XX</p>	
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NRO DE AUTO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DIAS DE ALQUILER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRECIO DE ALQUILER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FECHA DE  <br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEVOLUCION DL AUTO  <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXX,XX;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX/XX/XX	<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXX,XX;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX/XX/XX	 <br/>							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL RECAUDADO X ALQUILER (EN PESOS)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$XXXX,XX&nbsp;	<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL RECUADADO X ALQUILER (EN DOLARES)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U$SXXXX,XX&nbsp;	<br/>							
+							<br/>							
+						</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 8.6</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Realizar el juego del ahorcado. Primero se debe ingresar la palabra a adivinar de hasta 10 caracteres. 
+							Luego se muestra por cada letra un guion bajo para que el jugador sepa la cantidad de letras a adivinar. S
+							e ir&aacute; ingresando una a una las letras y si estas se encuentran en la palabra las deber&aacute; ir mostrando en el lugar correspondiente. 
+							Por cada letra que no se encuentre en la palabra perder&aacute; una vida. El jugador dispondr&aacute; de 5 vidas para intentar ganar el juego.</p>	
+							<p><u>Complemento</u>:</p>
+							<ul>
+							<p>&bull; Ir completando el dibujo del mu&ntilde;eco del ahorcado cada vez que se comete un error.</p>
+							</ul>							
+						</span>
+					  </div>
+					</li>
+																		
+										
+						</div>					
+				</ul>         
+			</div>            
+		   </div>         		  	
+	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <script type="text/javascript" src="js/init.js"></script>
+    </main>
+	 <footer>
+          <div class="footer-copyright green lighten-1">
+            <div class="container">
+				Elementos de Programaci&oacute;n - UNLaM             
+            </div>
+          </div>
+        </footer>
+		</body>
+  </html>
+        

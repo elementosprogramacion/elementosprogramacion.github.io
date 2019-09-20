@@ -1,0 +1,357 @@
+ <!DOCTYPE html>
+  <html>
+    <head>      
+	   <title>Ejercicios Unidad 7.2 - Matrices<</title>
+	  <link rel="manifest" href="/manifest.json">      
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/estilos.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>	  
+    </head>
+<body>
+    <main>	
+		  <nav>
+			<div class="nav-wrapper green lighten-1">		
+		<img src="icons/logo.svg" class="logo"  />			
+			  <label class="titulo flow-text">U7.2&nbsp;Matrices</label>		
+				<ul id="nav-mobile" class="right">
+					<li><a href="Matrices.html"> <img src="icons/volver.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+					<li><a href="index.html"> <img src="icons/home.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+				</ul>
+			</div>
+		  </nav>
+		  
+		  <div class="container center">
+		  
+		    <div class="row">
+				<ul class="collapsible  z-depth-5">
+					<li>
+					  <div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" /> Ejercicio 7.2.1</div>
+					  <div class="collapsible-body">
+						<span>
+							<p>Ingresar una matriz de 3x3 por teclado y un n&uacute;mero entero. Realizar el producto de la matriz por la constante.</p> 
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.2.2</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Ingresar una matriz de 2x3 por teclado. Calcular la matriz transpuesta.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.2.3</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Ingresar una matriz de 5x4 por teclado. Realizar una funci&oacute;n que genere un vector con la suma por fila de dicha matriz.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.2.4</div>
+					  <div class="collapsible-body">
+					    <span>
+						<p>Ingresar una matriz de 5x4 por teclado. Realizar una funci&oacute;n que genere un vector con la suma por columna de dicha matriz.</p>						
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.2.5</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Se desea desarrollar un sistema de reservas de entradas para un cine. La sala consta de 12 filas numeradas de la 1 a la 12 y cada fila tiene 
+							9 butacas numeradas a partir de la fila central, con las butacas impares a la derecha y 
+							las pares a la izquierda, como en el siguiente esquema:</p>
+							<p style="text-align: center;";<p class="codigo">8 6 4 2 1 3 5 7 9</p>	
+							<p style="text-align: justify;">Para la carga, se debe mostrar al usuario un esquema con las butacas disponibles y reservadas, marcando con la letra D las disponibles y con la letra R las reservadas.</p>
+							<p style="text-align: justify;">Por cada reserva se debe solicitar la fila y n&uacute;mero de butaca a reservar. Si ya se encuentra reservada, se deber&aacute; actualizar el esquema que muestra las butacas. El ingreso de datos finaliza con una fila con un n&uacute;mero negativo.</p>
+							<p>Al finalizar mostrar:</p>
+							<p>&nbsp;a. &nbsp;la cantidad de asientos disponibles y la cantidad de asientos reservados. <br> &nbsp;b. &nbsp;los n&uacute;meros de filas que quedaron vac&iacute;as. <br> &nbsp;c. &nbsp;la o las filas con mayor cantidad de espectadores. <br> &nbsp;d. &nbsp;un listado con la cantidad de personas que se sentaron en los mismos n&uacute;meros de butacas en todos los cines, ordenado de mayor a menor. Por ejemplo:
+						<p style="text-align: center;"; class="codigo">Butaca&nbsp; Cantidad</p>
+						<p style="text-align: center;"; class="codigo">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20</p>
+						<p style="text-align: center;"; class="codigo">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 15</p>
+						<p style="text-align: center;"; class="codigo">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10</p>
+						<p style="text-align: center;"; class="codigo">..............</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.2.6</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Se solicita modificar el programa anterior para que adem&aacute;s de la butaca y fila ingrese la cantidad de butacas de la reserva. En dicho caso se deber&aacute; 
+							verificar si existen a partir de la butaca ingresada la cantidad suficiente de butacas disponibles consecutivas (tomar siempre hacia la derecha del seleccionado). 
+							Si est&aacute;n disponibles reservar todas las butacas, sino mostrar un mensaje de error.</p>							
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.2.7</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Una empresa desea registrar las ventas realizadas de cada uno de sus 20 productos a lo lardo del a&ntilde;o. 
+							Los productos est&aacute;n identificados por un c&oacute;digo num&eacute;rico correlativo del 1 al 20. 
+							Como primera informaci&oacute;n se ingresa el precio unitario de cada uno de los productos. Luego por cada venta se ingresa:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de producto <br> &nbsp;&bull; &nbsp;D&iacute;a de venta <br> &nbsp;&bull; &nbsp;Mes de venta <br>&nbsp;&bull; &nbsp;Cantidad de unidades vendidas</p>
+							<p>El ingreso de datos finaliza con un c&oacute;digo de producto igual a 0. Informar:</p>
+							<p>&nbsp;a. &nbsp;El detalle de unidades vendidas de cada producto en cada uno de los 12 meses. <br> &nbsp;b. &nbsp;El producto con el cual se obtuvo la mayor recaudaci&oacute;n. <br> &nbsp;c. &nbsp;El trimestre de menor recaudaci&oacute;n del a&ntilde;o.
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.2.8</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Un consorcio desea controlar la cobranza de las expensas en un edificio de 5 pisos donde existen 15 departamentos en cada piso. El valor de las expensas es de $ 1000. 
+							Para registrar la cobranza se ingresa el n&uacute;mero de piso (1 a 5) y el n&uacute;mero de departamento (correlativo de 1 a 15 en cada piso). 
+							El ingreso finaliza con un piso igual a 99.</p>
+							<p style="text-align: justify;">Al finalizar mostrar el dinero total recaudado y una tabla con una X indicando aquellos departamentos deudores de la siguiente manera:</p>
+							<p style="text-align: center;";<p class="codigo">TOTAL RECAUDADO</p>
+							<p style="text-align: center;";<p class="codigo">DEPARTAMENTO DEUDORES</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PISO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DPTO1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DPTO2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DPTO15     <br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PISO 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PISO 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp	<br/>							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PISO 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PISO 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X&nbsp;&nbsp;&nbsp;&nbsp;	<br/>							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PISO 5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<br/>							
+							<br/>							
+						</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.2.9</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Se desea contabilizar los votos recibidos en las elecciones de un club de f&uacute;tbol. 
+							Existen 10 candidatos cada uno representado por un n&uacute;mero de lista diferente (n&uacute;mero de 3 cifras no correlativo). 
+							La votaci&oacute;n se realiza en 15 sedes distintas codificadas del 1 al 15. Se ingresan los votos registrados en cada una de las sedes registrando:</p>	
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de lista <br> &nbsp;&bull; &nbsp;N&uacute;mero de sede  <br>&nbsp;&bull; &nbsp;Cantidad de votos</p>
+							<p>(Solo se informan candidatos que recibieron votos).</p>
+							<p>Mostrar:</p>
+							<p>&nbsp;a. &nbsp;Cantidad de votos recibidos por cada candidato en cada sede.</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LISTA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEDE1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEDE2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEDE3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SEDE15     <br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;873&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;36&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;78&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;99...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;735&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXX...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp	<br/>							
+							
+							<br/>							
+							</p>
+							<p>&nbsp;b. &nbsp;Listado ordenado por cantidad de votos totales en formar decreciente, con el siguiente formato:</p>
+									<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL DE VOTOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PORCENTAJE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LISTA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;800&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;873	<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;735	<br/>							
+							
+							<br/>							
+							</p>
+							<p>c&nbsp;. &nbsp;Candidatos que NO recibieron votos en la sede 5.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.2.10</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Ingresar por teclado valores enteros y generar una matriz de 5x3 (5 filas y 3 por columnas). Informar:</p>
+									<p>&nbsp;a. &nbsp;La suma de los elementos de las columnas. <br> &nbsp;b. &nbsp;Las sumas de los elementos de las filas. <br> &nbsp;c. &nbsp;La suma total de los elementos. <br> &nbsp;d. &nbsp;El valor promedio de toda la matriz. <br> &nbsp;e. &nbsp;El valor promedio por columna. <br> &nbsp;f. &nbsp;El m&aacute;ximo valor de la matriz y en qu&eacute; posici&oacute;n se encuentra (el m&aacute;ximo es &uacute;nico). <br> &nbsp;g. &nbsp;El m&iacute;nimo valor de cada columna y en qu&eacute; posici&oacute;n se encuentra (el m&iacute;nimo es &uacute;nico)</p>
+									<p>Utilizar funciones para la carga y para resolver cada uno de los puntos.</p>		
+								</span>
+						</div>
+					</li>
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.2.11</div>
+							<div class="collapsible-body">
+								<span>
+									<p style="text-align: justify;">La cadena de supermercados NORTE, tiene 40 sucursales y comercializa 120 rubros de distintas mercader&iacute;as. 
+									La Casa Central recibe a diario las notas de pedido de mercader&iacute;as emitidas por cada una de las sucursales. 
+									Se ingresa por teclado las unidades pedidas (estos datos se ingresan hasta que aparece una sucursal
+									igual a 9, los datos vienen desordenados, y puede venir m&aacute;s de una informaci&oacute;n de una misma sucursal y el mismo rubro):</p>
+									<p>&nbsp;&bull; &nbsp;N&uacute;mero de sucursal (1 a 40)  <br> &nbsp;&bull; &nbsp;C&oacute;digo de rubro (1 a 120) <br> &nbsp;&bull; &nbsp;Cantidad de unidades pedidas.</p>
+									<p>Informar:</p>
+									<p>&nbsp;a. &nbsp;La cantidad de pedidos por sucursal. <br> &nbsp;b. &nbsp;Cu&aacute;l fue la sucursal que pidi&oacute; la menor cantidad en total (puede haber varias sucursales que tienen el mismo valor m&iacute;nimo).</p>
+									<p>FUNCIONES:</p>
+									<p>&nbsp;I. Para inicializar la matriz. <br> &nbsp;II. Para mostrar el resultado del punto b.
+								</span>
+						</div>
+					</li>
+					
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.2.12</div>
+							<div class="collapsible-body">
+								<span>
+									<p style="text-align: justify;">La empresa de turismo GUADALAJARA VIAJES comercializa 10 diferentes tours a trav&eacute;s de 15 agencias en todo el pa&iacute;s. 
+									Diariamente cada agencia env&iacute;a la cantidad de ventas efectuadas de cada tour, indicando agencia, tours y la cantidad de pasajes. 
+									Algunas agencias env&iacute;an o en la cantidad cuando no existen pasajes para un tour determinado, pero no en todas. 
+									La informaci&oacute;n que se env&iacute;a tiene los siguientes datos que se ingresan en forma desordenada:</p>
+									<p>&nbsp;&bull; &nbsp;C&oacute;digo de agencia (de 1 a 15) <br> &nbsp;&bull; &nbsp;C&oacute;digo de tour (1 a 10) <br> &nbsp;&bull; &nbsp;Cantidad de pasajes (0 a 20)</p>
+									<p>Informar:</p>
+									<p>a. El total de pasajes vendidos por tour. <br> b. El n&uacute;mero de agencia que obtuvo la m&aacute;xima cantidad de pasajes vendidos.</p>
+									<p>FUNCIONES:</p>
+									<p>&nbsp;I. Para inicializar la matriz. <br> &nbsp;II. Para mostrar el resultado del punto a.
+								</span>
+						</div>
+					</li>
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.2.13</div>
+							<div class="collapsible-body">
+								<span>
+									<p style="text-align: justify;">Realizar el juego de Tatet&iacute; para dos jugadores. EL jugador 1 utilizar&aacute; la letra X y el jugador 2 la letra O para marcar sus elecciones. 
+									El tablero armarlo con una matriz de 3x3 que debe ser visualizada en pantalla en cada jugada marcando la ubicaci&oacute;n elegida por cada jugador. 
+									Luego de cada jugada se debe llamar a una funci&oacute;n para verificar si el jugador gan&oacute; o no la partida. Si se llega a la &uacute;ltima jugada y nadie gana, 
+									se debe informar del empate.</p>	
+									<p style="text-align: justify;"><u>Complemento</u>: Modificar el juego para que sea de un solo jugador. Deber&aacute; programar la inteligencia artificial para que la computadora elija donde realizar la jugada para intentar ganar la partida y no perder completando el espacio correspondiente cuando haga falta.</p>
+								</span> 
+						</div>
+					</li>
+						
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.2.14</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Realizar el juego del rompecabezas de 8, dicho juego comienza con una matriz de 3x3 de n&uacute;meros del 1 al 8 desordenados y un espacio en blanco. Como por ejemplo:</p>	
+									<table>
+									<tbody>
+									<tr>
+									<td style="text-align: center;" width="29">
+									<p>2</p>
+									</td>
+									<td style="text-align: center;" width="29">
+									<p>5</p>
+									</td>
+									<td style="text-align: center;" width="29">
+									<p>1</p>
+									</td>
+									</tr>
+									<tr>
+									<td style="text-align: center;" width="29">
+									<p>7</p>
+									</td>
+									<td style="text-align: center;" width="29">
+									<p>6</p>
+									</td>
+									<td style="text-align: center;" width="29">
+									<p>3</p>
+									</td>
+									</tr>
+									<tr>
+									<td style="text-align: center;" width="29">
+									<p>8</p>
+									</td>
+									<td style="text-align: center;" width="29">
+									<p>&nbsp;</p>
+									</td>
+									<td style="text-align: center;" width="29">
+									<p>4</p>
+									</td>
+									</tr>
+									</tbody>
+									</table>
+									<p>El objetivo del juego es lograr que los n&uacute;meros queden ordenados de la siguiente forma:</p>
+									<table>
+									<tbody>
+									<tr>
+									<td style="text-align: center;" width="29">
+									<p>1</p>
+									</td>
+									<td style="text-align: center;" width="29">
+									<p>2</p>
+									</td>
+									<td style="text-align: center;" width="29">
+									<p>3</p>
+									</td>
+									</tr>
+									<tr>
+									<td style="text-align: center;" width="29">
+									<p>4</p>
+									</td>
+									<td style="text-align: center;" width="29">
+									<p>5</p>
+									</td>
+									<td style="text-align: center;" width="29">
+									<p>6</p>
+									</td>
+									</tr>
+									<tr>
+									<td style="text-align: center;" width="29">
+									<p>7</p>
+									</td>
+									<td style="text-align: center;" width="29">
+									<p>8</p>
+									</td>
+									<td style="text-align: center;" width="29">
+									<p>&nbsp;</p>
+									</td>
+									</tr>
+									</tbody>
+									</table>
+									<p style="text-align: justify;">Para ello, el jugador puede mover un n&uacute;mero a la vez al casillero libre, solo puedo mover alguno de los n&uacute;meros adyacentes al casillero en blando y 
+									solo en forma horizontal o vertical. 
+									Por ejemplo tomando como partida la primera matriz desordenada se podr&iacute;a mover el 6 hacia abajo, el 4 hacia la izquierda o el 8 hacia la derecha. <br> El jugador deber&aacute; ingresar el n&uacute;mero que quiere mover y autom&aacute;ticamente moverlo, si es posible, al casillero libre. 
+									Luego cada movimiento se debe controlar si se llega al objetivo de ordenar los n&uacute;meros e informar que se ha ganado la partida. Puede ir contando la cantidad de movimientos que se llev&oacute; 
+									al jugador lograr llegar a ordenar el rompecabezas y mostrarlos al finalizar para que pueda volver a jugarlo y superarse.</p>
+									<p style="text-align: justify;"><u>Complemento</u>: Puede agregar al ejercicio anterior distintos niveles para ir aumentando el nivel de complejidad partiendo de distintas matrices desordenadas. Los primeros niveles pueden ser matrices parcialmente desordenadas y luego a medida que avanza de nivel ir jugando con distintas matrices de inicio.</p>
+								</span> 
+						</div>
+					</li>						
+						
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.2.15</div>
+							<div class="collapsible-body">
+								<span>
+									<p style="text-align: justify;"><p style="text-align: justify;">BATALLA NAVAL: Realizar el juego con un tablero de 5x5. Inicialmente el retador deber&aacute; ingresar la ubicaci&oacute;n de sus barcos indicando las coordenadas donde se encuentra. 
+									Los barcos ocupan un solo casillero y se deben ubicar 5 barcos en distintas posiciones. La matriz a utilizar es de char inicializ&aacute;ndola con espacio en blanco y marcando la ubicaci&oacute;n de los barcos con la letra B. 
+									Una vez ubicado los barcos se muestra al jugador una pantalla con las coordenadas para que pueda realizar su disparo. En caso de no encontrar un barco en la posici&oacute;n indicada se debe poner en la celda de la matriz una letra A (agua). 
+									Si se encuentra un barco se marcar&aacute; como hundido con la letra X. Cada vez que se realiza un disparo se debe actualizar la matriz y mostrarla en pantalla pero sin mostrar la ubicaci&oacute;n de los barcos (letra B). Se debe mostrar si el barco fue hundido con la letra X. 
+									Contar la cantidad de disparos necesarios para hundir los 5 barcos de forma que pueda desafiar a la otra persona a resolverlo en menos disparos.</p></p>	
+									<p><u>Complementos:</u></p>
+									<p>&nbsp;a. &nbsp;Mejorar el juego al no permitir ubicar barcos en casilleros adyacentes teniendo en cuenta que al hundir un barco se deber&aacute;n marcar todos los casilleros como agua (letra A).</p>
+									<p>&nbsp;b. &nbsp;Agregar la posibilidad de poner barcos de distinto tama&ntilde;o, por ejemplo, 2 barcos de 2 casilleros y 3 de un casillero, lo que implica que un barco estar&aacute; hundido solo cuando se alcancen con un disparo en todas sus partes.</p>
+								</span> 
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.2.16</div>
+							<div class="collapsible-body">
+								<span>
+									<p><p style="text-align: justify;">Realizar el juego de 3 l&iacute;neas con un tablero de 6 filas por 10 columnas. El juego ser&aacute; para dos jugadores, uno utilizar&aacute; fichas redondas representadas por la letra O y el otro jugador marcar&aacute; sus fichas con la letra X.</p>
+									<p style="text-align: justify;">El juego se desarrolla de a un turno por vez donde el jugador elije sobre que columna tirar su ficha (numerarlas del 1 al 10). La ficha debe &ldquo;caer&rdquo; hasta la primera posici&oacute;n libre. Cada vez que ponga una ficha en el tablero deber&aacute; verificarse si se ha ganado la partida al tener 3 fichas del mismo tipo consecutivas. Si se llena todo el tablero y ning&uacute;n participante gana, se mostrar&aacute; &ldquo;empate&rdquo;.</p></p>	
+									<p style="text-align: justify;">&nbsp;a. &nbsp;Chequear si se gan&oacute; el juego teniendo en cuenta si se forma 3 en l&iacute;nea solo en forma vertical. <br> &nbsp;b. &nbsp;Chequear si se gan&oacute; el juego teniendo en cuenta si se forma 3 en l&iacute;nea tanto en forma vertical como horizontal. <br> &nbsp;c. &nbsp;Chequear si se gan&oacute; el juego teniendo en cuenta si se forma 3 en cualquier direcci&oacute;n (vertical, horizontal , o diagonal).</p>
+								</span> 
+						</div>
+					</li>
+						</div>					
+				</ul>         
+			</div>            
+		   </div>         		  	
+	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <script type="text/javascript" src="js/init.js"></script>
+    </main>
+	 <footer>
+          <div class="footer-copyright green lighten-1">
+            <div class="container">
+				Elementos de Programaci&oacute;n - UNLaM             
+            </div>
+          </div>
+        </footer>
+		</body>
+  </html>
+        

@@ -1,0 +1,220 @@
+ <!DOCTYPE html>
+  <html>
+    <head>      
+	   <title>Ejercicios Unidad 5.2 - Iteraci&oacute;n condicionada<</title>
+	  <link rel="manifest" href="/manifest.json">      
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/estilos.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>	  
+    </head>
+<body>
+    <main>	
+		  <nav>
+			<div class="nav-wrapper green lighten-1">		
+		<img src="icons/logo.svg" class="logo"  />			
+			  <label class="titulo flow-text">U5.2 Iteraci&oacute;n condicionada</label>		
+				<ul id="nav-mobile" class="right">
+					<li><a href="u5_iteracion.html"> <img src="icons/volver.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+					<li><a href="index.html"> <img src="icons/home.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+				</ul>
+			</div>
+		  </nav>
+		  
+		  <div class="container center">
+		  
+		    <div class="row">
+				<ul class="collapsible  z-depth-5">
+					<li>
+					  <div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" /> Ejercicio 5.2.1</div>
+					  <div class="collapsible-body">
+						<span>
+							<p>Confeccionar un programa que calcule e informe los valores de las potencias de 2 cuyo resultado sean menores que 600. (1 2 4 8 16 &hellip;. )</p> 
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 5.2.2</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Escribir las sentencias que permitan el ingreso correcto del valor num&eacute;rico de un d&iacute;a y un mes determinado. 
+							Por alg&uacute;n error volver a solicitar.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 5.2.3</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p><p style="text-align: justify;">Confeccionar un programa que pueda ingresar una secuencia de caracteres hasta que se digite un *. 
+							Se desea obtener e informar cuantos caracteres ingresados son num&eacute;ricos y cuantos alfab&eacute;ticos. 
+							Estos &uacute;ltimos tienen que mostrarse separados por may&uacute;sculas y min&uacute;sculas. 
+							Tambi&eacute;n informar la cantidad de otros s&iacute;mbolos que no sean ni letras ni n&uacute;meros.</p></p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 5.2.4</div>
+					  <div class="collapsible-body">
+					    <span>
+						<p>Un negocio de venta de granos desea controlar las ventas realizadas. De cada una ingresa el importe total y un c&oacute;digo que indica la forma de pago. 
+						El c&oacute;digo puede ser:</p>
+						<p>&nbsp;&bull;&nbsp;  C: cheque, 20% de recargo. <br> &nbsp;&bull;&nbsp;  E: efectivo, 10% de descuento. <br> &nbsp;&bull;&nbsp;  T: con tarjeta, 12% de recargo.</p>
+						<p>Se debe ingresar una F para finalizar el d&iacute;a de venta y arrojar los siguientes totales.</p>
+						<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;Efectivo en Caja:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ xxxx.xx	<br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;Ventas con Tarjeta de Cr&eacute;dito: $ xxxx.xx	<br/>					
+							&nbsp;&nbsp;&nbsp;&nbsp;Ventas con cheque:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ xxxx.xx<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;Total de Venta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ xxxx.xx<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;Importe del IVA:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ xxxx.xx
+							
+						</p>
+						<p><u>NOTA:</u> El IVA corresponde al 21% del total de ventas.<p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 5.2.5</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>De cada uno de los alumnos de un curso se ingresa su n&uacute;mero de DNI y las notas de los dos ex&aacute;menes parciales confeccionar, 
+							un programa que muestre por cada alumno su condici&oacute;n final con el siguiente mensaje:</p>
+							<p class="codigo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ldquo;El alumno con DNI: xxxxxxx, obtuvo las notas: xx y xx [condici&oacute;n final]&rdquo;</p>
+							<p>La condici&oacute;n final se establece seg&uacute;n las siguientes reglas:</p>
+							<p>&bull; &nbsp;PROMOCIONA: ambas notas &gt; = 7 <br>&bull; &nbsp;RINDE EXAMEN FINAL: ambas notas &gt; = 4 <br>&bull; &nbsp;REPROBO LA MATERIA: alguna nota no cumple lo anterior.</p>
+							<p>El programa finaliza cuando se ingresa un valor negativo como n&uacute;mero de DNI. Al finalizar mostrar la nota promedio de alumnos promocionados.</p>							
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 5.2.6</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Un negocio de perfumer&iacute;a efect&uacute;a descuentos en sus ventas seg&uacute;n el importe de las mismas, con la siguiente escala:</p>
+							<p>&nbsp;&bull; &nbsp;menor a 50 pesos el 3.5 % <br> &nbsp;&bull; &nbsp;entre 50 y 150 pesos el 10 %. <br> &nbsp;&bull; &nbsp;entre 151 y 300 pesos el 20 %. <br> &nbsp;&bull; &nbsp;mayor a 300 pesos el 25 %.</p>			
+							<p>Confeccionar un programa que:</p>
+							<p>&nbsp;a. &nbsp;Solicite un importe y calcule el descuento a efectuar y el importe neto a cobrar, con mensajes aclaratorios. <br>&nbsp;b. &nbsp;Informe el importe promedio de todas las ventas realizadas.</p>
+							<p>Se debe contemplar que se puedan ingresar varios importes y para finalizar se ingresa un valor negativo o cero.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 5.2.7</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Ingresar diversos quintetos de n&uacute;meros positivos de 1 cifra c/u, finalizando cuando las cinco cifras le&iacute;das sean iguales a cero. 
+							Determinar e informar cuantos de los quintetos ingresados han formado n&uacute;meros capic&uacute;as 'triples' y cuantos 'qu&iacute;ntuples'.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 5.2.8</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Confeccionar un programa que me permita calcular y mostrar una cantidad de n&uacute;meros primos que se solicita por la pantalla. 
+							Los n&uacute;meros se calculan a partir del 2. Ejemplo: Si ingreso 6 genero los n&uacute;meros: 5 - 7 - 11 - 13 - 17 &ndash; 19. 
+							El algoritmo para el c&aacute;lculo de si un n&uacute;mero es primo o no debe estar optimizado 
+							para que si encuentra un divisor no seguir buscando ya que se sabe que no es primo.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 5.2.9</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>En una empresa trabajan N empleados, de cada uno se tiene, sueldo b&aacute;sico, antig&uuml;edad, 
+							cantidad de hijos y estudios superiores (&lsquo;S&rsquo; o &lsquo;N&rsquo;). 
+							Adem&aacute;s, se conocen los porcentajes de aumento del sueldo que dependen de los siguientes factores:</p>	
+							<p>&nbsp;&bull; &nbsp;Si el empleado tiene m&aacute;s de 10 a&ntilde;os de antig&uuml;edad: aumento del 10%. <br> &nbsp;&bull; &nbsp;Si el empleado tiene m&aacute;s de 2 hijos: aumento del 10%, si solo tiene uno 5%. <br> &nbsp;&bull; &nbsp;Si el empleado posee estudios superiores: aumento del 5%.</p>							
+							<p>Determinar:</p>
+							<p>&nbsp;a. &nbsp;Por cada empleado: n&uacute;mero de empleado, el sueldo b&aacute;sico y el nuevo sueldo.</p>
+							<p>&nbsp;b. &nbsp;Sueldo nuevo promedio de la empresa.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 5.2.10</div>
+							<div class="collapsible-body">
+								<span>
+									<p>En un proceso de control se eval&uacute;an valores de temperatura, finalizando cuando de ingresa un valor ficticio de temperatura -50. 
+									Determinar el valor m&aacute;ximo y m&iacute;nimo medido y sus posiciones respecto al ingreso.</p>	
+								</span>
+						</div>
+					</li>
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 5.2.11</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Se ingresan n&uacute;meros enteros, hasta que se ingrese el n&uacute;mero cero. Determinar los 2 valores mayores.</p>							
+								</span>
+						</div>
+					</li>
+					
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 5.2.12</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Confeccionar un programa que permita el ingreso de 6 ternas de valores enteros.</p>
+									<p>&nbsp;a. &nbsp;de cada terna informar el mayor valor y su orden en la terna.</p>
+									<p>&nbsp;b. &nbsp;de cada terna informar cuantos valores son m&uacute;ltiplos de 7.</p>
+									<p>&nbsp;c. &nbsp;de las 6 ternas determinar e informar el promedio de los primeros valores de cada una.</p>															
+								</span>
+						</div>
+					</li>
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 5.2.13</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Realizar un programa que le solicite al usuario el ingreso de una vocal (este dato de ingreso se debe validar). 
+									Luego el programa debe exhibir en pantalla la vocal ingresada en cinco l&iacute;neas y cuatro columnas. 
+									La vocal debe estar formada en cada car&aacute;cter por la misma letra en may&uacute;scula. El programa finaliza con la letra f.</p>	
+									<p>Restricciones: Por cada printf se debe exhibir un solo car&aacute;cter o salto de l&iacute;nea o espacio.</p>
+									<p>Ejemplos:</p>
+									<p style="text-align: left;">Ingreso del car&aacute;cter a:</p>
+									<p style="text-align: left;">AAAA</p>
+									<p style="text-align: left;">A&nbsp; &nbsp;&nbsp;&nbsp;A</p>
+									<p style="text-align: left;">AAAA</p>
+									<p style="text-align: left;">A&nbsp; &nbsp;&nbsp;&nbsp;A</p>
+									<p style="text-align: left;">A&nbsp; &nbsp;&nbsp;&nbsp;A</p>
+									<p style="text-align: left;">Ingreso del car&aacute;cter e:</p>
+									<p>EEEE</p>
+									<p>E</p>
+									<p>EEEE</p>
+									<p>E</p>
+									<p>EEEE</p>
+									<p>Extender el programa para que la vocal se exhiba en n l&iacute;neas y m columnas.<p>
+								</span> 
+						</div>
+					</li>
+													
+						
+						</div>					
+				</ul>         
+			</div>            
+		   </div>         		  	
+	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <script type="text/javascript" src="js/init.js"></script>
+    </main>
+	 <footer>
+          <div class="footer-copyright green lighten-1">
+            <div class="container">
+				Elementos de Programaci&oacute;n - UNLaM             
+            </div>
+          </div>
+        </footer>
+		</body>
+  </html>
+        

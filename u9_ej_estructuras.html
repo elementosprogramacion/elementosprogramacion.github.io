@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+  <html>
+    <head>      
+	   <title>Ejercicios Unidad 9 - Estructuras<</title>
+	  <link rel="manifest" href="/manifest.json">      
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/estilos.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>	  
+    </head>
+<body>
+    <main>	
+		  <nav>
+			<div class="nav-wrapper green lighten-1">		
+		<img src="icons/logo.svg" class="logo"  />			
+			  <label class="titulo flow-text">U9&nbsp;Estructuras</label>		
+				<ul id="nav-mobile" class="right">
+					<li><a href="Estructuras.html"> <img src="icons/volver.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+					<li><a href="index.html"> <img src="icons/home.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+				</ul>
+			</div>
+		  </nav>
+		  
+		  <div class="container center">
+		  
+		    <div class="row">
+				<ul class="collapsible  z-depth-5">
+					<li>
+					  <div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" /> Ejercicio 9.1</div>
+					  <div class="collapsible-body">
+						<span>
+							<p style="text-align: justify;">Una empresa que vende neum&aacute;ticos desea realizar un programa para actualizar el total de ventas del mes de sus productos. 
+							Para ello primeramente se ingresan la informaci&oacute;n de los productos formados por:</p> 
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo (5 caracteres) &nbsp;&bull; &nbsp;Precio (real) <br> &nbsp;&bull; &nbsp;Descripci&oacute;n (30 caracteres) <br> &nbsp;&bull; &nbsp;Cantidad de unidades vendidas (al mes anterior, entero) <br> &nbsp;&bull; &nbsp;Importe Total Vendido (al mes anterior, real)</p>
+							<p>Se sabe que la empresa no vende m&aacute;s de 50 productos. El ingreso de la carga de productos finaliza con un producto con descripci&oacute;n &ldquo;FIN&rdquo;. <br> Luego ingresan las ventas del mes:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de Producto (5 caracteres). <br> &nbsp;&bull; &nbsp;Cantidad pedida.</p>
+							<p>El ingreso de datos de las ventas finaliza con una cantidad igual a 0. Se solicita:</p>
+							<p>&nbsp;a. &nbsp;Actualizar la informaci&oacute;n de los productos con las ventas realizadas en el mes.</p>
+							<p>&nbsp;b. &nbsp;Al finalizar, mostrar el listado de productos actualizado, informando:</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DESCRIPCION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CANT.UNIDADE VENDIDAS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IMPORTE TOTAL VENDIDO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      <br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$XXXXX,XX&nbsp;&nbsp;&nbsp	<br/>							
+							
+							<br/>							
+							</p>
+							<p>&nbsp;c. &nbsp;Declarar un tipo de dato llamado FECHA que contenga como campos (d&iacute;a &ndash; mes &ndash; a&ntilde;o)</p>
+							<p>&nbsp;d. &nbsp;Realizar la <b>Funci&oacute;n VALIDA_FECHA </b>que ingrese en una variable del tipo FECHA sus datos, los valide y retorne al programa principal la fecha correcta.</p>
+							<p>&nbsp;e. &nbsp;Cargar en un vector de estructuras, los datos referentes a los productos. <b>Funci&oacute;n INGRESO_PRODUCTOS.</b></p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 9.2</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Un laboratorio dispone de una lista con sus 50 medicamentos. De cada uno conoce:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo del medicamento (entero, de 3 cifras) <br> &nbsp;&bull; &nbsp;Precio (real) <br> &nbsp;&bull; &nbsp;Stock (entero)</p>
+							<p>Se solicita:</p>
+							<p>&nbsp;a. &nbsp;Declarar un tipo de dato que contenga la informaci&oacute;n del medicamento. <br> &nbsp;b. &nbsp;Declarar un vector de estructura de tipo de datos creado en a. <br> &nbsp;c. &nbsp;Cargar en un sector de estructuras, los datos referentes a los medicamentos. Funci&oacute;n INGRESO. <br> &nbsp;d. &nbsp;Consultar el precio seg&uacute;n c&oacute;digo del medicamento. Funci&oacute;n BUSQUEDA_MEDI. <br> &nbsp;e. &nbsp;Informar los c&oacute;digos de los medicamentos cuyo stock es inferior a 10 unidades. Funci&oacute;n INFORME.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 9.3</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Se sabe que como m&aacute;ximo en una comisi&oacute;n de Elementos de Programaci&oacute;n hay 80 alumnos. De cada alumno se conoce:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de DNI (entero)  <br> &nbsp;&bull; &nbsp;A&nbsp;pellido y Nombre (80 caracteres) <br> &nbsp;&bull; &nbsp;Nota1, Nota2 (entero) <br> &nbsp;&bull; &nbsp;Nota Promedio (real, calculado seg&uacute;n Nota1 y Nota2)
+							<p>Se solicita:</p>
+							<p>&nbsp;a. &nbsp;Declarar un tipo de dato que contenga la informaci&oacute;n del alumno. <br> &nbsp;b. &nbsp;Declarar un vector de estructuras del tipo de dato creado en el punto a.<br> &nbsp;c. &nbsp;Cargar en un vector de estructuras, los datos referentes a los alumnos de la comisi&oacute;n, esta informaci&oacute;n termina con DNI igual al 0. Funci&oacute;n INGRESO.
+							 <br> &nbsp;d. &nbsp;Indicar cu&aacute;ntos alumnos aprobaron (ambos parciales con nota &gt;= 4 y cu&aacute;ntos reprobaron la materia. Funci&oacute;n RESULTADO. <br> &nbsp;e. &nbsp;Informar los datos de los alumnos de (DNI &ndash; Apellido y Nombre &ndash; Nota Promedio) de los alumnos. PROMOCIONADOS (ambas notas &gt;= 7). Funci&oacute;n INFORME_PROMO.</p>
+						</span>
+					  </div>
+					</li>	
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 9.4</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Se ingresan las ventas de un comercio de insumos de computaci&oacute;n. Por cada venta se ingresa:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de cliente (entero de 4 d&iacute;gitos no correlativos). <br> &nbsp;&bull; &nbsp;Importe (mayor a cero) <br>  &nbsp;&bull; &nbsp;N&uacute;mero de vendedor (entero de 1 a 10)</p>
+							<p>El ingreso de datos finaliza con un n&uacute;mero de cliente 999.</p>
+							<p>Se sabe que no son m&aacute;s de 100 clientes, la carga de los clientes se debe realizar al inicio del programa con la funci&oacute;n CARGA_CLIENTE () y para cada uno se ingresa:</p>
+							<p>&bull; C&oacute;digo de cliente (entero de 4 d&iacute;gitos no correlativos) <br> &bull; Nombre y Apellido (50 caracteres m&aacute;ximo)</p>													
+							<p>Se solicita:</p>
+							<p>&nbsp;a. &nbsp;Determinar la cantidad de ventas realizadas por cliente. <br> &nbsp;b. &nbsp;La cantidad de ventas realizadas por vendedor.</p>
+							<p>Informar de manera ordenada por total facturado (modo descendente), el total facturado a cada cliente, informando:</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODIGO DE CLIENTE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NOMBRE Y APELLIDO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL FACTURADO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      <br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXXXX, XXXXXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$XXXXXXXX,XX&nbsp;&nbsp;&nbsp	<br/>							
+							
+							<br/>							
+							</p>
+						</span>
+					  </div>
+					</li>										
+				<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 9.5</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>De una persona se conoce los siguientes datos:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de Legajo (int, entre 1 y 10.000). <br> &nbsp;&bull; &nbsp;Apellido (string, 15 caracteres). <br> &nbsp;&bull; &nbsp;Nombre (string, 15 caracteres). <br> &nbsp;&bull; &nbsp;Altura (float, mayor de 0). <br> &nbsp;&bull; &nbsp;Sexo (char, F o M). <br> &nbsp;&bull; &nbsp;D&iacute;a de Nacimiento (int, entre 1 y 31). <br> &nbsp;&bull; &nbsp;Mes de Nacimiento (int, ente 1 y 12). <br> &nbsp;&bull; &nbsp;A&ntilde;o de Nacimiento (int, ente 1950 y 2019).</p>
+							<p>Se solicita realizar los siguientes procesos:</p>	
+							<p>&nbsp;a. &nbsp;<u>Con datos ingresados por teclado:</u> Crear una Estructura de Datos con los datos enunciados anteriormente y llamarla <b>PERSONA</b>. <br> &nbsp;b. &nbsp;Mostrar los datos de la Estructura de Datos del punto a. <br> &nbsp;c. &nbsp;Con datos ingresados por teclado: Modificar la Estructura de Datos del punto a., crear una Estructura de Datos que contenga Nombre y Apellido y otra Estructura de Datos que contenga D&iacute;a/Mes/A&ntilde;o utilizarla en una nueva Estructurad de Datos llamada <b>PERSONA2</b>.  <br> &nbsp;d. &nbsp;Mostrar los datos de la Estructura de Datos del punto c.<br> &nbsp;e. &nbsp;Crear una FUNCION que cargue los datos de la Estructurad de Datos del punto c y que retorne los datos al programa principal (main).<br> &nbsp;f. &nbsp;<u>Con datos ingresados por teclado:</u> Modificar la Estructurad de Datos llamada PERSONA2 del punto c. y agregarle un campo/miembro que contenga los c&oacute;digos de las Materias Aprobadas (pueden llegar a ser hasta 36 materias) y llamarla <b>PERSONA3</b>. <br> &nbsp;g. &nbsp;Crear una FUNCION que realice el punto f. <br> &nbsp;h. &nbsp;Mostrar los datos de la Lista creada en el punto f. <br> &nbsp;i. &nbsp;Crear una FUNCION que realice el punto h.</p>		
+						</span>
+					  </div>
+					</li>		
+					</li>
+						</div>					
+				</ul>         
+			</div>            
+		   </div>         		  	
+	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <script type="text/javascript" src="js/init.js"></script>
+    </main>
+	 <footer>
+          <div class="footer-copyright green lighten-1">
+            <div class="container">
+				Elementos de Programaci&oacute;n - UNLaM             
+            </div>
+          </div>
+        </footer>
+		</body>
+  </html>
+        

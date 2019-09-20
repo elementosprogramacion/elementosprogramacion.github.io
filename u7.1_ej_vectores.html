@@ -1,0 +1,305 @@
+ <!DOCTYPE html>
+  <html>
+    <head>      
+	  <title>Ejercicios Unidad 7.1 - Vectores<</title>
+	  <link rel="manifest" href="/manifest.json">      
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/estilos.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>	  
+    </head>
+<body>
+    <main>	
+		  <nav>
+			<div class="nav-wrapper green lighten-1">		
+		<img src="icons/logo.svg" class="logo"  />			
+			  <label class="titulo flow-text">U7.1 Vectores</label>		
+				<ul id="nav-mobile" class="right">
+					<li><a href="Vectores.html"> <img src="icons/volver.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+					<li><a href="index.html"> <img src="icons/home.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+				</ul>
+			</div>
+		  </nav>
+		  
+		  <div class="container center">
+		  
+		    <div class="row">
+				<ul class="collapsible z-depth-5">
+					<li>
+					  <div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" /> Ejercicio 7.1.1</div>
+					  <div class="collapsible-body">
+						<span>
+							<p>Ingresar un vector de 10 unidades reales mediante una funci&oacute;n llamada CARGA. Luego mediante una segunda funci&oacute;n llamada INVERTIR, 
+							generar un segundo vector del mismo tama&ntilde;o con los elementos ubicados en el orden inverso al del vector original.</p> 							
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.2</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Realizar una funci&oacute;n que reciba por par&aacute;metro dos vectores enteros de 5 elementos cada uno y genere un vector de 10 posiciones 
+							con el contenido de ambos vectores uno a continuaci&oacute;n del otro.</p>							
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.3</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Realizar una funci&oacute;n que reciba por par&aacute;metro dos vectores enteros de 5 
+							elementos cada uno y genere un vector de 10 posiciones con el contenido de ambos vectores intercalados.</p>					
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.4</div>
+					  <div class="collapsible-body">
+					    <span>
+						<p>Construir una funci&oacute;n que reciba dos vectores enteros de igual tama&ntilde;o y retorne un 1 si son iguales o un 0 sino lo son.</p>													
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.5</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Una empresa debe registrar los pedidos recibidos de cada uno de sus 10 productos a lo largo del d&iacute;a. Por cada pedido se recibe:</p>	
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de producto (de 1 a 10) <br> &nbsp;&bull; &nbsp;Cantidad de unidades solicitadas</p>
+							<p>Se puede recibir m&aacute;s de un pedido por producto. La carga finaliza cuando se ingresa un producto con c&oacute;digo igual a cero. <br> Al finalizar se debe emitir un listado con c&oacute;digo y cantidad de unidades solicitadas de cada producto.
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.6</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>&Iacute;dem ejercicio anterior, pero con c&oacute;digo de productos no correlativos de 4 d&iacute;gitos. 
+							Los c&oacute;digos deben solicitarse al iniciar el programa mediante la funci&oacute;n IngresaCodigos. Luego de la carga determinar:</p>
+							<p>&nbsp;a. &nbsp;El / los productos del cual se solicitaron mayor cantidad de unidades.</p>
+							<p>&nbsp;b. &nbsp;El / los productos del cual se solicitaron menos cantidad de unidades.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.7</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Se ingresan DNI, c&oacute;digo de sector (1 a 5) y sueldo de los empleados de una empresa. Se sabe que como m&aacute;ximo la empresa tiene 100 empleados. 
+							Se desea:</p>
+							<p>&nbsp;a. &nbsp;Cargar los datos de los empleados mediante la funci&oacute;n CargaEmpleados. La carga finaliza con un empleado con DNI 99. <br> &nbsp;b. &nbsp;Generar un vector con la cantidad de empleados en cada sector mediante la funci&oacute;n CuentaPorSector y mostrarlo en forma de listado. <br>  &nbsp;c. &nbsp;Determinar el importe total a pagar de sueldos mediante la funci&oacute;n TotalAPagar.  <br> &nbsp;d. &nbsp;Volver a mostrar el listado de cantidad de empleados por sector, pero esta vez ordenado de menor a mayor por cantidad de empleados en cada sector.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.8</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Se ingresan DNI y nota de un parcial de los alumnos de un curso. El ingreso de datos finaliza con un DNI negativo. 
+							Se sabe que como m&aacute;ximo pueden presentarse a rendir 60 alumnos. Mostrar:</p>
+							<p>&nbsp;a. &nbsp;Listado de alumnos con su correspondiente DNI y la nota obtenida (en forma de listado).  <br> &nbsp;b. &nbsp;La m&aacute;xima nota obtenida y el DNI de los alumnos que la obtuvieron.
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.9</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Se debe ingresar los c&oacute;digos de 15 productos de una empresa (n&uacute;meros de 3 d&iacute;gitos). Luego se ingresan las ventas realizadas durante el d&iacute;a. Por cada venta se ingresa c&oacute;digo de vendedor, c&oacute;digo de art&iacute;culo y cantidad. Los vendedores son 5 y est&aacute;n codificados en forma correlativa de 1001 a 1005. 
+							Se puede recibir m&aacute;s de una venta de un mismo vendedor y art&iacute;culo. El ingreso de datos finaliza con c&oacute;digo de vendedor igual a 0. Se desea:</p>
+							<p>&nbsp;a. &nbsp;Mostrar un listado ordenado de mayor a menor por cantidad de unidades vendidas.</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CANT. UNIDADES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CODIGO	<br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXX	<br/>					
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXX	<br/>							
+							<br/>							
+						</p>
+							<p>&nbsp;b. &nbsp;Indicar el/los vendedores que realizaron menor cantidad de ventas (no de unidades).</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.10</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Realizar los siguientes vectores con 10 valores reales. Confeccionar un programa para:</p>
+									<p>&nbsp;a. &nbsp;Generar el vector VA con la informaci&oacute;n ingresada por teclado <br> &nbsp;b. &nbsp;Generar el vector VB, donde cada elemento es la ra&iacute;z cuadrada del respectivo elemento de VA. (para el c&aacute;lculo de la ra&iacute;z cuadrada utilizar la funci&oacute;n sqrt disponible en la biblioteca math.h)  <br> &nbsp;c. &nbsp;Calcular el vector VC como VA+VB. <br> &nbsp;d. &nbsp;Copiar el vector VC en orden inverso en otro vector llamado VD. <br> &nbsp;e. &nbsp;Hallar el valor m&aacute;ximo del vector VA y en qu&eacute; posici&oacute;n se hall&oacute; (el mayor es &uacute;nico). <br> &nbsp;f. &nbsp;Hallar el valor m&iacute;nimo del vector VB y en qu&eacute; posiciones se hallaron (el mayor se pude repetir). <br> &nbsp;g. &nbsp;Dado un valor ingresado por teclado, indicar en qu&eacute; posici&oacute;n se encontr&oacute; del vector VC. <br> &nbsp;h. &nbsp;Ordenar el vector VD en forma ascendente (de menor a mayo). <br> &nbsp;i. &nbsp;Generar un vector VE con aquellos valores negativos que se encuentran en el vector VA. <br> &nbsp;j. &nbsp;Mostrar el contenido de todos los vectores.</p>
+									<p>FUNCIONES:</p>
+									<p>&nbsp;I. &nbsp;Para el ingreso del vector AA, del punto a). <br> &nbsp;II. &nbsp;Para generar el vector CC, del punto c). <br> &nbsp;III. &nbsp;Para realizar la b&uacute;squeda del punto g). <br> &nbsp;IV. &nbsp;Para realizar el ordenamiento del punto h). <br>  &nbsp;V. &nbsp;Para generar el vector VE del punto i).<br>  &nbsp;VI. &nbsp;Para mostrar los valores de todos los vectores del punto j).</p>
+								</span>
+						</div>
+					</li>
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.11</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Confeccionar un programa para:</p>
+									<p>&nbsp;a. &nbsp;Generar los vectores necesarios para guardar la informaci&oacute;n ingresada por teclado. 
+									Se ingresa los datos de 300 art&iacute;culos diferentes. De cada art&iacute;culo se ingresa los siguientes datos:</p>
+									<p>&nbsp;&nbsp;&bull; C&oacute;digo de art&iacute;culo (int, entre 1 y 500) <br> &nbsp;&nbsp;&bull; Clase de art&iacute;culo (char, &lsquo;A&rsquo; o &lsquo;B&rsquo; o &lsquo;C&rsquo; o &lsquo;D&rsquo;) <br> &nbsp;&nbsp;&bull; N&uacute;mero de dep&oacute;sito donde se encuentra el art&iacute;culo (int, entre 1 y 100) <br> &nbsp;&nbsp;&bull; Stock (int, entre o y 2000) <br> &nbsp;&nbsp;&bull; Punto de reposici&oacute;n (int, entre 500 y 1000)</p>
+									<p>&nbsp;b. &nbsp;Generar e informar el vector VB, que contenga los c&oacute;digos de art&iacute;culos de aquellos que hayan quedado con el saldo igual a cero.</p>
+									<p>&nbsp;c. &nbsp;Generar e informar el vector VC, que contengo a los c&oacute;digos de art&iacute;culos de aquellos que hayan quedado con saldo por debajo del punto de reposici&oacute;n.</p>
+									<p>&nbsp;d. &nbsp;Generar e informar el vector VD, que contengo los c&oacute;digos de art&iacute;culos de aquellos que est&aacute;n en los dep&oacute;sitos entre el 15 y 50.</p>
+									<p>&nbsp;e. &nbsp;Informar el/los códigos de el/los artículos que tienen el stock más alto. (puede haber varios artículos que tienen la misma cantidad de stock).</p>
+									<p>FUNCIONES:</p>
+									<p>&nbsp;I. Para generar los vectores del punto a). <br> &nbsp;II. Para generar el vector VB. <br>  &nbsp;III. Para generar el vector VC. <br> &nbsp;IV. Para generar el vector VD.
+								</span>
+						</div>
+					</li>
+					
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.12</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Dados los legajos y sueldos de los empleados de una empresa (m&aacute;ximo 100 empleados). 
+									Se pide determinar el/los empleados/as de m&aacute;ximo sueldo. El fin de carga de sueldos est&aacute; dado por un legajo igual a cero.</p>
+									<p>&nbsp;a. &nbsp;Los n&uacute;meros de legajo son n&uacute;meros correlativos de 1 a 100.</p>
+									<p>&nbsp;b. &nbsp;Realizar el mismo ejercicio considerando que los n&uacute;meros de legajos son n&uacute;meros NO correlativos de 4 cifras.</p>
+								</span>
+						</div>
+					</li>
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.13</div>
+							<div class="collapsible-body">
+								<span>
+									<p style="text-align: justify;">Para una carrera de autom&oacute;viles, se toman los tiempos de clasificaci&oacute;n (real, mayor que 0 en segundos y cent&eacute;simos de segundo) de como m&aacute;ximo 60 autos de carrera inscriptos para la competencia. 
+									Los autos se identifican con n&uacute;meros correlativos del 1 al 60, quedando sin informaci&oacute;n aquellos que no participan de la presente carrera. 
+									Cuando ya no hay m&aacute;s tiempos de clasificaci&oacute;n para cargar, se ingresa un auto con n&uacute;mero negativo. Se solicita determinar:</p>	
+									<p>&nbsp;a. &nbsp;El n&uacute;mero de auto que clasific&oacute; en primer lugar.</p>
+									<p>&nbsp;b. &nbsp;El n&uacute;mero de auto que obtuvo el peor tiempo de clasificaci&oacute;n.</p>
+									<p>&nbsp;c. &nbsp;La cantidad de autos que superaron el promedio de tiempo de clasificaci&oacute;n.</p>
+									<p>&nbsp;d. &nbsp;El o los n&uacute;meros de autos que no participan de la carrera actual.</p>
+								</span> 
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.14</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Una f&aacute;brica produce 14 tipos de muebles de oficina con la mano de obra de 25 operarios especializados. 
+									Al finalizar el mes se genera una planilla donde cada registro indica:</p>
+									<p>&bull; &nbsp;D&iacute;a h&aacute;bil del mes de fabricaci&oacute;n (entero, de 1 a 22) <br> &bull; &nbsp;Tipo de mueble que se fabric&oacute; (entero, de 1 a 14) <br> &bull; &nbsp;C&oacute;digo del operario que fabric&oacute; el mueble (entero, de 1 a 25)</p>
+									<p>En la &uacute;ltima informaci&oacute;n presentada, se ingres&oacute; un d&iacute;a h&aacute;bil negativo. 
+									No hay orden alguno en los datos ingresados y un mismo operario puede hacer m&aacute;s de un mueble (del mismo tipo o no) durante el mes. Determinar e informar:</p>
+								<p>&nbsp;a. &nbsp;La cantidad de cada tipo de mueble fabricado durante el mes. <br>  &nbsp;b. &nbsp;El tipo de mueble del cual se ha fabricado la mayor cantidad. (puede haber m&aacute;s de uno) <br> &nbsp;c. &nbsp;El listado ordenado en forma ascendente por cantidad de muebles fabricados por operario (sin importar el tipo), indicando:
+								<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&oacute;digo de Operario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cantidad de muebles fabricados	<br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXX	<br/>
+													
+							<br/>							
+						</p>
+								<p>&nbsp;d. &nbsp;El d&iacute;a o d&iacute;as h&aacute;biles en los cuales no hubo producci&oacute;n.</p>
+								</span> 
+						</div>
+					</li>
+						
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.15</div>
+							<div class="collapsible-body">
+								<span>
+									<p>La empresa TODOMODA desea controlar las ventas de sus productos. 
+									La empresa vende 200 productos diferentes. La informaci&oacute;n de los productos se ingresa por teclado. Cada producto contiene:</p>
+									<p>&nbsp;&bull; &nbsp;C&oacute;digo de producto (int, 301 y 900) <br> &nbsp;&bull; &nbsp;Unidades en stock. (int, mayor o igual a 0) </p>
+									<p>Luego ingresar la informaci&oacute;n de las ventas diarias tambi&eacute;n por teclado. 
+									Los datos ingresados son (este lote de datos finaliza con un c&oacute;digo de producto igual a 0):</p>
+									<p>&nbsp;&bull; &nbsp;C&oacute;digo de producto (int, 301 y 900) &nbsp;&bull; &nbsp;Cantidad de unidades vendidas (int, 1 y 150)</p>
+									<p>Se piden procesar las ventas diarias y luego determinar:</p>
+									<p>&nbsp;a. &nbsp;Informar el stock de cada c&oacute;digo de producto, indicando el c&oacute;digo de producto y el stock del mismo. <br> &nbsp;b. &nbsp;Informar el c&oacute;digo del producto que tiene el stock m&aacute;s alto. <br> &nbsp;c. &nbsp;Informar el c&oacute;digo del producto de aquellos que hayan superado el stock promedio.
+									<p>FUNCIONES:</p>
+									<p>&nbsp;I. &nbsp;Para controlar los datos ingresados por teclado (la funci&oacute;n debe controlar un solo dato). <br> &nbsp;II. &nbsp;Para informar el punto a).</p>
+								</span> 
+						</div>
+					</li>						
+						
+						<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.16</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Una empresa textil desea realizar un informe sobre los sueldos de cada secci&oacute;n para lo cual dispone de los siguientes datos:</p>
+									<p>&nbsp;&bull; &nbsp;La fecha del d&iacute;a del proceso, que debe ser ingresada al comienzo del programa y controlarse que sea v&aacute;lida. De no serlo, reingresarla hasta que lo sea. <br> &nbsp;&bull; &nbsp;Los sueldos de cada empleado:</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. Legajo (entero, mayor a cero) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii. Secci&oacute;n (car&aacute;cter, desde &lsquo;A&rsquo; hasta &lsquo;H&rsquo;) <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii. Sueldo (real, mayor a cero)
+									<p>Los datos de cada empleado deben validarse y <strong>en caso de que alguno sea incorrecto, debe ignorarse los tres y reingresarse nuevamente.</strong> 
+									El fin de datos es cuando aparece un legajo igual a cero. Se pide:</p>
+									<p>&nbsp;a. &nbsp;Emitir un informe que indique por secci&oacute;n, el total de sueldos de la misma, ordenado en forma descendente por total de sueldos:</p>
+									<p class="codigo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sueldos al: XX/XX/XXXX</p>
+									<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Secci&oacute;n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Total de sueldos por secci&oacute;n	<br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXX,XX	<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXX,XX	<br/>							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...	<br/>
+							
+							<br/>							
+						</p>
+									<p>&nbsp;b. &nbsp;El legajo del empleado con mayor sueldo consignando legajo, secci&oacute;n y sueldo.</p>
+								</span> 
+						</div>
+					</li>	
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.17</div>
+							<div class="collapsible-body">
+								<span>
+									<p>En un negocio trabajan 12 vendedores. Cada vez que se realiza una venta durante el d&iacute;a, se emite una factura donde se indican los siguientes datos:</p>	
+									<p>&nbsp;&bull; N&uacute;mero de Factura (entero, mayor que cero) <br> &nbsp;&bull; C&oacute;digo de vendedor (entero) <br> &nbsp;&bull; Importe de la venta (real, mayor que cero)</p>
+									<p>La informaci&oacute;n termina con un n&uacute;mero de Factura igual a cero. Al principio del ingreso, se debe solicitar la fecha del d&iacute;a de procesamiento. 
+									Se pide informar con las leyendas aclaratorias:</p>
+								    <p>&nbsp;&bull; Importe total por facturaci&oacute;n por cada vendedor y Cantidad de facturas emitidas por vendedor, ordenando de forma descendente por importe, con el siguiente formato:</p>
+									<p style="text-align: center;";<p class="codigo"><u>Venta del D&iacute;a: XX/XX/XXXX</u></p>
+									<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nro. de Vendedor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importe vendido&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cant. facturas emitidas	<br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX	<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX	<br/>							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.......&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;....	<br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX	<br/>							
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspXXXXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX	<br/>							
+							<br/>							
+						</p>
+									<p>Desarrollar 2 programas seg&uacute;n: el C&oacute;digo de vendedor, n&uacute;mero de 3 cifras, no correlativos.</p>
+									<p>&nbsp;&bull; C&oacute;digo de vendedor, n&uacute;mero correlativo de 1 a 12.</p>
+								</span> 
+								<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 7.1.18</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Se procesan los datos de los casi 90 alumnos de un turno de la materia Elementos de Programación. Por cada alumno se ingresan:</p>									
+									<p>&nbsp;&bull; &nbsp;DNI (entero, mayor que cero y menor que 99.999.999) <br> &nbsp;&bull; &nbsp;Nota del Parcial 1 (entero, de 0 a 10) <br> &nbsp;&bull; &nbsp;Nota del Parcial 2 (entero, de 0 a 10) <br> &nbsp;&bull; &nbsp;Porcentaje de asistencia (real, mayor o igual a cero)</p>
+									<p>Para finalizar, se ingresa un DNI igual a cero. <br> Se pide informar con las leyendas aclaratorias y/o t&iacute;tulos:</p>
+									<p>&nbsp;a. &nbsp;Seg&uacute;n los parciales si promocion&oacute;, aprob&oacute;, reprob&oacute; o estuvo ausente (uno o ambos parciales igual a cero). <br> &nbsp;b. &nbsp;Listar los alumnos que no cumplen con la asistencia (mayor o igual a 75%).<br>  &nbsp;c. &nbsp;Informar cu&aacute;ntos alumnos que promocionaron NO cumplen en la asistencia. <br> &nbsp;d. &nbsp;Informar los alumnos que sacaron 10 en el parcial 2. <br> &nbsp;e. &nbsp;Informar los alumnos con menor asistencia (puede haber varios). <br> &nbsp;f. &nbsp;Al finalizar, informar el promedio total de notas de cada parcial y de asistencia.</p>
+								</span> 
+						</div>
+								</li>	
+						</div>
+					</li>							
+						</div>					
+				</ul>         
+			</div>            
+		   </div>         		  	
+	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <script type="text/javascript" src="js/init.js"></script>
+    </main>
+	 <footer>
+          <div class="footer-copyright green lighten-1">
+            <div class="container">
+				Elementos de Programaci&oacute;n - UNLaM             
+            </div>
+          </div>
+        </footer>
+		</body>
+  </html>
+        

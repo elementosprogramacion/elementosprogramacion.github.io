@@ -1,0 +1,233 @@
+ <!DOCTYPE html>
+  <html>
+    <head>      
+	  <title>Ejercicios Unidad 6 - Funciones<</title>
+	  <link rel="manifest" href="/manifest.json">      
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/estilos.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>	  
+    </head>
+<body>
+    <main>	
+		  <nav>
+			<div class="nav-wrapper green lighten-1">		
+		<img src="icons/logo.svg" class="logo"  />			
+			  <label class="titulo flow-text">U6. Funciones</label>		
+				<ul id="nav-mobile" class="right">
+					<li><a href="Funciones.html"> <img src="icons/volver.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+					<li><a href="index.html"> <img src="icons/home.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+				</ul>
+			</div>
+		  </nav>
+		  
+		  <div class="container center">
+		  
+		    <div class="row">
+				<ul class="collapsible z-depth-5">
+					<li>
+					  <div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" /> Ejercicio 6.1</div>
+					  <div class="collapsible-body">
+						<span>
+							<p>Se ingresan n&uacute;meros enteros comprendidos entre 100 y 2000 (usar funci&oacute;n LeerYValidar). 
+							Determinar usando la funci&oacute;n EstaDentroDelRango:</p> 
+							<p>&nbsp;a. &nbsp;Cantidad de n&uacute;meros ingresados entre 100 y 500</p>
+							<p>&nbsp;b. &nbsp;Cantidad de n&uacute;meros pares ingresados entre 500 y 1200</p>
+							<p>&nbsp;c. &nbsp;Promedio de n&uacute;meros ingresados entre 1200 y 2000</p>
+							<p>El ingreso de datos finaliza cuando se ingresa un n&uacute;mero igual a 99.</p>
+							<p>Para realizar este programa se deben realizar las siguientes funciones:</p>
+							<p style="text-align: justify;">&nbsp;&bull;&nbsp; EstaDentroDelRango: que reciba 3 enteros correspondientes a un n&uacute;mero a validar y 
+							los l&iacute;mites superior e inferior del rango. La funci&oacute;n debe retornar un 1 si el n&uacute;mero a 
+							validar se encuentra dentro del rango indicado o un 0 si no lo est&aacute;.</p>
+							<p style="text-align: justify;">&nbsp;&bull;&nbsp; LeerYValidar: que reciba los l&iacute;mites superior e inferior de un rango y retorne un n&uacute;mero que se encuentre dentro del mismo. 
+							(El ingreso de datos se realiza dentro de la funci&oacute;n). Para validar el rango utilizar la funci&oacute;n EstaDentroDelRango realizada en el punto anterior.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 6.2</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Se realiz&oacute; un concurso de tiro al blanco. Por cada participante se ingresa un n&uacute;mero que lo identifica y el resultado de los disparos efectuados. El ingreso finaliza con un n&uacute;mero de participante negativo. 
+							Cada participante efect&uacute;a 5 disparos, registr&aacute;ndose las coordenadas X-Y de cada disparo.</p>
+							<p>&nbsp;&bull; &nbsp;No considere disparos sobre los ejes, pero s&iacute; en el centro (si es sobre los ejes las coordenadas deber&aacute;n volver a ingresarse).</p>
+							<p>&nbsp;&bull; &nbsp;Para determinar el cuadrante utilizar la funci&oacute;n CUADRANTE que reciba las dos coordenadas y retorne 
+							el cuadrante al cual pertenece (1 a 4) y 0 para indicar un tiro en el centro.</p>
+							<p>Para calcular el puntaje utilizar la funci&oacute;n PUNTAJE que reciba 5 par&aacute;metros que representan la cantidad disparos en cada eje y en el centro. 
+							La funci&oacute;n debe retornar el puntaje obtenido seg&uacute;n la siguiente escala:</p>
+							<p>&nbsp;&bull; &nbsp;Cuadrantes 1 y 2: 50 puntos</p>
+							<p>&nbsp;&bull; &nbsp;Cuadrantes 3 y 4: 40 puntos</p>
+							<p>&nbsp;&bull; &nbsp;Centro: 100 puntos</p>
+							<p>Determinar:</p>
+							<p>a. El puntaje obtenido por cada participante, detallando cuantos disparos realiz&oacute; en cada cuadrante.<br> b. Mostrar el n&uacute;mero del participante ganador y el puntaje obtenido.<br> c. Calcular y mostrar la cantidad total de disparos en el centro (de todos los participantes).</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 6.3</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Se ingresa valores positivos entre 1 y 50, finalizando el ingreso con el valor -10, para ello generar una funci&oacute;n que valide dicho ingreso. 
+							Calcular:</p>
+							<p>&nbsp;&nbsp;a. Cu&aacute;ntos n&uacute;meros son primos.</p>
+							<p>&nbsp;&nbsp;b. Cantidad de n&uacute;meros pares.</p>
+							<p>&nbsp;&nbsp;c. Promedio de los n&uacute;meros impares.</p>
+							<p>Utilizar las siguientes funciones:</p>
+							<p>&nbsp;&bull; &nbsp;Resto: recibe por par&aacute;metro el Dividendo y el Divisor; Retorna el resto <br> &nbsp;&bull; &nbsp;EsPar: recibe por par&aacute;metro un n&uacute;mero; Retorna 1 si es Par, 0 si es Impar; Invoca a la funci&oacute;n Resto <br> &nbsp;&bull; &nbsp;EsPrimo: recibe por par&aacute;metro un n&uacute;mero; Retorna 1 si es primo, 0 si no es primo; Invoca a la funci&oacute;n Resto. (un n&uacute;mero es primero si solo es divisible por 1 y por s&iacute; mismo) <br> &nbsp;&bull; &nbsp;Promedio: recibe por par&aacute;metro la suma y el contador; Retorna el promedio si contador &gt; 0 sino Retorna 0.
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 6.4</div>
+					  <div class="collapsible-body">
+					    <span>
+						<p>Realizar un programa que al ingresar solicite el ingreso de dos n&uacute;meros enteros y luego muestre por pantalla el siguiente men&uacute; 
+						(las xx de los n&uacute;meros deben ser reemplazadas con los valores correspondientes):</p>
+						<p class="codigo">Men&uacute; de Opciones <br>----------------</p>
+						<p class="codigo">Numero 1: xx Numero 2: xx</p>
+						<p class="codigo">1) Sumar</p>
+						<p class="codigo">2) Restar</p>
+						<p class="codigo">3) Multiplicar</p>
+						<p class="codigo">4) Dividir</p>
+						<p class="codigo">5) Ingresar Nuevos N&uacute;meros</p>
+						<p class="codigo">6) Salir</p>
+						<p class="codigo">Ingrese su opci&oacute;n:</p>
+						<p>Al ingresar el n&uacute;mero de la opci&oacute;n del 1 al 4, se realiza la operaci&oacute;n y muestra el resultado hasta que se presione una tecla. 
+						Luego vuelve a mostrar el men&uacute; para poder realizar otra operaci&oacute;n con los mismos n&uacute;meros. La opci&oacute;n 5 pide el ingreso de dos nuevos n&uacute;meros de trabajo mientras que la opci&oacute;n 6 sale y cierra el programa. 
+						El ingreso de la opci&oacute;n debe estar validado y en caso de ingresarse un n&uacute;mero no v&aacute;lido debe solicitarlo nuevamente. Usar una funci&oacute;n 
+						para mostrar el men&uacute; y retornar el valor elegido.</p>									
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 6.5</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Confeccionar un programa que permita ingresar varias ternas de valores a punto flotante, que finalice al ingresar una terna con los valores ORDENADOS en forma creciente. 
+							Para cada terna exhibir la siguiente pantalla:</p>
+							<p class="codigo">** OPCIONES POSIBLES ** </p>
+							<p class="codigo">1 &ndash; Mayor valor </p>
+							<p class="codigo">2 &ndash; Promedio </p>
+							<p class="codigo">3 &ndash; Suma </p>
+							<p class="codigo">4 &ndash; Finalizar </p>
+							<p class="codigo">** Digite su opci&oacute;n:</p>
+							<p>Seg&uacute;n la opci&oacute;n deseada debe aparecer en pantalla el resultado, sin borrar el men&uacute;. No admitir otros valores de opci&oacute;n. 
+							Confeccionar y utilizar una funci&oacute;n PARA CADA UNA de las opciones y otra para detectar la condici&oacute;n final.</p>													
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 6.6</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Confeccionar un programa que permita determinar e informar en cu&aacute;ntos de los n&uacute;meros enteros comprendidos entre 10001 y 90009 existen m&aacute;s cifras 3 que 4. Debe existir por lo menos, un 4 para que sea considerado el n&uacute;mero como v&aacute;lido. 
+							Para resolverlo confeccionar una funci&oacute;n llamada CIFRAS, que pueda determinar cu&aacute;ntas cifras &ldquo;n&rdquo; existen en un n&uacute;mero de 5 cifras.</p>							
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 6.7</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Confeccionar un programa que permita ingresar diversas ternas de valores enteros mayores que 0 y menores que 99. 
+							Finalizar el ingreso cuando se informen 3 valores iguales a 96, 97 y 98. Determinar e informar para cada terna, el mayor y el menor de los valores. 
+							Confeccionar y utilizar una funci&oacute;n con par&aacute;metros llamada MayorMenor, que permita calcular el menor o el mayor valor de la terna seg&uacute;n un par&aacute;metro de configuraci&oacute;n.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 6.8</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Realizar una funci&oacute;n que, dado un mes y un a&ntilde;o, calcule la cantidad de d&iacute;as de dicho mes. El a&ntilde;o se utilizar&aacute; 
+							en el caso de que el mes sea febrero ya que los a&ntilde;os bisiestos tienen 29 d&iacute;as en lugar de 28. 
+							Un a&ntilde;o es bisiesto cuando: (el a&ntilde;o es divisible por 4 y NO por 100) o (el a&ntilde;o es divisible por 400).</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 6.9</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Realizar una funci&oacute;n que reciba 3 n&uacute;meros enteros correspondientes al d&iacute;a, mes y a&ntilde;o de una fecha y valide si la misma es correcta. 
+							En caso de que la fecha es correcta debe retornar un 1 y si es incorrecta debe retornar un 0. Para la validaci&oacute;n 
+							usar la funci&oacute;n del punto 8 que retorna la cantidad de d&iacute;as de un mes.</p>								
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 6.10</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Realizar una funci&oacute;n que permita sumar 1 d&iacute;a a una fecha v&aacute;lida mostrando la fecha resultante. 
+									Si la fecha recibida no es v&aacute;lida informarlo con un mensaje (validar utilizando la funci&oacute;n del punto 9).</p>	
+								</span>
+						</div>
+					</li>
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 6.11</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Realizar una funci&oacute;n que permita sumar n d&iacute;as a una fecha v&aacute;lida mostrando la fecha resultante. 
+									Si la fecha recibida no es v&aacute;lida informarlo con un mensaje (validar utilizando la funci&oacute;n del punto 9).</p>							
+								</span>
+						</div>
+					</li>
+					
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 6.12</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Realizar una funci&oacute;n que permita restar 1 d&iacute;a a una fecha v&aacute;lida mostrando la fecha resultante. 
+									Si la fecha recibida no es v&aacute;lida informarlo con un mensaje (validar utilizando la funci&oacute;n del punto 9).</p>																							
+								</span>
+						</div>
+					</li>
+					
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 6.13</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Realizar una funci&oacute;n que permita restar n d&iacute;as a una fecha v&aacute;lida mostrando la fecha resultante. 
+									Si la fecha recibida no es v&aacute;lida informarlo con un mensaje (validar utilizando la funci&oacute;n del punto 9).</p>	
+								</span> 
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 6.14</div>
+							<div class="collapsible-body">
+								<span>
+									<p>Realizar un programa que ingrese la fecha actual y la fecha de nacimiento de una persona y calcule su edad. Para validar las fechas utilizar la funci&oacute;n del punto 9. Para el c&aacute;lculo realizar una funci&oacute;n que reciba las dos fechas y retorne la edad de la persona.</p>	
+								</span> 
+						</div>
+					</li>
+													
+						
+						</div>					
+				</ul>         
+			</div>            
+		   </div>         		  	
+	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <script type="text/javascript" src="js/init.js"></script>
+    </main>
+	 <footer>
+          <div class="footer-copyright green lighten-1">
+            <div class="container">
+				Elementos de Programaci&oacute;n - UNLaM             
+            </div>
+          </div>
+        </footer>
+		</body>
+  </html>
+        
