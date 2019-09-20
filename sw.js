@@ -1,5 +1,5 @@
-const cachePaginas = 'epUNLaM-v33';
-const cacheFija = 'epUNLaMEstatica-v6';
+const cachePaginas = 'epUNLaM-v34';
+const cacheFija = 'epUNLaMEstatica-v7';
 
 const paginasCache = [
   'oldindex.html'
