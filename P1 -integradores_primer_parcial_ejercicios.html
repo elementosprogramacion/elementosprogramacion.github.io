@@ -1,0 +1,228 @@
+ <!DOCTYPE html>
+  <html>
+    <head>      
+	   <title>Primer Parcial<</title>
+	  <link rel="manifest" href="/manifest.json">      
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/estilos.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>	  
+    </head>
+<body>
+    <main>	
+		  <nav>
+			<div class="nav-wrapper green lighten-1">		
+		<img src="icons/logo.svg" class="logo"  />			
+			  <label class="titulo flow-text">&nbsp;Primer Parcial</label>		
+				<ul id="nav-mobile" class="right">
+					<li><a href="Primer Parcial.html"> <img src="icons/volver.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+					<li><a href="index.html"> <img src="icons/home.svg" alt="Volver al Inicio" class="iconoNav" /></a></li>								
+				</ul>
+			</div>
+		  </nav>
+		  
+		  <div class="container center">
+		  
+		    <div class="row">
+				<ul class="collapsible  z-depth-5">
+					<li>
+					  <div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" /> Ejercicio P.1.1</div>
+					  <div class="collapsible-body">
+						<span>
+							<p style="text-align: justify;">Las localidades para asistir al recital FestiRock, a desarrollarse durante cuatro d&iacute;as, puede ser adquiridas por Internet o personalmente en distintos puntos de venta. Los recitales se desarrollar&aacute;n en el Estadio &Uacute;nico de La Plata, y el costo de la entrada depende del sector de ubicaci&oacute;n. Existen cinco sectores, cuya identificaci&oacute;n y costo deben ingresarse al comenzar el programa:</p> 
+							<p>&nbsp;&bull; &nbsp;Sector (cadena de 10 caracteres) <br> &nbsp;&bull; &nbsp;Costo de la entrada (real, mayor que cero) <br> &nbsp;&bull; &nbsp;Capacidad m&aacute;xima de ubicaciones en el sector (entero, mayor a cero)</p>
+							<p>En cada solicitud de entradas, se puede vender m&aacute;s de una entrada, pero todas son del mismo sector. Por cada solicitud se ingresa:</p>
+						    <p>&nbsp;&bull; &nbsp;D&iacute;a del recital (entero, del 1 a 4) <br> &nbsp;&bull; &nbsp;Sector <br> &nbsp;&bull; &nbsp;Cantidad de localidades (entero, mayor a cero)</p> 
+							<p style="text-align: justify;">Se debe tener en cuenta que no se pueden vender m&aacute;s entradas que la capacidad m&aacute;xima del sector. La carga de solicitudes de entradas termina se ingresa un sector &ldquo;FIN&rdquo;. Como oferta especial, se promociona que, si la cantidad vendida en la solicitud es mayor a 10 y el d&iacute;a del recital es 3 o 4, se realiza un descuenta del 10% sobre el total de la solicitud. Determinar e informar:></p>
+							<p>&nbsp;a. &nbsp;Un listado indicando lo recaudado seg&uacute;n sector y d&iacute;a con el siguiente dise&ntilde;o:</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;Sector &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&iacute;a1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&iacutea2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&iacute;a3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&iacute;a4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>				
+							&nbsp;&nbsp;&nbsp;Nnnnnn&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX<br/>
+							&nbsp;&nbsp;&nbsp;Nnnnnn&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX	
+							&nbsp;&nbsp;&nbsp;Nnnnnn&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX
+							&nbsp;&nbsp;&nbsp;Nnnnnn&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXXX,XX
+								
+							<br/>							
+							</p>		
+							<p>&nbsp;b. &nbsp;Informar los sectores y d&iacute;as que tienen toda la capacidad de ubicaciones vendidas.<br> &nbsp;c. &nbsp;Indicar qu&eacute; sector o sectores vendieron menos de $ 1.500.000 en el d&iacute;a 4. <br> &nbsp;d. &nbsp;Recaudaci&oacute;n total del recital.
+						
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio P.1.2</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Se conocen los c&oacute;digos (alfanum&eacute;rico de 6 caracteres) y el precio unitario (real, mayor que cero) de 100 art&iacute;culos. Al comenzar el programa, guardar en una adecuada estructura de memoria estos datos. En un segundo lote de datos, cada vez que se actualiza el ingreso de mercader&iacute;a a stock, se tiene la siguiente informaci&oacute;n:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de Pedido (entero, de mayor que cero) <br> &nbsp;&bull; &nbsp;C&oacute;digo de art&iacute;culo <br> &nbsp;&bull; &nbsp;Cantidad comprada (entero, mayor que cero)</p>
+							<p>Esta informaci&oacute;n termina con N&uacute;mero de Pedido igual a cero. De una misma mercader&iacute;a se puede recibir m&aacute;s de un pedido. Se pide mostrar con leyendas aclaratorias:</p>
+							<p>&nbsp;a. &nbsp;Al finalizar la carga, calcular el total de stock valorizado y el total de unidades de cada art&iacute;culo.<br>  &nbsp;b. &nbsp;Informar los art&iacute;culos cuya valoraci&oacute;n total supere los $ 1.000.000. <br> &nbsp;c. &nbsp;Informar los c&oacute;digos de art&iacute;culos cuya cantidad sea menor que 100. <br> &nbsp;d. &nbsp;Informar los c&oacute;digos de los art&iacute;culos que posean la mayor cantidad (puede haber m&aacute;s de uno)  <br> &nbsp;e. &nbsp;Informar los art&iacute;culos que est&aacute;n sin stock.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio P.1.3</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Una empresa transportista tiene 30 camiones y 50 conductores. Por cada cami&oacute;n se ha preparado una planilla con lo siguiente:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de Dominio (6 caracteres) <br> &nbsp;&bull; &nbsp;Importe a cobrar por kil&oacute;metro (real, mayor a cero)</p>
+							<p>Por cada viaje realizado por un conductor se ingresa lo siguiente:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de conductor (entero, de 1 a 50) <br>&nbsp;&bull; &nbsp;Nombre del conductor (30 caracteres) <br> &nbsp;&bull; &nbsp;C&oacute;digo de Dominio del cami&oacute;n (6 caracteres) <br> &nbsp;&bull; &nbsp;Cantidad de kil&oacute;metros (real, mayor a cero) <br>&nbsp;&bull; &nbsp;Toneladas transportadas (real, mayor a cero)</p>
+							<p>Esta informaci&oacute;n no est&aacute; ordenada y termina con un n&uacute;mero de conductor igual a 100. Se pide determinar informar con t&iacute;tulos:</p>
+							<p>&nbsp;a. &nbsp;Un listado con el importe recaudado por el conductor ordenado en forma descendente por importe con el siguiente formato:</p>
+							<p class="codigo">		
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N&uacute;mero del conductor&nbsp;&nbsp;&nbsp;&nbsp;Importe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>													
+							<br/>							
+							</p>
+							<p>&nbsp;b. &nbsp;C&oacute;digo de dominio del cami&oacute;n que recorri&oacute; la mayor cantidad de kil&oacute;metros especificando la cantidad de kil&oacute;metros (puede haber m&aacute;s de uno).<br>  &nbsp;c. &nbsp;El Total de toneladas transportadas por cada cami&oacute;n.</p>
+						</span>
+					  </div>
+					</li>	
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio P.1.4</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Un canal privado de TV por cable proyectar&aacute; durante 10 semanas las pel&iacute;culas que sus asociados voten telef&oacute;nicamente, para lo cual se suministra un listado con los nombres de las 100 pel&iacute;culas (30 caracteres) y sus respectivos c&oacute;digos (entero no correlativo de 5 cifras). Reservar estos datos en memoria en una adecuada estructura de datos. Los votos se registran por pel&iacute;cula y semana obteni&eacute;ndose un segundo lote de datos, que no se encuentra ordenado. Los datos de cada uno de los votos son:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de pel&iacute;cula <br> &nbsp;&bull; &nbsp;N&uacute;mero de semana (entero de 1 a 10)</p>
+							<p style="text-align: justify;">Si el c&oacute;digo ingresado no pertenece a una de las pel&iacute;culas ofrecidas, no contabilizar ese voto e informar la leyenda &ldquo;CODIGO ERRONEO&rdquo;, junto con el c&oacute;digo ingresado. El final de la informaci&oacute;n se realiza con un n&uacute;mero de semanas negativo.</p>							
+							<p>Confeccionar un programa para determinar e informar con los t&iacute;tulos correspondiente:</p>
+							<p>&nbsp;a. &nbsp;Un listado con las pel&iacute;culas y el total de votos por semana, con el siguiente dise&ntilde;o:</p>
+							<p class="codigo">		
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&iacute;tulo de la pel&iacute;cula&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Semana1&nbsp;&nbsp;&nbsp;Semana2&nbsp;&nbsp;...&nbsp;&nbsp;Semana10 <br/>																	
+							<br/>							
+							</p>																			
+							<p>&nbsp;b. &nbsp;Una lista con los c&oacute;digos de las pel&iacute;culas que no han tenido ning&uacute;n voto en las diez semanas. <br> &nbsp;c. &nbsp;T&iacute;tulo de las pel&iacute;culas m&aacute;s votadas en cada semana, (puede haber m&aacute;s de una).</p>
+						</span>
+					  </div>
+					</li>										
+				<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio P.1.5</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Una empresa de productos alimenticios cuenta con casi 300 empleados. Mensualmente cobran un sueldo que depende de la categor&iacute;a y el valor de la hora correspondiente. Se cuenta con 15 categor&iacute;as y esta informaci&oacute;n se encuentra en un primer lote, donde cada registro tiene la siguiente forma:</p>
+							<p>&nbsp;&bull; &nbsp;Categor&iacute;a (tres letras) <br>&nbsp;&bull;&nbsp;Valor hora (real, mayor que cero)</p>
+							<p>Un segundo lote de datos con informaci&oacute;n por cada empleado con el siguiente dise&ntilde;o:</p>	
+							<p>&nbsp;&bull; &nbsp;Apellido y Nombre (50 caracteres) <br> &nbsp;&bull; &nbsp;N&uacute;mero del empleado (entero de 4 cifras no correlativo)</p>													
+							<p>A continuaci&oacute;n, se ingresa cada d&iacute;a trabajado por cada empleado:</p>	
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero del empleado (entero de 4 cifras no correlativo) <br> &nbsp;&bull; &nbsp;Categor&iacute;a (tres letras) <br> &nbsp;&bull; &nbsp;N&uacute;mero del mes (entero, de 1 a 12) <br> &nbsp;&bull; &nbsp;Cantidad de horas trabajadas (entero, mayor o igual a cero)</p>
+							<p>Esta &uacute;ltima informaci&oacute;n viene desordenada y termina con n&uacute;mero del mes igual a 13. Determinar e informar con t&iacute;tulos aclaratorios:</p>
+							<p>&nbsp;a. &nbsp;Listado por empleado y lo cobrado en cada mes con el siguiente dise&ntilde;o:</p>
+							<p class="codigo">		
+							&nbsp;&nbsp;&nbsp;&nbsp;Apellido y Nombre del Empleado&nbsp;&nbsp;&nbsp;&nbsp;Mes1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mes2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mes12 <br/>																	
+							<br/>							
+							</p>													
+							<p>&nbsp;b. &nbsp;El Total pagado en sueldos por cada categor&iacute;a <br> &nbsp;c. &nbsp;El Total ANUAL trabajado en cantidad de horas e importe cobrado por cada empleado ordenado en forma decreciente por dicho importe cobrado indicando:</p>
+							<p class="codigo">		
+							&nbsp;&nbsp;&nbsp;&nbsp;Apellido y Nombre&nbsp;&nbsp;&nbsp;&nbsp;Nro. del empleado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total Horas Trabajadas&nbsp;&nbsp;&nbsp;&nbsp;Total Importe Cobrado&nbsp;&nbsp; <br/>																	
+							<br/>							
+							</p>
+							<p></p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio P.1.6</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p>Una empresa necesita un informe sobre las ventas. Dispone de la siguiente informaci&oacute;n sobre cada una de las mismas:</p>
+							<p>&nbsp;&bull; &nbsp;Fecha venta (d&iacute;a, mes, a&ntilde;o, enteros)<br> &nbsp;&bull; &nbsp;N&uacute;mero de vendedor (entero, de 1 a 35) <br> &nbsp;&bull; &nbsp;C&oacute;digo de cliente (cadena de caracteres) <br> &nbsp;&bull; &nbsp;Importe (real, mayor que cero)</p>	
+							<p>La informaci&oacute;n no est&aacute; ordenada, los datos se ingresan por teclado y finalizan con N&uacute;mero de Vendedor igual a 0. Confeccionar un programa que realice las siguientes actividades:</p>
+							<p>&nbsp;a. &nbsp;Ingresar y validad la fecha de proceso. <br> &nbsp;b. &nbsp;Efectuar un adecuado control de los datos que se ingresan (n&uacute;mero de Vendedor entre 1 y 35, Importe &gt; 0, y Fecha de Venta v&aacute;lida y correspondiente al a&ntilde;o de proceso). <br> &nbsp;c. &nbsp;Informar la cantidad de ventas por cada vendedor, con el siguiente formato:</p>
+							<p class="codigo">		
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ventas del Vendedor al X/XX/X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp <br/>																	
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendedor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp <br/>
+							<br/>							
+							</p>					
+							<p>&nbsp;d. &nbsp;Informar el importe total de ventas.<br> &nbsp;e. &nbsp;Informar cu&aacute;l es el c&oacute;digo de clientes que realiz&oacute; la compra m&aacute;s grande (en importe, el &uacute;ltimo cliente, si fueran varios los que hicieron la compra m&aacute;xima) <br>&nbsp;f. &nbsp;Informar el porcentaje de vendedores que no vendieron nada sobre el total de vendedores.</p>
+							<p></p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio P.1.7</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">Una empresa de alquiler de m&aacute;quinas expendedoras de bebidas calientes en distintos organismos p&uacute;blicos, cada d&iacute;a recibe un listado en el cual est&aacute;n guardados todas las ventas de bebidas realizadas el d&iacute;a anterior en todos los organismos. Se desea conocer informaci&oacute;n de alguno de estos organismos, previamente ingresado por el usuario desde el teclado. Se pide dise&ntilde;ar un diagrama que realice las siguientes actividades:</p>
+							<p>&nbsp;&bull; &nbsp;Ingrese al comenzar el programa los c&oacute;digos y descripciones de las 12 bebidas que se venden habitualmente y su precio, con el siguiente formato:</p>
+							<p>&nbsp;&nbsp;&nbsp;i. &nbsp;C&oacute;digo de la bebida (alfanum&eacute;rico, de 3 posiciones)<br> &nbsp;&nbsp;&nbsp;ii. &nbsp;Descripci&oacute;n de la bebida (alfanum&eacute;rico de 15 posiciones) <br> &nbsp;&nbsp;&nbsp;iii. &nbsp;Precio unitario de la bebida (real, mayor que cero)</p>
+							<p>&nbsp;&bull; &nbsp;A continuaci&oacute;n, ingresar la fecha de procesamiento.<br> &nbsp;&bull; &nbsp;Pedir el ingreso del nombre del organismo p&uacute;blico a procesar.</p>
+							<p style="text-align: justify;">Ingresar el listado de ventas correspondiente a la fecha ingresado por teclado procesando solamente aquellos datos en que el nombre del organismo p&uacute;blico coincida con el nombre de organismo p&uacute;blico ingresado al principio de programa, con el siguiente formato (los datos vienen sin orden alguno):</p>
+							<p>&nbsp;&nbsp;&nbsp;i. &nbsp;Nombre del organismo p&uacute;blico (alfanum&eacute;rico, de 25 caracteres) br>&nbsp;&nbsp;&nbsp;ii. &nbsp;N&uacute;mero de la m&aacute;quina (entero de 1 a 50) <br> &nbsp;&nbsp;&nbsp;iii.&nbsp;C&oacute;digo de bebida vendida (alfanum&eacute;rico, de 3 caracteres)</p>
+							<p style="text-align: justify;">Esta informaci&oacute;n termina cuando se ingresa un n&uacute;mero de m&aacute;quina negativo. Determinar e informar con mensajes aclaratorios:</p>
+							<p>&nbsp;a. &nbsp;La descripci&oacute;n de la bebida que recaud&oacute; m&aacute;s dinero en dicho organismo, en total en todas las m&aacute;quinas.<br> &nbsp;b. &nbsp;Indicar cu&aacute;ntas m&aacute;quinas estuvieron inactivas durante el d&iacute;a analizado en dicho organismo, con el siguiente t&iacute;tulo:</p>
+							<p class="codigo">		
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&aacute;quinas Inactivas el d&iacute;a XX/XX/XXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>																	
+							<br/>							
+							</p>	
+							<p>&nbsp;c. &nbsp;Informar cu&aacute;nto dinero se recaud&oacute; en total de todas las ventas del organismo analizado.</p>
+						</span>
+					  </div>
+					</li>
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio P.1.8</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">La empresa Siemons se dedica a la importaci&oacute;n de componentes electr&oacute;nico, importa como m&aacute;ximo 650 distintos componentes para el desarrollo de tecnolog&iacute;as. Desea controla el stock de &eacute;stos y para ellos cuenta con los siguientes datos de cada uno:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de Art&iacute;culos (entero mayor a cero).br> &nbsp;&bull; &nbsp;Descripci&oacute;n del Art&iacute;culo (alfanum&eacute;rico, de 20 caracteres). <br> &nbsp;&bull; &nbsp;Cantidad de unidades en stock (entero, mayor o igual a cero) <br> &nbsp;&bull; &nbsp;Precio unitario (real, mayor a cero)</p>
+							<p>Por otro lado, se tienen los datos de los art&iacute;culos comprados y vendidos durante el &uacute;ltimo mes (estos datos se ingresan por teclado y finalizan cuando se ingresa un cero en cada d&iacute;a de venta):</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de vendedor (entero, de 1 a 10) <br> &nbsp;&bull; &nbsp;C&oacute;digo de art&iacute;culo <br> &nbsp;&bull; &nbsp;C&oacute;digo de operaci&oacute;n (car&aacute;cter &acute;C&acute;: compra - &acute;V&acute;: venta) <br> &nbsp;&bull; &nbsp;Cantidad de unidades compradas/vendidas (entero, mayor a cero)</p>
+							<p>Determinar en informar:</p>
+							<p>&nbsp;a. &nbsp;El saldo de unidades de cada componente que queda en stock al finalizar el proceso. <br> &nbsp;b. &nbsp;Informar el importe vendido por cada uno de los vendedores de cada componente.<br> &nbsp;c. &nbsp;Informar el componente del que se ha vendido mendos unidades (puede haber m&aacute;s de uno)</p>
+							<p><u>NOTA:</u> No se puede vender componentes que no hay en existencia, si sucede esta situaci&oacute;n, se debe informar al usuario con la leyenda &ldquo;Componente en falta&rdquo; y desechar la operaci&oacute;n.</p>	
+						</span>
+					  </div>
+					</li>	
+					
+					<li>
+					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio P.1.9</div>
+					  <div class="collapsible-body">
+					    <span>
+							<p style="text-align: justify;">La empresa de turismo CIVITATIS desea analizar las ventas de los 80 paquetes tur&iacute;sticos que comercializa, efectuadas durante el periodo de vacaciones. Para ello, en un primer lote de datos, por cada paquete tur&iacute;stico, se ingresa:</p>
+							<p>&nbsp;&bull; &nbsp;C&oacute;digo de paquete tur&iacute;stico (n&uacute;meros no consecutivos de 4 cifras).<br> &nbsp;&bull; &nbsp;Nombre del paquete tur&iacute;stico (30 caracteres) <br> &nbsp;&bull; &nbsp;Precio unitario (real, mayor a cero)</p>
+							<p>A continuaci&oacute;n, ingresar la fecha del d&iacute;a del proceso (d&iacute;a, mes, a&ntilde;o). Luego procesar los datos de las ventas del per&iacute;odo, que se ingresan por teclado, con el siguiente detalle:</p>
+							<p>&nbsp;&bull; &nbsp;N&uacute;mero de cliente (entero, no correlativo) <br>&nbsp;&bull; &nbsp;C&oacute;digo de paquete tur&iacute;stico <br>&nbsp;&bull; &nbsp;Cantidad vendida (entero, mayor a cero)</p>
+							<p>Estos datos no se ingresan ordenados y la lectura debe detenerse cuando se ingrese un n&uacute;mero de cliente igual a cero.</p>
+							<p>&nbsp;a. &nbsp;Acumular la cantidad vendida por cada paquete tur&iacute;stico. Si se ingresa un c&oacute;digo de paquete tur&iacute;stico err&oacute;neo, rechazar la venta (los 3 datos) con una leyenda aclaratoria. <br> &nbsp;b. &nbsp;Al finalizar el proceso informar las cantidades e importes vendidos de cada paquete tur&iacute;stico con el siguiente dise&ntilde;o:</p>
+							<p class="codigo">		
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&oacute;digo de paquete tur&iacute;stico&nbsp;&nbsp;&nbsp;&nbsp;Nombre del paquete tur&iacute;stico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cantidad Vendida&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Impote Vendido&nbsp;&nbsp;&nbsp;&nbsp; <br/>				
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23745&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grecia cl&aacute;sica&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;132&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;545.300&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;48795&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ciudades Imperiales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;48&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.260.300&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;57324&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sicilia Dorada&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;59&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.880.000&nbsp; <br/>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.....&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;......&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp; <br/>
+							
+							<br/>							
+							</p>									
+													
+							<p></p>
+						</span>
+					  </div>
+					</li>									
+				
+					
+					
+					</li>
+						</div>					
+				</ul>         
+			</div>            
+		   </div>         		  	
+	  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <script type="text/javascript" src="js/init.js"></script>
+    </main>
+	 <footer>
+          <div class="footer-copyright green lighten-1">
+            <div class="container">
+				Elementos de Programaci&oacute;n - UNLaM             
+            </div>
+          </div>
+        </footer>
+		</body>
+  </html>
+        
