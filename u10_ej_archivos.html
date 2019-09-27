@@ -11,7 +11,7 @@
     <main>	
 		  <nav>
 			<div class="nav-wrapper green lighten-1">		
-		<img src="icons/logo.svg" class="logo"  />			
+		<a href="index.html">	<img src="icons/logo.svg" class="logo"  /></a>
 			  <label class="titulo flow-text">U10 - Archivos</label>		
 				<ul id="nav-mobile" class="right">
 					<li><a href="u10_archivos.html"> <img src="icons/volver.svg" alt="Volver" class="iconoNav" /></a></li>								
@@ -54,7 +54,10 @@
 							<p>La empresa trabaja con a lo sumo 100 productos que est&aacute;n guardados en el archivo productos.dat con la siguiente estructura:</p>
 							<p>&nbsp;&bull; &nbsp;C&oacute;digo (entero) <br> &nbsp;&bull; &nbsp;Precio (float) <br> &nbsp;&bull; &nbsp;Descripci&oacute;n (de hasta 50 caracteres)</p>
 							<p>Para modificar un precio se ingresa por teclado el c&oacute;digo del producto y el nuevo precio. La modificaci&oacute;n de precios finaliza con un c&oacute;digo de producto igual a 0.</p>
-							<p>Al finalizar actualizar el archivo de productos con los nuevos precios.</p>
+							<p>Al finalizar:<br/>
+								a. Actualizar el archivo de productos con los nuevos precios</br>
+								b. Exportar a un archivo con formato de texto (.csv) para que la lista de precios pueda ser visualizada directamente utilizando un programa de planillas de c&aacute;lculo como por ejemplo el Excel.
+							</p>
 						</span>
 					  </div>
 					</li>	
@@ -91,7 +94,7 @@
 					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.6</div>
 					  <div class="collapsible-body">
 					    <span>
-							<p>Realizar un programa que tome el archivo Faltantes.dat del ejercicio anterior y unifique las cantidades sumari&aacute;ndolas por art&iacute;culo (la empresa trabaja con 10 art&iacute;culos en total, pero no todos pueden estar en falta).  <br> Grabar un nuevo archivo llamado Pedido.dat que contenga los registros por art&iacute;culo conteniendo:</p>
+							<p>Realizar un programa que tome el archivo Faltantes.dat del ejercicio anterior y unifique las cantidades sumari&aacute;ndolas por art&iacute;culo (la empresa trabaja con 10 art&iacute;culos en total, pero no todos pueden estar en falta).  <br> Generar una planilla Excel para enviar al proveedor con el pedido a realizar. Para ello se debe crear un nuevo archivo llamado pedido.csv que contenga los registros por art&iacute;culo conteniendo:</p>
 							<p>	<p>&nbsp;&bull; &nbsp;C&oacute;digo de art&iacute;culo (entero) <br> &nbsp;&bull; &nbsp;Cantidad (entero)</p>	
 						</span>
 					  </div>
@@ -105,7 +108,7 @@
 							<p>&nbsp;&bull; &nbsp;C&oacute;digo Aerol&iacute;nea (alfanum&eacute;rico de 10 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;D&iacute;a (entero) &nbsp;&bull; &nbsp;N&uacute;mero de Vuelo (entero) <br> &nbsp;&bull; &nbsp;Costo del pasaje (real) <br> &nbsp;&bull; &nbsp;Pasajeros (inicialmente en el archivo viene en 0)</p>
 							<p style="text-align: justify;">El mes tiene 30 d&iacute;as y se sabe que como m&aacute;ximo cada aerol&iacute;nea realiza 5 vuelos diarios. Luego se dispone de un segundo archivo llamado Pasajeros.dat que incluye la informaci&oacute;n de los viajeros del mes para la aerol&iacute;nea con c&oacute;digo &ldquo;Aero1&rdquo;, el archivo contiene los siguientes campos:</p>
 							<p>&nbsp;&bull; &nbsp;DNI (entero) <br> &nbsp;&bull; &nbsp;N&uacute;mero de Vuelo (entero)</p>
-							<p style="text-align: justify;"> Se desea realizar un programa que actualice la cantidad de pasajeros de la aerol&iacute;nea con c&oacute;digo &ldquo;Aero1&rdquo; con la informaci&oacute;n de los pasajeros que realizar los viajes. Al finalizar, grabar la informaci&oacute;n en un nuevo archivo llamado Aero1.dat.</p>
+							<p style="text-align: justify;"> Se desea realizar un programa que actualice la cantidad de pasajeros de la aerol&iacute;nea con c&oacute;digo &ldquo;Aero1&rdquo; con la informaci&oacute;n de los pasajeros que realizar los viajes. Al finalizar, grabar la informaci&oacute;n en un nuevo archivo llamado Aero1.dat. Agregar la opción para exportar el archivo Aero1 a formato csv</p>
 						</span>
 					  </div>
 					</li>
