@@ -1,34 +1,42 @@
-const cachePaginas = 'epUNLaM-v38';
-const cacheFija = 'epUNLaMEstatica-v10';
+const cacheActual = 'epUNLaM-v1';
 
-const paginasCache = [
+
+const paginasModificadas = [
   'oldindex.html'
 ];
 
-const recursosEstaticos = [
+const recursosACopiar = [
   'css/materialize.min.css',
-  'js/materialize.min.js' 
-  
+  'js/materialize.min.js'   
 ];
 
-self.addEventListener('install', function(event) 
-{
-  event.waitUntil
-  (
-    caches.open(cachePaginas).then(function(cache) 
-       {
-        return cache.addAll(paginasCache);
-       })
-  );
-  
-  event.waitUntil
-  (
-    caches.open(cacheFija).then(function(cache) 
-       {
-        return cache.addAll(recursosEstaticos);
-       })
+
+
+self.addEventListener("install", function(event) {
+  event.waitUntil(
+    caches.open(cacheActual).then(function(cache) {
+      var newImmutableRequests = [];
+      return Promise.all(
+        recursosACopiar.map(function(url) {
+          return caches.match(url).then(function(response) {
+            if (response) {
+              return cache.put(url, response);
+            } else {
+              newImmutableRequests.push(url);
+              return Promise.resolve();
+            }
+          });
+        })
+      ).then(function() {
+        return cache.addAll(newImmutableRequests.concat(paginasModificadas));
+      });
+    })
   );
 });
+
+
+
+
 
 self.addEventListener('fetch', function (event) {
   event.respondWith(
@@ -47,7 +55,7 @@ self.addEventListener("activate", function(event) {
     caches.keys().then(function(cacheNames) {
       return Promise.all(
         cacheNames.map(function(cacheVieja) {
-          if (cacheVieja !== cachePaginas && cacheVieja !== cacheFija) 	  //&& cacheVieja.startsWith("epUNLaM")) {
+          if (cacheVieja !== cacheActual) 	  //&& cacheVieja.startsWith("epUNLaM")) {
 		  {		
             return caches.delete(cacheVieja);
           }
@@ -57,3 +65,57 @@ self.addEventListener("activate", function(event) {
   );
   return self.clients.claim(); //fuerza que todos los clientes se actualicen
 });
+
+
+
+/*
+
+var immutableRequests = [
+  "/fancy_header_background.mp4",
+  "/vendor/bootstrap/3.3.7/bootstrap.min.css",
+  "/css/style-v355.css"
+];
+var mutableRequests = [
+  "app-settings.json",
+  "index.html"
+];
+
+
+
+self.addEventListener('install', function(event) 
+{
+  event.waitUntil
+  (
+    caches.open(cachePaginas).then(function(cache) 
+       {
+        return cache.addAll(paginasCache);
+       })
+  );
+  
+
+});
+
+
+self.addEventListener("install", function(event) {
+  event.waitUntil(
+    caches.open("cache-v2").then(function(cache) {
+      var newImmutableRequests = [];
+      return Promise.all(
+        immutableRequests.map(function(url) {
+          return caches.match(url).then(function(response) {
+            if (response) {
+              return cache.put(url, response);
+            } else {
+              newImmutableRequests.push(url);
+              return Promise.resolve();
+            }
+          });
+        })
+      ).then(function() {
+        return cache.addAll(newImmutableRequests.concat(mutableRequests));
+      });
+    })
+  );
+});
+
+*/
