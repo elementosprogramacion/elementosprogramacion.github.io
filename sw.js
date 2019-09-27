@@ -1,4 +1,4 @@
-const cacheActual = 'epUNLaM-v1';
+const cacheActual = 'epUNLaM-v2';
 
 
 const paginasModificadas = [
@@ -7,7 +7,27 @@ const paginasModificadas = [
 
 const recursosACopiar = [
   'css/materialize.min.css',
-  'js/materialize.min.js'   
+  'js/materialize.min.js',
+  'icons/apoyo.svg',
+  'icons/catedra.svg',
+  'icons/consultas.svg',
+  'icons/ejercicios.svg',
+  'icons/expandir.svg',
+  'icons/herramientas.svg',
+  'icons/home.svg',
+  'icons/icon192.png',
+  'icons/icon512.png',
+  'icons/linkweb.svg',
+  'icons/list.svg',
+  'icons/logo.svg',
+  'icons/pdf.svg',
+  'icons/programados.svg',
+  'icons/ProgramadosApaisado.svg',
+  'icons/seleccionar.svg',
+  'icons/teoricos.svg',
+  'icons/unidades.svg',
+  'icons/videos.svg',
+  'icons/volver.svg'  
 ];
 
 
