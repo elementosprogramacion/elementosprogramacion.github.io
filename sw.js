@@ -1,4 +1,4 @@
-const cacheActual = 'epUNLaM-v5';
+const cacheActual = 'epUNLaM-v6';
 
 
 const paginasModificadas = [
@@ -29,6 +29,7 @@ const recursosACopiar = [
   'icons/unidades.svg',
   'icons/videos.svg',
   'icons/volver.svg',
+  'icons/menu.svg',
   'favicon.ico'  
 ];
 
