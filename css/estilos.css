@@ -69,6 +69,17 @@
 	margin-top: 1.2rem;
 }
 
+.iconoSideNav
+{
+	width: 1.3rem;	
+}
+
+.iconoSideNavSubMenu
+{
+	width: 2rem;	
+}
+
+
 .IconoMenu
 {
 	width: 1.3rem;
@@ -98,5 +109,9 @@
 	
 }
 
+.linkSubMenu
+{
+	color:black;
+}
 
 
