@@ -65,8 +65,8 @@
 
 .iconoNav
 {
-	width: 1.8rem;
-	margin-top: 1.2rem;
+	height: 1.8rem;
+	margin-top: 1rem;
 }
 
 .iconoSideNav
@@ -119,6 +119,27 @@
 	text-align:left;
 }
 
+.contenedor
+{
+	display: flex;
+    justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	
+}
+
+.columna
+{
+	  text-align: center;
+	  width: 50%;
+	  flex-grow:1;
+}
 
 
-
+@media only screen and (min-width: 40rem) 
+{
+	.columna
+	{		  
+		  width: 33%;
+	}	
+}
