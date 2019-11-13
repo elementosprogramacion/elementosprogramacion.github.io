@@ -111,7 +111,7 @@
 					  <div class="collapsible-body">
 					    <span>
 							<p>Se desea realizar un programa que permita actualizar la lista de precios de una empresa en forma individual a cada uno de sus productos.</p>
-							<p>La empresa trabaja con a lo sumo 100 productos que est&aacute;n guardados en el archivo productos.dat con la siguiente estructura:</p>
+							<p>La empresa trabaja con a lo sumo 100 productos que est&aacute;n guardados en el archivo <a href="archivos/10.3/PRODUCTOS.dat">PRODUCTOS.dat</a> con la siguiente estructura:</p>
 							<p>&nbsp;&bull; &nbsp;C&oacute;digo (entero) <br> &nbsp;&bull; &nbsp;Precio (float) <br> &nbsp;&bull; &nbsp;Descripci&oacute;n (de hasta 50 caracteres)</p>
 							<p>Para modificar un precio se ingresa por teclado el c&oacute;digo del producto y el nuevo precio. La modificaci&oacute;n de precios finaliza con un c&oacute;digo de producto igual a 0.</p>
 							<p>Al finalizar:<br/>
@@ -126,7 +126,7 @@
 					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.4</div>
 					  <div class="collapsible-body">
 					    <span>
-							<p>Realizar un programa que permite actualizar una lista de precios en forma masiva, ingresando un porcentaje de incremento. El archivo original se llama precios.dat y fue generado utilizando la siguiente estructura:</p>
+							<p>Realizar un programa que permite actualizar una lista de precios en forma masiva, ingresando un porcentaje de incremento. El archivo original se llama <a href="archivos/10.4/PRECIOS.dat">PRECIOS.dat</a> y fue generado utilizando la siguiente estructura:</p>
 							<p>&nbsp;&bull; &nbsp;C&oacute;digo (entero) <br> &nbsp;&bull; &nbsp;Precio (float) <br> &nbsp;&bull; &nbsp;Descripci&oacute;n (de hasta 50 caracteres)</p>
 							<p>No se sabe la cantidad de registros del archivo. <br> Se solicita generar un nuevo archivo llamado Precios_actualizados.dat</p>							
 						</span>
@@ -137,10 +137,11 @@
 					  <div class="collapsible-body">
 					    <span>
 							<p></p>
-							<p>Se dispone de un archivo llamado Stock.dat que contiene la informaci&oacute;n de los 10 productos que vende una f&aacute;brica. En el archivo se guarda:</p>
+							<p>Se dispone de un archivo llamado <a href="archivos/10.5/STOCK.dat">Stock.dat</a> que contiene la informaci&oacute;n de los 10 productos que vende una f&aacute;brica. En el archivo se guarda:</p>
 							<p>&nbsp;&bull; &nbsp;C&oacute;digo de art&iacute;culo (entero) <br> &nbsp;&bull; &nbsp;Descripci&oacute;n (50 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;Stock (entero)</p>	
 							<p>Luego se ingresan por teclado las ventas a realizar indicando:</p>													
 							<p>&nbsp;&bull; &nbsp;C&oacute;digo de art&iacute;culo <br> &nbsp;&bull; &nbsp;Cantidad</p>	
+							<p>La carga por teclado de las ventas finaliza con un c&oacute;digo de art&iacute;culo igual a 0.								</p>
 							<p style="text-align: justify;">Por cada venta se debe controlar si hay stock suficiente y si lo hay, restar el stock de dicho producto, 
 							sino hay stock se debe vender lo que quede disponible y grabar un registro en un archivo Faltantes.dat con la cantidad que no pudo venderse, 
 							dicho registro debe contener:</p>
@@ -164,9 +165,9 @@
 					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.7</div>
 					  <div class="collapsible-body">
 					    <span>
-							<p style="text-align: justify;">Se dispone de un archivo que contiene informaci&oacute;n de los vuelos realizados por las distintas aerol&iacute;neas a lo largo del mes. El archivo se denomina Vuelos.dat y guarda los registros con la siguiente estructura:</p>
+							<p style="text-align: justify;">Se dispone de un archivo que contiene informaci&oacute;n de los vuelos realizados por las distintas aerol&iacute;neas a lo largo del mes. El archivo se denomina <a href="archivos/10.7/VUELOS.dat">Vuelos.dat</a> y guarda los registros con la siguiente estructura:</p>
 							<p>&nbsp;&bull; &nbsp;C&oacute;digo Aerol&iacute;nea (alfanum&eacute;rico de 10 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;D&iacute;a (entero) &nbsp;&bull; &nbsp;N&uacute;mero de Vuelo (entero) <br> &nbsp;&bull; &nbsp;Costo del pasaje (real) <br> &nbsp;&bull; &nbsp;Pasajeros (inicialmente en el archivo viene en 0)</p>
-							<p style="text-align: justify;">El mes tiene 30 d&iacute;as y se sabe que como m&aacute;ximo cada aerol&iacute;nea realiza 5 vuelos diarios. Luego se dispone de un segundo archivo llamado Pasajeros.dat que incluye la informaci&oacute;n de los viajeros del mes para la aerol&iacute;nea con c&oacute;digo &ldquo;Aero1&rdquo;, el archivo contiene los siguientes campos:</p>
+							<p style="text-align: justify;">El mes tiene 30 d&iacute;as y se sabe que como m&aacute;ximo cada aerol&iacute;nea realiza 5 vuelos diarios. Luego se dispone de un segundo archivo llamado <a href="archivos/10.7/PASAJEROS.dat">Pasajeros.dat</a> que incluye la informaci&oacute;n de los viajeros del mes para la aerol&iacute;nea con c&oacute;digo &ldquo;Aero1&rdquo;, el archivo contiene los siguientes campos:</p>
 							<p>&nbsp;&bull; &nbsp;DNI (entero) <br> &nbsp;&bull; &nbsp;N&uacute;mero de Vuelo (entero)</p>
 							<p style="text-align: justify;"> Se desea realizar un programa que actualice la cantidad de pasajeros de la aerol&iacute;nea con c&oacute;digo &ldquo;Aero1&rdquo; con la informaci&oacute;n de los pasajeros que realizar los viajes. Al finalizar, grabar la informaci&oacute;n en un nuevo archivo llamado Aero1.dat. Agregar la opción para exportar el archivo Aero1 a formato csv</p>
 						</span>
@@ -177,7 +178,7 @@
 					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.8</div>
 					  <div class="collapsible-body">
 					    <span>
-							<p style="text-align: justify;">Se dispone de un archivo denominado INSCRIPTOS.dat que contiene la informaci&oacute;n de los inscriptos a un curso de programaci&oacute;n. El curso tiene una capacidad m&aacute;xima para 60 personas. El archivo a&uacute;n no est&aacute; completo ya que la inscripci&oacute;n se realiza por partes. Por cada inscripto se tiene la siguiente informaci&oacute;n:</p>
+							<p style="text-align: justify;">Se dispone de un archivo denominado <a href="archivos/10.8/INSCRIPTOS.dat">INSCRIPTOS.dat</a> que contiene la informaci&oacute;n de los inscriptos a un curso de programaci&oacute;n. El curso tiene una capacidad m&aacute;xima para 60 personas. El archivo a&uacute;n no est&aacute; completo ya que la inscripci&oacute;n se realiza por partes. Por cada inscripto se tiene la siguiente informaci&oacute;n:</p>
 							<p>&nbsp;&bull; &nbsp;DNI (entero) <br> &nbsp;&bull; &nbsp;Apellido y Nombres (texto de 20 caracteres m&aacute;ximo) <br> &nbsp;&bull; &nbsp;Pagado (campo entero donde 1 indica que pag&oacute; y 0 que a&uacute;n adeuda la matr&iacute;cula)</p>
 							<p>Se desea realizar un programa que cumpla con dos funciones:</p>
 							<p>&nbsp;a. &nbsp;Registrar los pagos de los alumnos ya inscriptos <br> &nbsp;b. &nbsp;Si hay cupo, agregar nuevos inscriptos</p>
@@ -378,9 +379,9 @@
 					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.16</div>
 					  <div class="collapsible-body">
 					    <span>
-							<p>Se dispone de un archivo ventas.dat con el siguiente formato:</p>
+							<p>Se dispone de un archivo <a href="archivos/10.16/VENTAS.dat">VENTAS.dat</a> con el siguiente formato:</p>
 							<p>&nbsp;&bull; &nbsp;C&oacute;digo de producto (alfanum&eacute;rico 10 caracteres) <br> &nbsp;&bull; &nbsp;C&oacute;digo de vendedor (entero 1 a 5) <br>&nbsp;&bull; &nbsp;Cantidad (entero).</p>
-							<p>El archivo puede contener m&aacute;s de una venta para el mismo producto/vendedor. Luego se dispone de un segundo archivo llamado productos.dat que contiene:</p>
+							<p>El archivo puede contener m&aacute;s de una venta para el mismo producto/vendedor. Luego se dispone de un segundo archivo llamado <a href="archivos/10.16/PRODUCTOS.dat">PRODUCTOS.dat</a> que contiene:</p>
 							<p>&nbsp;&bull; &nbsp;C&oacute;digo de producto (alfanum&eacute;rico 10 caracteres) <br> &nbsp;&bull; &nbsp;Precio de venta (float)</p>
 							<p>Como m&aacute;ximo hay 15 productos.</p>
 							<p>&nbsp;a. &nbsp;Se desea mostrar la cantidad de ventas realizada por cada vendedor de cada producto (utilizar una matriz).</p>
@@ -402,9 +403,9 @@
 					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.17</div>
 					  <div class="collapsible-body">
 					    <span>
-							<p>El archivo temperaturas.dat contiene informaci&oacute;n de las temperaturas registradas en 5 localidades a lo largo del primer trimestre del a&ntilde;o con la siguiente estructura:</p>
+							<p>El archivo <a href="archivos/10.17/TEMPERATURAS.dat">TEMPERATURAS.dat</a> contiene informaci&oacute;n de las temperaturas registradas en 5 localidades a lo largo del primer trimestre del a&ntilde;o con la siguiente estructura:</p>
 							<p>&nbsp;&bull; &nbsp;C&oacute;digo Localidad (alfanum&eacute;rico 10 caracteres) <br> &nbsp;&bull; &nbsp;Mes (entero 1 a 12) <br> &nbsp;&bull;&nbsp;Temperatura (float)</p>
-							<p style="text-align: justify;">Por cada localidad pueden existir varias mediciones para un mismo mes, pero no se sabe la cantidad. Adem&aacute;s, se dispone de un segundo archivo llamado localidades.dat que contiene 5 registros con la informaci&oacute;n de las localidades:</p>
+							<p style="text-align: justify;">Por cada localidad pueden existir varias mediciones para un mismo mes, pero no se sabe la cantidad. Adem&aacute;s, se dispone de un segundo archivo llamado <a href="archivos/10.17/LOCALIDADES.dat">LOCALIDADES.dat</a> que contiene 5 registros con la informaci&oacute;n de las localidades:</p>
 							<p>&nbsp;&bull; &nbsp;C&oacute;digo Localidad (alfanum&eacute;rico 10 caracteres) <br> &nbsp;&bull; &nbsp;Descripci&oacute;n</p>
 							<p>Se desea realizar un programa que basado en la informaci&oacute;n del archivo temperaturas.dat:</p>
 							<p style="text-align: justify;">&nbsp;a. &nbsp;Genere un listado de temperaturas promedio en cada localidad en cada mes con el siguiente formato (para ello usar una matriz), es posible que para una localidad mes no se tengan lecturas de temperaturas por lo tanto deber&aacute; mostrarse con un signo de interrogaci&oacute;n.</p>
@@ -466,9 +467,9 @@
 							<p>&nbsp;&bull; &nbsp;C&oacute;digo de Localidad (entero, Mayor que 0, no consecutivo) <br> &nbsp;&bull; &nbsp;C&oacute;digo de Provincia (entero, de 1 a 24) <br> &nbsp;&bull; &nbsp;C&oacute;digo de Zona Geogr&aacute;fica (entero, de 1 a 9)</p>
 							<p>Tambi&eacute;n se cuenta con el archivo ENCOM, con los datos de las encomiendas despachadas que posee los siguientes campos:</p>
 						    <p>&nbsp;&bull; &nbsp;C&oacute;digo de Localidad (entero, Mayor que 0, no consecutivo) <br> &nbsp;&bull; &nbsp;Peso de la Encomienda en kg. (real, Mayor que 0)</p>
-							<p>Si un c&oacute;digo de Localidad del archivo ENCOM no se encuentra ene l archivo GEOGR, debe guardarse el registro en un archivo llamado ERROR.</p>
+							<p>Si un c&oacute;digo de Localidad del archivo ENCOM no se encuentra en  el archivo GEOGR, debe guardarse el registro en un archivo llamado ERROR.</p>
 							<p>Se solicita confeccionar un programa que determine e informe:</p>
-							<p>&nbsp;a. &nbsp;Los c&oacute;digos de las localidades que se encuentran dentro de la zona que ha recibido la menor cantidad de encomiendas. <br> &nbsp;b. &nbsp;La distribuci&oacute;n del toral de kilos de encomiendas por zona de acuerdo al siguiente formato:</p>
+							<p>&nbsp;a. &nbsp;Los c&oacute;digos de las localidades que se encuentran dentro de la zona que ha recibido la menor cantidad de encomiendas. <br> &nbsp;b. &nbsp;La distribuci&oacute;n del total de kilos de encomiendas por zona de acuerdo al siguiente formato:</p>
 							<p class="codigo">		
 							
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ZONA&nbsp;&nbsp;&nbsp;&nbsp;TOTAL DE KILOS <br/>
