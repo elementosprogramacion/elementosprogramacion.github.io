@@ -1,4 +1,4 @@
-const cacheActual = 'epUNLaM-v9';
+const cacheActual = 'epUNLaM-v10';
 
 
 const paginasModificadas = [
@@ -79,7 +79,7 @@ self.addEventListener("activate", function(event) {
     caches.keys().then(function(cacheNames) {
       return Promise.all(
         cacheNames.map(function(cacheVieja) {
-          if (cacheVieja !== cacheActual) 	  //&& cacheVieja.startsWith("epUNLaM")) {
+          if (cacheVieja !== cacheActual) 	  
 		  {		
             return caches.delete(cacheVieja);
           }

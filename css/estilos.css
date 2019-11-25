@@ -27,7 +27,19 @@
 {
 	width: 7rem;
 	padding-top: 2rem;
+	animation-duration: 1s;
+  	animation-name: crecer;
 } 
+@keyframes crecer {
+	from {	  
+	  width: 3em;
+	}
+  
+	to {
+	  
+	  width: 7em;
+	}
+  }
 
 .textoBoton
 {
