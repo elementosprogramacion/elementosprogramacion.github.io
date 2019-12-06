@@ -503,12 +503,12 @@
 					<div class="collapsible-header"><img src="icons/expandir.svg" alt="Ver ejercicio" class="iconoExpandir" />Ejercicio 10.22</div>
 					  <div class="collapsible-body">
 					    <span>
-							<p>Para estudiar la poblaci&oacute;n extranjera en la Argentina, se decide realizar un censo por las distintas provincias. Para ello, se dispone del archivo PROVINCIAS de 30 registros de dos campos:</p>						
+							<p>Para estudiar la poblaci&oacute;n extranjera en la Argentina, se decide realizar un censo por las distintas provincias. Para ello, se dispone del archivo PROVINCIAS de 24 registros de dos campos:</p>						
 							<p>&nbsp;&bull; &nbsp;C&oacute;digo de Provincia (cadena de 3 posiciones) <br> &nbsp;&bull; &nbsp;Nombre de la Provincia (cadena de 30 posiciones) Argentina tiene 24 provincias, incluyendo CABA.</p>
-							<p>La informaci&oacute;n sobre el censo realizado se encentra en un archivo secuencia (CENSO) cuyos registros est&aacute;n formados por:</p>
+							<p>La informaci&oacute;n sobre el censo realizado se encuentra en un archivo secuencial (CENSO) cuyos registros est&aacute;n formados por:</p>
 							<p>&nbsp;&bull; &nbsp;C&oacute;digo de Provincia <br> &nbsp;&bull; &nbsp;Nacionalidad (entero 1 a 50) <br> &nbsp;&bull; &nbsp;Cantidad de habitantes (entero, mayor a cero)</p>
 							<p>El archivo no est&aacute; ordenado.</p>
-							<p>En otro archivo secuencial (MODIF_CENSO), que tampoco est&aacute; ordenado, se tienen modificaciones, cuyo formato de registro es:</p>
+							<p>En el archivo secuencial (MODIF_CENSO), que tampoco est&aacute; ordenado, se tienen modificaciones, cuyo formato de registro es:</p>
 							<p>&nbsp;&bull; &nbsp;C&oacute;digo de modificaci&oacute;n (car&aacute;cter: &acute;A&acute; o &acute;M&acute;) <br> &nbsp;&bull; &nbsp;C&oacute;digo de Provincia <br> &nbsp;&bull; &nbsp;Nacionalidad <br> &nbsp;&bull; &nbsp;Cantidad (entero, mayor a cero)</p>
 							<p>Si el c&oacute;digo de modificaci&oacute;n es &acute;A&acute;, debe sumarse la Cantidad a la existente; si es &acute;M&acute;, debe reemplazarse Cantidad de Habitantes con la informada. Se pide:</p>
 							<p>&nbsp;a. &nbsp;Almacenar la informaci&oacute;n del archivo en memoria utilizando una estructura adecuada. Puede ocurrir que no haya informaci&oacute;n alguna Provincia &ndash; Nacionalidad, en cuyo caso se asume 0 habitantes. <br> &nbsp;b. &nbsp;Actualizar los datos con las modificaciones.<br> &nbsp;c. &nbsp;Informar el total de habitantes por Provincia ordenado en forma descendente por cantidad de habitantes. <br> &nbsp;d. &nbsp;Grabar el archivo actualizado.</p>

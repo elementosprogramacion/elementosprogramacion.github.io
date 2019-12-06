@@ -1,0 +1,51 @@
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: 0EF6-199E
+
+ Directorio de C:\Users\pvera.GIDFIS\Documents\GitHub\elementosprogramacion.github.io
+
+06/12/2019  09:32 a.m.             7.473 adicionales.html
+18/10/2019  11:55 a.m.             8.326 catedra.html
+18/10/2019  09:45 a.m.             8.740 herramientas.html
+18/10/2019  09:44 a.m.             8.569 horariosConsulta.html
+18/10/2019  09:40 a.m.             9.011 index - copia.html
+18/10/2019  09:40 a.m.             8.265 index.html
+27/09/2019  10:29 a.m.             3.223 iteracionCondicionada.html
+11/10/2019  08:34 a.m.             1.940 menu.html
+13/09/2019  11:16 a.m.             7.966 OLD secuencial_ejercicios.html
+13/09/2019  11:45 a.m.             3.286 oldindex.html
+27/09/2019  10:29 a.m.            24.585 P1 -integradores_primer_parcial_ejercicios.html
+18/10/2019  09:48 a.m.             7.706 programados.html
+08/11/2019  10:52 a.m.             7.532 u10_ad_archivos.html
+25/11/2019  12:02 p.m.             8.333 u10_archivos.html
+06/12/2019  08:50 a.m.            58.877 u10_ej_archivos.html
+29/11/2019  09:54 a.m.             8.036 u10_vi_archivos.html
+08/11/2019  10:51 a.m.             7.546 u11_ad_corte_de_control.html
+08/11/2019  10:58 a.m.             8.009 u11_corte_de_control.html
+06/12/2019  08:53 a.m.            31.747 u11_ej_corte_de_control.html
+08/11/2019  10:55 a.m.             7.513 u1_introduccion.html
+18/10/2019  09:40 a.m.             7.590 u1_vi_introduccion.html
+18/10/2019  09:40 a.m.             7.600 u2_ad_secuencial.html
+18/10/2019  09:40 a.m.            13.334 u2_ej_secuencial.html
+08/11/2019  10:55 a.m.             7.805 u2_secuencial.html
+18/10/2019  09:40 a.m.             7.825 u3_ad_lenguajeC.html
+08/11/2019  10:55 a.m.             7.614 u3_lenguajeC.html
+08/11/2019  10:56 a.m.             7.580 u4_decision.html
+18/10/2019  09:40 a.m.            19.603 u4_ej_decision.html
+18/10/2019  09:40 a.m.            19.014 u5.1_ej_iteracionDefinida.html
+18/10/2019  09:40 a.m.            21.656 u5.2_ej_iteracionCondicionada.html
+08/11/2019  10:56 a.m.             9.546 u5_iteracion.html
+06/12/2019  08:26 a.m.            19.969 u6_ej_funciones.html
+08/11/2019  10:56 a.m.             7.691 u6_funciones.html
+18/10/2019  10:11 a.m.            31.486 u7.1_ej_vectores.html
+06/12/2019  08:35 a.m.            32.067 u7.2_ej_matrices.html
+08/11/2019  10:52 a.m.             7.481 u7_ad_arrays.html
+08/11/2019  10:56 a.m.             8.692 u7_arrays.html
+01/11/2019  11:58 a.m.             7.518 u7_vi_arrays.html
+18/10/2019  09:40 a.m.            15.091 u8_ej_strings.html
+08/11/2019  10:57 a.m.             8.796 u8_strings.html
+25/11/2019  12:04 p.m.             8.439 u8_vi_strings.html
+06/12/2019  08:39 a.m.            17.042 u9_ej_estructuras.html
+08/11/2019  11:00 a.m.             7.635 u9_estructuras.html
+18/10/2019  09:43 a.m.             8.903 unidades.html
+              44 archivos        546.660 bytes
+               0 dirs  25.072.242.688 bytes libres
