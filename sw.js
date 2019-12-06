@@ -1,8 +1,12 @@
-const cacheActual = 'epUNLaM-v2';
+const cacheActual = 'epUNLaM-v3';
 
 
 const paginasModificadas = [
-  'u10_vi_archivos.html' 
+  'u10_vi_archivos.html' ,
+  'u10_archivos.html',
+  'u8_strings.html',
+  'u7_arrays.html',
+  'u11_corte_de_control.html' 
 ];
 
 const recursosACopiar = [
@@ -39,10 +43,8 @@ const recursosACopiar = [
   'menu.html' ,
   'programados.html' ,
   'u10_ad_archivos.html' ,
-  'u10_archivos.html' ,
   'u10_ej_archivos.html' ,
   'u11_ad_corte_de_control.html' ,
-  'u11_corte_de_control.html' ,
   'u11_ej_corte_de_control.html' ,
   'u1_introduccion.html' ,
   'u1_vi_introduccion.html' ,
@@ -61,10 +63,8 @@ const recursosACopiar = [
   'u7.1_ej_vectores.html' ,
   'u7.2_ej_matrices.html' ,
   'u7_ad_arrays.html' ,
-  'u7_arrays.html' ,
   'u7_vi_arrays.html' ,
   'u8_ej_strings.html' ,
-  'u8_strings.html' ,
   'u8_vi_strings.html' ,
   'u9_ej_estructuras.html' ,
   'u9_estructuras.html' ,
