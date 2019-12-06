@@ -1,8 +1,8 @@
-const cacheActual = 'epUNLaM-v1';
+const cacheActual = 'epUNLaM-v2';
 
 
 const paginasModificadas = [
-  'oldindex.html'
+  'u10_vi_archivos.html' 
 ];
 
 const recursosACopiar = [
@@ -41,7 +41,6 @@ const recursosACopiar = [
   'u10_ad_archivos.html' ,
   'u10_archivos.html' ,
   'u10_ej_archivos.html' ,
-  'u10_vi_archivos.html' ,
   'u11_ad_corte_de_control.html' ,
   'u11_corte_de_control.html' ,
   'u11_ej_corte_de_control.html' ,
