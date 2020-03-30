@@ -8,7 +8,9 @@ const paginasModificadas = [
   'u7_arrays.html',
   'u11_corte_de_control.html',
   'u2_vi_secuencial.html',
-  'u2_secuencial.html'
+  'u2_secuencial.html',
+  'u3_lenguajeC.html',
+  'u3_vi_lenguajeC.html'
 ];
 
 const recursosACopiar = [
