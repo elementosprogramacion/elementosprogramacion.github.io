@@ -1,4 +1,4 @@
-const cacheActual = 'epUNLaM-v5';
+const cacheActual = 'epUNLaM-v6';
 
 
 const paginasModificadas = [
@@ -10,7 +10,9 @@ const paginasModificadas = [
   'u2_vi_secuencial.html',
   'u2_secuencial.html',
   'u3_lenguajeC.html',
-  'u3_vi_lenguajeC.html'
+  'u3_vi_lenguajeC.html',
+  'u4_vi_decision.html',
+  'u4_decision.html'
 ];
 
 const recursosACopiar = [
