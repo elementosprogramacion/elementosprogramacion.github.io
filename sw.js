@@ -1,4 +1,4 @@
-const cacheActual = 'epUNLaM-v6';
+const cacheActual = 'epUNLaM-v7';
 
 
 const paginasModificadas = [
