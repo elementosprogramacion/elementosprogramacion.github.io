@@ -1,4 +1,4 @@
-const cacheActual = 'epUNLaM-v8';
+const cacheActual = 'epUNLaM-v9';
 
 
 const paginasModificadas = [
@@ -12,7 +12,10 @@ const paginasModificadas = [
   'u3_lenguajeC.html',
   'u3_vi_lenguajeC.html',
   'u4_vi_decision.html',
-  'u4_decision.html'
+  'u4_decision.html',
+  'u5_iteracion.html',
+  'u5_vi_iteracion.html',
+  'index.html'
 ];
 
 const recursosACopiar = [
@@ -44,7 +47,6 @@ const recursosACopiar = [
   'adicionales.html' ,
   'catedra.html' ,
   'herramientas.html' ,
-  'index.html' ,
   'iteracionCondicionada.html' ,
   'menu.html' ,
   'programados.html' ,
@@ -56,14 +58,11 @@ const recursosACopiar = [
   'u1_vi_introduccion.html' ,
   'u2_ad_secuencial.html' ,
   'u2_ej_secuencial.html' ,
-  'u2_secuencial.html' ,
   'u3_ad_lenguajeC.html' ,
   'u3_lenguajeC.html' ,
-  'u4_decision.html' ,
   'u4_ej_decision.html' ,
   'u5.1_ej_iteracionDefinida.html' ,
   'u5.2_ej_iteracionCondicionada.html' ,
-  'u5_iteracion.html' ,
   'u6_ej_funciones.html' ,
   'u6_funciones.html' ,
   'u7.1_ej_vectores.html' ,
