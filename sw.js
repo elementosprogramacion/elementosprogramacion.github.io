@@ -1,4 +1,4 @@
-const cacheActual = 'epUNLaM-v10';
+const cacheActual = 'epUNLaM-v11';
 
 
 const paginasModificadas = [
@@ -15,7 +15,8 @@ const paginasModificadas = [
   'u4_decision.html',
   'u5_iteracion.html',
   'u5_vi_iteracion.html',
-  'index.html'
+  'index.html',
+  'u5.1_ej_iteracionDefinida.html'
 ];
 
 const recursosACopiar = [
