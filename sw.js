@@ -1,4 +1,4 @@
-const cacheActual = 'epUNLaM-v12';
+const cacheActual = 'epUNLaM-v13';
 
 
 const paginasModificadas = [
@@ -16,7 +16,8 @@ const paginasModificadas = [
   'u5_iteracion.html',
   'u5_vi_iteracion.html',
   'index.html',
-  'u5.1_ej_iteracionDefinida.html'
+  'u5.1_ej_iteracionDefinida.html',
+  'herramientas.html' 
 ];
 
 const recursosACopiar = [
@@ -47,7 +48,6 @@ const recursosACopiar = [
   'favicon.ico' ,
   'adicionales.html' ,
   'catedra.html' ,
-  'herramientas.html' ,
   'iteracionCondicionada.html' ,
   'menu.html' ,
   'programados.html' ,
