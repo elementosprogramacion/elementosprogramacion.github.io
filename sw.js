@@ -1,4 +1,4 @@
-const cacheActual = 'epUNLaM-v13';
+const cacheActual = 'epUNLaM-v14';
 
 
 const paginasModificadas = [
@@ -17,6 +17,7 @@ const paginasModificadas = [
   'u5_vi_iteracion.html',
   'index.html',
   'u5.1_ej_iteracionDefinida.html',
+  'u5.2_ej_iteracionCondicionada.html' ,
   'herramientas.html' 
 ];
 
@@ -63,7 +64,6 @@ const recursosACopiar = [
   'u3_lenguajeC.html' ,
   'u4_ej_decision.html' ,
   'u5.1_ej_iteracionDefinida.html' ,
-  'u5.2_ej_iteracionCondicionada.html' ,
   'u6_ej_funciones.html' ,
   'u6_funciones.html' ,
   'u7.1_ej_vectores.html' ,
