@@ -1,4 +1,4 @@
-const cacheActual = 'epUNLaM-v25';
+const cacheActual = 'epUNLaM-v26';
 
 
 const paginasModificadas = [
@@ -24,7 +24,11 @@ const paginasModificadas = [
   'u6_vi_funciones.html',
   'u7.2_ej_matrices.html',
   'u7.1_ej_vectores.html' ,
-  'u10_ej_archivos.html' 
+  'u10_ej_archivos.html' ,
+  'u11_corte_de_control.html',
+  'u11_vi_corte_de_control.html',
+  'u9_estructuras.html' ,
+  'u9_vi_estructuras.html'
 ];
 
 const recursosACopiar = [
@@ -74,7 +78,6 @@ const recursosACopiar = [
   'u8_ej_strings.html' ,
   'u8_vi_strings.html' ,
   'u9_ej_estructuras.html' ,
-  'u9_estructuras.html' ,
   'unidades.html'
 ];
 
